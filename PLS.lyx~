@@ -307,7 +307,6 @@ PLS1 es un algoritmo utilizado ampliamente apropiado para el vector Y caso.
 
 \begin_layout Standard
 \begin_inset Float algorithm
-placement H
 wide false
 sideways false
 status collapsed
@@ -1500,30 +1499,6 @@ Esta forma del algoritmo no requiere el centrado de la entrada X y Y , Ya
 \end_layout
 
 \begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-↑ «PLS path modeling» (PDF).
- Computational Statistics & Data Analysis 48 (1): pp.
- 159–205.
- January 2005.
- doi:10.1016/j.csda.2004.03.005.
- Ir a ↑ Handbook of Partial Least Squares.
- 2010.
- ISBN 978-3-540-32825-4.
- Ir a ↑ Tenenhaus, M.
- (2008).
- «Component-based structural equation modelling» (PDF).
- Ir a ↑ «PLS-regression: a basic tool of chemometrics».
- Chemometrics and Intelligent Laboratory Systems 58 (2): pp.
- 109–130.
- 2001.
- doi:10.1016/S0169-7439(01)00155-1.
-\end_layout
-
-\end_inset
-
 
 \end_layout
 
