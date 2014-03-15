@@ -1,0 +1,167 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass article
+\use_default_options true
+\maintain_unincluded_children false
+\language spanish
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine jurabib
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation skip
+\defskip medskip
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Section*
+PLS
+\end_layout
+
+\begin_layout Standard
+PLS se utiliza para encontrar las relaciones fundamentales entre dos matrices
+ (X e Y), es decir, un enfoque de variable latente para el modelado de las
+ estructuras de covarianza en estos dos espacios.
+\end_layout
+
+\begin_layout Standard
+Un modelo de PLS trata de encontrar el sentido multidimensional en el espacio
+ X que explica la dirección de la máxima varianza multidimensional en el
+ espacio Y.
+\end_layout
+
+\begin_layout Standard
+la regresion PLS es especialmente adecuada cuando la matriz de los predictores
+ tiene más variables que observaciones, y cuando hay multicolinealidad entre
+ los valores X.
+ Por el contrario, la regresión estándar fallará en estos casos.
+\end_layout
+
+\begin_layout Standard
+modelo subyacente:
+\end_layout
+
+\begin_layout Standard
+el modelo genera multivariado para PLS es:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $X=TP^{\top}+E$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $Y=UQ^{\top}+F$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+donde X es una matrix de predictores (nxm), Y es una matrix de respuestas
+ (nxp);
+\end_layout
+
+\begin_layout Standard
+T y U de dimension (nxl) son matrices de proyeccion (los pesos (scores))
+ de X y (los pesos (scores)) de Y respectivamente.
+\end_layout
+
+\begin_layout Standard
+P y Q son de dimensiones (mxl) y (pxl) respectivamente y son las matrices
+ que contienen las cargas ortogonales.
+\end_layout
+
+\begin_layout Standard
+finalmente las matrices E y F son los terminos de error, supone que las
+ variables son aleatorias normales independientes e idénticamente distribuidas.
+ Estas descomposiciones de X y Y son hechas para maximixar la covarianza
+ de T y U.
+\end_layout
+
+\begin_layout Subsection*
+Algoritmo
+\end_layout
+
+\begin_layout Standard
+un numero de antes del PLS existe para estimar el factor de carga y las
+ matrices T,U,P y Q.
+ la mayoria de ellos generan estimaciones apartir de la regresion lineal
+ entre Xy Y como 
+\begin_inset Formula $Y=X\tilde{B}+\tilde{B_{0}}$
+\end_inset
+
+.
+ algunos algoritmos PLS solo son apropiados para el caso en que Y es un
+ vector de una columna, mientras que los otros se ocupan del caso general
+ de una matriz Y.
+\end_layout
+
+\begin_layout Standard
+los algoritmos tambien difieren de si estiman la matriz de factores T como
+ una vista ortogonal, una matrix ortonormal o no.
+\end_layout
+
+\begin_layout Standard
+la prediccion final sera el mismo para todas las variables de estas PLS,
+ pero los componentes seran diferentes.
+\end_layout
+
+\begin_layout Standard
+algoritmo PLS1
+\end_layout
+
+\begin_layout Standard
+este algoritmo es ampliamente utilizado 
+\end_layout
+
+\end_body
+\end_document
