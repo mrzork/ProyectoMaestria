@@ -1,0 +1,18 @@
+Redes Bayesianas
+
+"En una red bayesiana, cada nodo corresponde a una variable, que a su vez representa una entidad del mundo real."
+"Los arcos que unen los nodos indican relaciones de influencia causal."
+"los modelos gráficos probabilísticos (en particular las Redes Bayesianas) constituyen una metodología elegante y potente basada en la probabilidad y la estadística que permite construir modelos de probabilidad conjunta manejables que representan las dependencias relevantes entre un conjunto de variables (cientos de variables en aplicaciones prácticas). Los modelos resultantes permiten realizar inferencia probabilística de una manera eficiente. Por ejemplo, una Red Bayesiana podría representar la relaciones probabilísticas entre campos sinópticos de larga escala y registros de observaciones locales, proporcionando una nueva metodología de downscaling probabilístico"
+"Una Red Bayesiana es una grafo dirigido acíclico cuyos nodos representan variables y los arcos que los unen codifican dependencias condicionales entre las variables. El grafo proporciona una forma intuitiva de describir las dependencias del modelo y define una factorización sencilla de la distribución de probabilidad conjunta consiguiendo un modelo manejable que es compatible con las dependencias codificadas. Existen algoritmo eficientes para aprender modelos gráficos probabilísticos a partir de datos, permitiendo así la aplicación automática de esta metodología en problemas complejos. Las Redes Bayesianas que modelizan secuencias de variables (por ejemplo, series temporales de observaciones) se denominan Redes Bayesianas Dinámicas. Una generalización de las Redes Bayesianas que permiten representar y resolver problemas de decisión con incertidumbre son los Diagramas de Influencia."
+"Las redes auto-organizativas (SOM) son redes competitivas diseñadas para problemas de agrupación (clustering) y visualización"
+
+Redes SOM (Mapas Autoorganizativas de Kohonen)
+
+
+
+http://www.meteo.unican.es/es/research/mineria_datos
+http://www.psico.uniovi.es/REMA/v13n1/a2/p3.html
+http://es.wikipedia.org/wiki/Mapa_autoorganizado
+http://es.wikipedia.org/wiki/Red_bayesiana
+http://en.wikibooks.org/wiki/Data_Mining_Algorithms_In_R/Clustering/Self-Organizing_Maps_(SOM)
+

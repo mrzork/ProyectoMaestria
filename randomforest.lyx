@@ -1,0 +1,180 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass article
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Section*
+Random Forest
+\end_layout
+
+\begin_layout Standard
+El random Forest es una combinación de árboles predictores tal que cada
+ árbol depende de los valores de un vector aleatorio probado independientemente
+ y con la misma distribución para cada uno de estos.
+ Es una modificación sustancial de bagging que construye una larga colección
+ de árboles no correlacionados y luego los promedia.
+\end_layout
+
+\begin_layout Standard
+Random Forest es una unión entre métodos de clasificación o de regresión,
+ esta opera por la construcción de una multitud de árboles de decisión en
+ el entrenamiento y a la salida una clase que es el modo de salida de árboles
+ individuales de salida.
+\end_layout
+
+\begin_layout Standard
+El algoritmo de random forest fue introducido y desarrollado por Leo Breiman
+ y adele Cutler.
+\end_layout
+
+\begin_layout Standard
+El termino random forest proviene de los bosques de decisión aleatoria que
+ fue propuesto por primera vez por estaño Jam Ho de laboratorios Bell en
+ 1995.
+\end_layout
+
+\begin_layout Standard
+El método combina la idea de breiman de “bagging” y la selección aleatoria
+ de características introducido de forma independiente por Ho y Amin y Geman
+ con el finde construir una colección de árboles de decisión con varianza
+ controlada.
+\end_layout
+
+\begin_layout Standard
+La selección de un subconjunto aleatorio de características es un ejemplo
+ del método de subespacio aleatorio, que en la formulación de Ho, es una
+ forma de implementar una clasificación propuesta por Eugene Kleinberg.
+ 
+\end_layout
+
+\begin_layout Standard
+Bagging o Bootstrap agregación, es un procedimiento para procedimientos
+ generales, el procedimiento reduce la varianza de un método de aprendizaje
+ estadístico; este es particularmente y frecuentemente usado en el contexto
+ de árboles de decisión.
+\end_layout
+
+\begin_layout Standard
+Si tenemos un set de n observaciones Z1; : : : ;Zn, cada una con varianza
+ 2, la varianza de la media de las observaciones Z estada do por 2=n.
+ en otras palabras, el promedio de set de observaciones reduce la varianza.
+ por supuesto, esto no es practico porque generalmente tenemos acceso múltiples
+ sets de entrenamiento.
+\end_layout
+
+\begin_layout Standard
+En lugar, podemos iniciar bootstrap tomando muestras repetidas del set de
+ datos de entrenamiento.
+\end_layout
+
+\begin_layout Standard
+Esta características genera B diferentes datos de entrenamiento “bootstraped”
+ nosotros entonces entrenaremos en el B_ceavo bootstraped set de entrenamiento
+ en el orden a obtener 
+\begin_inset Formula $\hat{f}^{*b}\left(x\right)$
+\end_inset
+
+,la predicción para el punto en X, tendríamos entonces un promedio de todas
+ las predicciones posibles, 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\hat{f}^{*b}\left(x\right)=\frac{1}{B}\overset{B}{\underset{b=1}{\sum}}\hat{f}^{*b}\left(x\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Esto es llamado bagging.
+\end_layout
+
+\begin_layout Standard
+Random forest:
+\end_layout
+
+\begin_layout Standard
+Proporcionan una mejora con respecto a los árboles en baggiong a modo de
+ un pequeño pellizco que descorrelaciona los árboles.
+ Esto reduce la varianza cuando promediamos los árboles.
+ Al igual que en el bagging, construimos una serie de árboles de decisión
+ sobre muestras de entrenamiento bootstrapped.
+ Pero cuando la construcción de estos árboles de decisión, cada vez que
+ una 
+\begin_inset Quotes eld
+\end_inset
+
+separacion
+\begin_inset Quotes erd
+\end_inset
+
+ en un árbol es considerado, una selección aleatoria de m predictores es
+ elegido como candidatos de división de todo el conjunto de p predictores.
+ Se permite que la división de usar sólo uno de esos predictores m.
+ Una selección fresca de m predictores se toma en cada división, y por lo
+ general elegimos 
+\begin_inset Formula $m\approx\sqrt{p}$
+\end_inset
+
+ es decir, el número de predictores considerados en cada división es aproximadam
+ente igual a la raíz cuadrada del número total de predictores.
+\end_layout
+
+\end_body
+\end_document
