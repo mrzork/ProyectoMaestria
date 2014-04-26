@@ -65,6 +65,38 @@ PLS (Partial least squares regression)
 \end_layout
 
 \begin_layout Standard
+La Regresión por mínimos cuadrados se introdujo hace casi treinta años y
+ actualmente se utiliza en Quimiometría, donde se analizan datos que se
+ caracterizan por muchas variables predictoras, con problemas de multicolinealid
+ad, y pocas unidades experimentales en estudio (Geladi and Kowalski
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+Geladi P, Kowalski B, 1986.
+ Partial least squares regression; a tutorial.AualChimActa 185, 1-17.
+ 
+\end_layout
+
+\end_inset
+
+, 1986; Martens and Naes, 1989
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+Martens, H.
+ and Naes, T.
+ 1989.Multivariate calibration.John Wiley and Sons Inc., Chichester, UK.
+ 
+\end_layout
+
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Standard
 Es una particular forma de analisis multivariante, este metodo relacionado
  con la regresion de componentes principales, PCR (
 \begin_inset Quotes eld
@@ -74,11 +106,11 @@ Principal components regression
 \begin_inset Quotes erd
 \end_inset
 
-) posse innumerables ventajas teoricas y computacionales que han llevado
- a innumerables aplicaciones.PLS se utiliza para encontrar las relaciones
- fundamentales entre dos matrices (X e Y), es decir, un enfoque de variable
- latente para el modelado de las estructuras de covarianza en estos dos
- espacios.
+) posee valiosas ventajas teoricas y computacionales que han llevado a innumerab
+les aplicaciones.
+ PLS se utiliza para encontrar las relaciones fundamentales entre dos matrices
+ (X e Y), es decir, un enfoque de variable latente para el modelado de las
+ estructuras de covarianza en estos dos espacios.
 \end_layout
 
 \begin_layout Standard

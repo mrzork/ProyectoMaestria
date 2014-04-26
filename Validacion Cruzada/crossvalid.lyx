@@ -74,14 +74,14 @@ Probablemente el mas simple y ampliamente usado metodo para estimar el error
 \begin_inset Formula $\hat{f}\left(X\right)$
 \end_inset
 
-se aplica a una muestra de prueba independiente de la distribución conjunta
+, se aplica a una muestra de prueba independiente de la distribución conjunta
  de X e Y.
  Como se mencionó anteriormente, podríamos esperar que la validación cruzada
  estima el error condicional, con el conjunto de entrenamiento 
 \begin_inset Formula $\tau$
 \end_inset
 
- se mantiene fijo.
+ el cual se mantiene fijo.
 \end_layout
 
 \begin_layout Subsection*
@@ -89,15 +89,15 @@ Validacion cruzada K-Fold
 \end_layout
 
 \begin_layout Standard
-Lo ideal sería que si tuviéramos suficientes datos, tendríamos dejar de
- lado un conjunto de validación y lo utilizan para evaluar el desempeño
+Lo ideal sería que si tuviéramos suficientes datos, asi tendríamos que dejar
+ de lado un conjunto de validación y se utiliza para evaluar el desempeño
  de nuestro modelo de predicción.
  Puesto que los datos a menudo son escasos, esto no suele ser posible.
- A la delicadeza del problema, validación cruzada K veces utiliza parte
+ A la delicadeza del problema, la validación cruzada K veces utiliza parte
  de los datos disponibles para ajustar el modelo, y una parte distinta para
  comprobarlo.
- Dividimos los datos en K partes más o menos del mismo tamaño; Por ejemplo,
- cuando 
+ Donde dividimos los datos en K partes más o menos del mismo tamaño; Por
+ ejemplo, cuando 
 \begin_inset Formula $K=5$
 \end_inset
 
@@ -112,19 +112,19 @@ sideways false
 status collapsed
 
 \begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename C:/Users/SAMSUNG/Desktop/Proyecto Maestria V2/ProyectoMaestria/imagenes/kfold.png
+	filename C:/Users/SAMSUNG/Documents/GitHub/ProyectoMaestria/imagenes/kfold.png
 	lyxscale 50
 	scale 50
 
 \end_inset
 
 
+\end_layout
+
+\begin_layout Plain Layout
+\align center
 \begin_inset Caption
 
 \begin_layout Plain Layout
@@ -146,25 +146,25 @@ k-fold
 \end_layout
 
 \begin_layout Standard
-Para la parte de orden k (tercio superior), nos ajustamos el modelo al otro
- K - 1 parte de los datos, y calcular el error de predicción del modelo
- ajustado la k-th de predecir la parte de orden k de los datos.
+Para la parte de orden k (k=3), nos ajustamos el modelo a la otra K - 1
+ parte de los datos, y se calcula el error de predicción del modelo ajustado
+ la k-th para predecir la parte de orden k de los datos.
  Hacemos esto para k = 1, 2,.
  .
  .
- , K y combinar las estimaciones de K de error de predicción.
+ , K y se combinan las estimaciones del error de predicción de K.
 \end_layout
 
 \begin_layout Standard
 Aquí hay más detalles.
- Deje κ: {1,.
+ Deje κ : {1,.
  .
  .
  , N} 7 → {1,.
  .
  .
  , K} una función de indexación que indica la partición a la que la observación
- i es asignado por la aleatorización.
+ i es asignada por la aleatorización.
  Denotemos por 
 \begin_inset Formula $\hat{f}^{-k}\left(X\right)$
 \end_inset
@@ -172,7 +172,7 @@ Aquí hay más detalles.
    la función de módulos, calculado con la parte de orden k de los datos
  eliminados.
  A continuación, la estimación de la validación cruzada de error de predicción
- es
+ es:
 \end_layout
 
 \begin_layout Standard

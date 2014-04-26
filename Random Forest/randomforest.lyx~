@@ -64,7 +64,7 @@ Random Forest
 \end_layout
 
 \begin_layout Standard
-el random Forest es una combinación de árboles predictores tal que cada
+El random Forest es una combinación de árboles predictores tal que cada
  árbol depende de los valores de un vector aleatorio probado independientemente
  y con la misma distribución para cada uno de estos.
  Es una modificación sustancial de bagging que construye una larga colección
@@ -72,80 +72,63 @@ el random Forest es una combinación de árboles predictores tal que cada
 \end_layout
 
 \begin_layout Standard
-Random Forest es una union entre metodos de clasificacion o de regression,
- esta opera por la construccion de una multitud de arboles de decision en
- el entrenamiento y a la salida una clase que es el modo de salida de arboles
- individuales de salida.
+Random Forest es una unión entre métodos de clasificación y metodos de regresión
+, esta opera por la construcción de una multitud de árboles de decisión
+ en el entrenamiento y en la salida una clase el cual es el modo de salida
+ de los árboles individuales.
 \end_layout
 
 \begin_layout Standard
-El algoritmo de random forest fue introducido y desarrollado por Leo Breiman
- y adele Cutler.
+El termino random forest proviene de los bosques de decisión aleatoria que
+ fue propuesto por primera vez por estaño Jam Ho de laboratorios Bell en
+ 1995 y el algoritmo de random forest fue introducido y desarrollado por
+ Leo Breiman y Adele Cutler.
 \end_layout
 
 \begin_layout Standard
-el termino random forest proviene de los bosques de desicison aleatoria
- que fue propuesto por primera vez por estaño jam ho de laboratoriso bell
- en 1995.
+Este método combina la idea de breiman del “bagging” y la selección aleatoria
+ de características introducido de forma independiente por Ho concepto de
+ (Amin y Geman) con el finde construir una colección de árboles de decisión
+ con varianza controlada.
 \end_layout
 
 \begin_layout Standard
-el metodo combina la idea de breiman de 
-\begin_inset Quotes eld
-\end_inset
-
-bagging
-\begin_inset Quotes erd
-\end_inset
-
- y la seleccion alatoria de caracteristicas introducido de forma independiente
- por Ho y Amin y Geman con el finde contruir una coleccion de arboles de
- decision con varianza controlada.
-\end_layout
-
-\begin_layout Standard
-la seleccion de un subconjunto aleatorio de caracteristicas es un ejemplo
- del metodo de subespacio aleatorio, que en la formulacion de Ho, es una
- forma de implementar una clasifiacaion propuesta por Eugene Kleinberg.
+La selección de un subconjunto aleatorio de características es un ejemplo
+ del método de subespacio aleatorio, que en la formulación de Ho, es una
+ forma de implementar una clasificación propuesta por (Eugene Kleinberg).
  
 \end_layout
 
-\begin_layout Standard
-Bagging o Bootstrap aggregation, es un procedimiento para procedimientos
- generales, el procedimiento reduce la varianza de un metodo de aprendizaje
- estadistico; este es particulramnete y frecuentemente usado en el contexto
- de arboles de decision.
+\begin_layout Subsection*
+Bagging o Bootstrap agregación
 \end_layout
 
 \begin_layout Standard
-si tenemos un set de n observaciones Z1; : : : ;Zn, cada una con varianza
- 2, la varianza de la media de las observaciones Z estada do por 2=n.
- en otras palabras, el promedio de set de observaciones reduce la varianza.
- por supuesto, esto no es practico porque generalmenteno tenemos acceso
- multiples sets de entrenamiento.
+Este es un procedimiento aplicado en terminos generales, el procedimiento
+ reduce la varianza de un método de aprendizaje estadístico, este es particular
+ y frecuentemente usado en el contexto de árboles de decisión.
 \end_layout
 
 \begin_layout Standard
-En lugar , podemos iniciar bootstrap tomando muestras repetidas del set
+Es decir: Si tenemos un set de n observaciones Z1; : : : ;Zn, cada una con
+ varianza 2, la varianza de la media de las observaciones Z estada do por
+ 2=n.
+ en otras palabras, el promedio del set de observaciones reduce la varianza.
+ por supuesto, esto no es practico porque generalmente tenemos acceso a
+ múltiples sets de entrenamiento.
+ En lugar, podemos iniciar bootstrap tomando muestras repetidas del set
  de datos de entrenamiento.
 \end_layout
 
 \begin_layout Standard
-esta caracteristicas genera B diferentes datos de entrenamisnto 
-\begin_inset Quotes eld
-\end_inset
-
-bootstraped
-\begin_inset Quotes erd
-\end_inset
-
+Esta características genera B diferentes datos de entrenamiento “bootstraped”
  nosotros entonces entrenaremos en el B_ceavo bootstraped set de entrenamiento
  en el orden a obtener 
 \begin_inset Formula $\hat{f}^{*b}\left(x\right)$
 \end_inset
 
-, la prediccion para el punto en X,tendriamos entonces un promedio de todas
- las predicciones posibles, 
+, la predicción para el punto en X, tendríamos entonces un promedio de todas
+ las predicciones posibles:
 \end_layout
 
 \begin_layout Standard
@@ -156,21 +139,21 @@ bootstraped
 \end_layout
 
 \begin_layout Standard
-esto es llamado bagging.
+A este procedimiento es a lo que llamamos bagging.
 \end_layout
 
 \begin_layout Standard
-Random forest:
+El Algoritmo de Random forest:
 \end_layout
 
 \begin_layout Standard
-proporcionan una mejora con respecto a los árboles en baggiong a modo de
- un pequeño pellizco que descorrelaciona los árboles.
- Esto reduce la varianza cuando promediamos los árboles.
+Proporcionan una mejora con respecto a los árboles en bagging a modo de
+ pequeñas cantidades que descorrelacionan los árboles, esto reduce la varianza
+ cuando promediamos los árboles.
  Al igual que en el bagging, construimos una serie de árboles de decisión
  sobre muestras de entrenamiento bootstrapped.
- Pero cuando la construcción de estos árboles de decisión, cada vez que
- una 
+ Pero en la construcción de estos árboles de decisión, cada vez se da una
+ 
 \begin_inset Quotes eld
 \end_inset
 
@@ -178,11 +161,13 @@ separacion
 \begin_inset Quotes erd
 \end_inset
 
- en un árbol es considerado, una selección aleatoria de m predictores es
- elegido como candidatos de división de todo el conjunto de p predictores.
- Se permite que la división de usar sólo uno de esos predictores m.
- Una selección fresca de m predictores se toma en cada división, y por lo
- general elegimos 
+ en un árbol, esta es considerada, asi se realiza una una selección aleatoria
+ de m predictores donde son elegido los candidatos de división de todo el
+ conjunto de p predictores.
+ Se le permite que la división use sólo uno de esos predictores m.
+ en cada seleccion de las muestras boostraped se elige una selección fresca
+ de m predictores que se toma para cada división, y por lo general elegimos
+ 
 \begin_inset Formula $m\approx\sqrt{p}$
 \end_inset
 
