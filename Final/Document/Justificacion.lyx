@@ -1,0 +1,250 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass article
+\use_default_options true
+\maintain_unincluded_children false
+\language spanish-mexico
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Section*
+
+\size small
+Justificación
+\end_layout
+
+\begin_layout Standard
+
+\size small
+En Colombia los costos para producir una tonelada de azúcar son mayores
+ que en otros países, a causa de múltiples factores como el precio de la
+ tierra, la mano de obra, los insumos, los impuestos, la seguridad, el valor
+ de los derechos de uso del agua, el costo de fertilizantes e inclusive
+ los costos de inspecciones para la detección de plagas y enfermedades.
+ Igualmente, los recursos necesarios para medir la sacarosa en la caña en
+ evaluaciones de pre cosecha, y otros rubros de importancia.
+ Una manera de disminuir estos costos de producción y mejorar la productividad
+ de los campos es mediante la utilización de herramientas para identificar
+ las condiciones anormales en los cultivos, de manera que se pueden tomar
+ medidas de control o de prevención oportunas.
+ El uso de percepción remota en combinación con sistemas de información
+ geográfica (SIG) y sistemas de posicionamiento global (GPS), generan una
+ oportunidad para mejorar la competitividad de la producción agrícola asegurando
+ el desarrollo sostenible de la actividad.
+\end_layout
+
+\begin_layout Standard
+
+\size small
+Las variables que se desean estimar por medio de esta metodología son de
+ vital importancia para poder efectuar pronósticos tempranos de producción
+ en el cultivo caña de azúcar entre otras aplicaciones, lo que generaría
+ avances importantes en el sector agro industrial de caña de azúcar en el
+ Valle del Cauca relacionados a los siguientes factores:
+\end_layout
+
+\begin_layout Enumerate
+
+\size small
+Innovación
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+
+\size small
+Actualmente no se utiliza fotografía aérea para conocer el estado del cultivo
+ y mucho menos para la estimación de parámetros biofísicos.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\size small
+Utilidad Económica
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+
+\size small
+Actualmente se utilizan métodos que conllevan altos costos económicos y
+ logísticos.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\size small
+Facilidad de aplicación
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+
+\size small
+El sensor puede instalarse en plataformas aéreas, como aviones de fumigacion,
+ UAVs, grúas u otros.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\size small
+Impacto ambiental
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+
+\size small
+Conocer el comportamiento del cultivo en una etapa temprana (4 meses - 6
+ meses) donde se expresan características como su crecimiento y desarrollo,
+ permitiría realizar tanto estimaciones tempranas de producción como también
+ evaluar el estado del cultivo.
+ Esto permitiría realizar acciones de corrección cuando estas son necesarias,
+ logrando minimizar el impacto en costos y sobre el suelo, que se podrían
+ producir si estas acciones se toman en una etapa posterior al periodo de
+ desarrollo del cultivo.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+
+\end_layout
+
+\begin_layout Standard
+
+\size small
+Los ingenios tienen la necesidad de cuantificar el rendimiento de los cultivos
+ de caña de azúcar, ya sea como un método de seguimiento del cultivo o para
+ el respectivo pago de los derechos relacionados con los lotes productivos
+ (
+\begin_inset Quotes eld
+\end_inset
+
+suertes
+\begin_inset Quotes erd
+\end_inset
+
+) que se realiza hasta el momento del aforo realizado un mes antes del corte
+ de la caña.
+ Dichos derechos se liquidan por medio de la estimación del rendimiento
+ promedio de grandes áreas de cultivo, lo que significa que se pierde resolución
+ a la hora de considerar el rendimiento específico de sitios del cultivo,
+ lo que conlleva una pérdida de información importante, tanto para el ingenio
+ como para el agricultor.
+ Al lograr mejorar la resolución de la toma de información se enriquece
+ mucho más el conocimiento del cultivo y así puede llevar a tener en cuenta
+ prácticas realizadas sobre el cultivo que harían más preciso y menos empírico
+ el manejo de los cultivos en pro del rendimiento y calidad en la producción.
+ 
+\end_layout
+
+\begin_layout Standard
+
+\size small
+Realizar un proceso adecuado de estimación de parámetros biofísicos en el
+ cultivo de caña a partir de imágenes multiespectrales genera una gran ganancia
+ al estudio del comportamiento de la caña a nivel de cultivo, además de
+ proveer información que hasta el momento solo es capturada mediante costosos
+ instrumentos, muchas veces necesariamente estos procesos de medición deben
+ ser destructivos.
+ Además logrando capturar una mayor resolución en imágenes multiespectrales
+ unido a sistemas de SIG es posible generar mapas mucho más detallados de
+ importantes características, tanto del cultivo como del comportamiento
+ de los suelos dándole un valor agregado a cada área estudiada.
+\end_layout
+
+\begin_layout Subsubsection*
+
+\size small
+Significado de la investigación
+\end_layout
+
+\begin_layout Standard
+
+\size small
+Se desea mostrar que el proceso de estimación de características, tanto
+ de población como biofísicas, presente en cultivos de caña es posible por
+ medio del uso de imágenes multiespectrales y un correcto procesamiento
+ estadístico de los datos.
+ Además se espera lograr la aplicabilidad real de este proceso de estimación
+ para medir de forma no destructiva las variables biofísicas, sobre cultivos
+ de caña que de otra manera no es posible.
+ Adicionalmente, se analizará la factibilidad de implementar nuevas estrategias
+ de modelación del cultivo y captura de datos para aprovechar al máximo
+ toda la información presente en el cultivo.
+\end_layout
+
+\begin_layout Subsubsection*
+
+\size small
+Facilidades Disponibles
+\end_layout
+
+\begin_layout Standard
+
+\size small
+El trabajo se desarrollará contando con información y datos a portados por
+ el Programa de Agronomía del Centro de Investigación de la Caña de Azúcar
+ de Colombia y el área de Biometría de esta entidad.
+ Los gastos adicionales distintos a la toma de información (computo, papelería
+ , etc.) serán solventados por el investigador.
+\end_layout
+
+\end_body
+\end_document
