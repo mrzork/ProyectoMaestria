@@ -183,25 +183,38 @@ Empezar con descripcion de metodos una intro
 \end_layout
 
 \begin_layout Standard
-Existe una gran cantidad de metodos estadisticos en la actualidad y cada
- uno de estos tiene una infiniadad de variaciones y posibles aplicaciones,
- En este contexto hemos seleccionado una serie de metodos que se encuentran
- catalogados entre los llamados maquinas de aprendizaje automatico o algoritmos
- de inteligencia artificial, estos han sido seleccionados con la premisa
- de que son metodos interesantes para su aplicacion en casos de clasificacion
- como el que deseamos aplicar a lo largo de este proyecto.
+La caña de azúcar (
+\shape slanted
+Saccharum officinarum
+\shape default
+) es un cultivo de zonas tropicales y subtropicales que se propaga mediante
+ la plantación de trozos y/o vástagos de caña, donde de cada nudo sale una
+ planta nueva e idéntica a la original.
+ Una vez plantado, el vástago crece y acumula azúcar (sacarosa) en su tallo,
+ su crecimiento total varía entre 11 y 17 meses, dependiendo de la variedad
+ de caña y de la zona donde es plantada, el tallo se corta cuando está maduro
+ y este proceso se puede repetir varias veces.
+ A estos cortes sucesivos se les llama "zafras", de esta forma la planta
+ retoña varias veces y puede seguir siendo cosechada, aunque se deteriora
+ con el tiempo por cada corte y el uso de maquinaria pesada que pisa las
+ raíces, así que el cultivo debe replantarse aproximadamente cada siete
+ a diez años.
+ 
 \end_layout
 
 \begin_layout Standard
-Los metodos a evaluar serian PLS, Random Forest y El aprendizaje por cuantificac
-ión vectorial (LVQ)
+Metodos a abordar
 \end_layout
 
 \begin_layout Standard
-PLS o Regresion por Minimos cuadrados Parciales:
+PLS:
 \end_layout
 
 \begin_layout Standard
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
 La Regresión por mínimos cuadrados se introdujo hace casi treinta años y
  actualmente se utiliza en Quimiometría, donde se analizan datos que se
  caracterizan por muchas variables predictoras, con problemas de multicolinealid
@@ -237,7 +250,7 @@ Martens, H.
 ).
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 Es una particular forma de analisis multivariante, este metodo relacionado
  con la regresion de componentes principales, PCR (
 \begin_inset Quotes eld
@@ -254,13 +267,17 @@ les aplicaciones.
  estructuras de covarianza en estos dos espacios.
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 Un modelo de PLS trata de encontrar el sentido multidimensional en el espacio
  X que explica la dirección de la máxima varianza multidimensional en el
  espacio Y.
+ La regresion PLS es especialmente adecuada cuando la matriz de los predictores
+ tiene más variables que observaciones, y cuando hay multicolinealidad entre
+ los valores X.
+ Por el contrario, la regresión estándar fallará en estos casos.
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 Estos métodos tienen ventajas intrínsecas cuando se le compara con métodos
  univariados.
  Todas las variables relevantes son incluidas en el modelo PLS.
@@ -272,128 +289,21 @@ Estos métodos tienen ventajas intrínsecas cuando se le compara con métodos
  estudiado depende de un número pequeño de variables latentes (V.L.).
  Este concepto es similar al de componentes principales.
  Las variables latentes son estimadas como combinaciones lineales de las
- variables observadas.
-\end_layout
-
-\begin_layout Standard
-Random Forest o Arboles Aleatorios:
-\end_layout
-
-\begin_layout Standard
-En una serie de documentos e informes técnicos, Breiman (1996, 2000, 2001,
- 2004) 
-\begin_inset Note Note
-status collapsed
-
-\begin_layout Plain Layout
-
-\lang english
- poner cita.
- L.
- Breiman.
- Bagging predictors.
- Machine Learning, 24:123–140, 1996.
- L.
- Breiman.
- Some Infinity Theory for Predictor Ensembles.
- Technical Report 577, UC Berkeley, 2000.
- URL http://www.stat.berkeley.edu/ ˜ breiman.
- L.
- Breiman.
- Random forests.
- Machine Learning, 45:5–32, 2001.
- L.
- Breiman.
- Consistency For a Simple Model of Random Forests.
- Technical Report 670, UC Berkeley, 2004.
- URL http://www.stat.berkeley.edu/ ˜ breiman.
- L.
- Breiman, J.H.
- Friedman, R.A.
- Olshen, and C.J.
- Stone.
- Classification and Regression Trees.
- Chapman & Hall, New York, 1984.
+ variables observadas, como se explica más adelante.
+ 
 \end_layout
 
 \end_inset
 
- demostraron que hay ganancias sustanciales en la clasificación y la exactitud
- de la regresión y se puede lograr mediante el uso de conjuntos de árboles,
- donde cada árbol en el conjunto que crece de acuerdo con un parametro de
- azar.
- Las predicciones finales se obtienen de las agregaciones sobre el conjunto
- de datos.
- Como los componentes de base del conjunto son predictores con estructura
- de árbol, y desde cada uno de estos árboles se construye utilizando una
- inyección de aleatoriedad, estos procedimientos son llamados "Random Forest."
+
 \end_layout
 
 \begin_layout Standard
-El random Forest es una combinación de árboles predictores tal que cada
- árbol depende de los valores de un vector aleatorio probado independientemente
- y con la misma distribución para cada uno de estos.
- Es una modificación sustancial de bagging que construye una larga colección
- de árboles no correlacionados y luego los promedia.
+Random Forest:
 \end_layout
 
 \begin_layout Standard
-Random Forest es una unión entre métodos de clasificación y metodos de regresión
-, esta opera por la construcción de una multitud de árboles de decisión
- en el entrenamiento y en la salida una clase el cual es el modo de salida
- de los árboles individuales.
-\end_layout
 
-\begin_layout Standard
-Aprendizaje por cuantificación vectorial (LVQ):
-\end_layout
-
-\begin_layout Standard
-LVQ se puede entender como un caso especial de una red neuronal artificial,
- con mayor precisión, este aplica el concepto de ([winner-take-all] el ganador
- toma todo mediante el aprendizaje de Hebb) .
- Es un precursor de los mapas auto-organizados (SOM) y relacionado con el
- algoritmo de gas neural , y para el algoritmo de K vecinos más cercanos
- (k-NN).
-\end_layout
-
-\begin_layout Standard
-El aprendizaje por cuantificación vectorial (LVQ) supone una extensión del
- aprendizaje competitivo donde los prototipos están etiquetados.
- Ahora, además de considerar la cercanía de un prototipo se puede evaluar
- la clase de éste e imponer, por lo tanto, correcciones de premio (acercamiento)
- o castigo (alejamiento).
- 
-\end_layout
-
-\begin_layout Standard
-En ciencias de la computación , aprendizaje cuantificación vectorial (LVQ)
- , esta basado en prototipos de algoritmos de clasificación supervisada.
- LVQ es la contraparte supervisada las sistemas de cuantificación vectorial.
-\end_layout
-
-\begin_layout Standard
-Estos metodos seran aplicados en 
-\end_layout
-
-\begin_layout Standard
-La caña de azúcar (
-\shape slanted
-Saccharum officinarum
-\shape default
-) es un cultivo de zonas tropicales y subtropicales que se propaga mediante
- la plantación de trozos y/o vástagos de caña, donde de cada nudo sale una
- planta nueva e idéntica a la original.
- Una vez plantado, el vástago crece y acumula azúcar (sacarosa) en su tallo,
- su crecimiento total varía entre 11 y 17 meses, dependiendo de la variedad
- de caña y de la zona donde es plantada, el tallo se corta cuando está maduro
- y este proceso se puede repetir varias veces.
- A estos cortes sucesivos se les llama "zafras", de esta forma la planta
- retoña varias veces y puede seguir siendo cosechada, aunque se deteriora
- con el tiempo por cada corte y el uso de maquinaria pesada que pisa las
- raíces, así que el cultivo debe replantarse aproximadamente cada siete
- a diez años.
- 
 \end_layout
 
 \begin_layout Standard
@@ -735,46 +645,6 @@ Antecedentes
 \end_layout
 
 \begin_layout Standard
-\begin_inset Box Frameless
-position "t"
-hor_pos "c"
-has_inner_box 1
-inner_pos "t"
-use_parbox 0
-use_makebox 0
-width "100col%"
-special "none"
-height "1in"
-height_special "totalheight"
-status open
-
-\begin_layout Plain Layout
-El termino random forest proviene de los bosques de decisión aleatoria que
- fue propuesto por primera vez por estaño Jam Ho de laboratorios Bell en
- 1995 y el algoritmo de random forest fue introducido y desarrollado por
- Leo Breiman y Adele Cutler.
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Box Frameless
-position "t"
-hor_pos "c"
-has_inner_box 1
-inner_pos "t"
-use_parbox 0
-use_makebox 0
-width "100col%"
-special "none"
-height "1in"
-height_special "totalheight"
-status open
-
-\begin_layout Plain Layout
 Casi la mitad del suministro de azúcar del mundo es derivado de la caña
  de azúcar, por lo que este cultivo es de gran importancia en el sector
  agrícola y en general para la economía de muchos países en desarrollo.
@@ -820,11 +690,6 @@ http://www.cenicana.org/quienes_somos/agroindustria/historia.php
 \end_inset
 
  
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Standard
