@@ -1,5 +1,5 @@
-#LyX 2.0 created this file. For more info see http://www.lyx.org/
-\lyxformat 413
+#LyX 2.1 created this file. For more info see http://www.lyx.org/
+\lyxformat 474
 \begin_document
 \begin_header
 \textclass article
@@ -12,13 +12,13 @@
 \font_roman default
 \font_sans default
 \font_typewriter default
+\font_math auto
 \font_default_family default
 \use_non_tex_fonts false
 \font_sc false
 \font_osf false
 \font_sf_scale 100
 \font_tt_scale 100
-
 \graphics default
 \default_output_format default
 \output_sync 0
@@ -29,15 +29,24 @@
 \use_hyperref false
 \papersize default
 \use_geometry false
-\use_amsmath 1
-\use_esint 1
-\use_mhchem 1
-\use_mathdots 1
-\cite_engine natbib_authoryear
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 0
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 0
+\use_package mhchem 1
+\use_package stackrel 0
+\use_package stmaryrd 0
+\use_package undertilde 0
+\cite_engine natbib
+\cite_engine_type authoryear
+\biblio_style plainnat
 \use_bibtopic false
 \use_indices false
 \paperorientation portrait
 \suppress_date false
+\justification true
 \use_refstyle 1
 \index Index
 \shortcut idx
@@ -68,29 +77,30 @@ Resumen
 
 \begin_layout Standard
 En la actualidad existe una gran variedad de métodos y algoritmos de inteligenci
-a artificial los cuales poco han sido explorados desde la industria y pueden
- ser aplicados en la solución de problemas de estimación, Es de mucho interés
- evaluar el funcionamiento, la adaptación, la eficiencia y precisión de
- estos métodos y sus posibles aplicaciones en este caso en el sector de
- la caña de azúcar.
+a artificial los cuales poco han sido explorados desde la agroindustria
+ y pueden ser aplicados en la solución de problemas de estimación.
+ Es de mucho interés evaluar el funcionamiento,adaptación, eficiencia y
+ precisión de estos métodos y sus posibles aplicaciones el sector agroindustrial
+ de la caña de azúcar.
  
 \end_layout
 
 \begin_layout Standard
 En este trabajo presentaremos la comparación entre 3 métodos de inteligencia
  artificial [Aprendizaje por cuantificación vectorial (LVQ)], [La Regresión
- por mínimos cuadrados Parciales] y [Random Forest] haciendo uso de imágenes
- multiespectrales y procesos de simulación.
+ por mínimos cuadrados Parciales] y [Random Forest], aplicados en datos
+ obtendidos mediante el uso de imágenes multiespectrales y procesos de simulació
+n.
  Se espera de este modo mejorar la comprensión de procesos a nivel de cultivo
- reflejados por sistemas de sensores, los cuales facilitan la toma de gran
+ reflejados en sistemas de sensores, los cuales facilitan la toma de gran
  cantidad de información.
  Igualmente, se espera lograr el reconocimiento de patrones espaciales presentes
  en lotes productivos, para poder automatizar y mejorar procesos costosos
  o de características destructivas relacionados a la toma de información
  tal como se realiza hoy día.
- De esta manera, será posible hacer un mejor manejo agronómico del cultivo
- apuntando a sistemas de agricultura de precisión y manejo sitio-específico
- en cultivos de caña.
+ Se espera mediante estos procesos de estimacion realizar un mejor manejo
+ agronómico del cultivo apuntando a sistemas de agricultura de precisión
+ y manejo sitio-específico en cultivos de caña.
  
 \end_layout
 
@@ -104,12 +114,13 @@ Estos 3 métodos contiene la mayoría de conceptos implícitos en lo que hoy
  (bootstrap).
  Estos métodos se pueden considerar para distintas aplicaciones, pero en
  este caso se enfocaran directamente a métodos para realizar estimación
- y clasificación de características presentes en cultivos de caña de azúcar,
- y por esta razón se explora también métodos para la comparación de algoritmos
- de clasificación como los son los métodos de validación cruzada que nos
- permitirá mediante procesos de simulación y remuestreo evaluar distintos
- escenarios y calificar la precisión y eficiencia de cada uno de los métodos
- evaluados.
+ y clasificación de características presentes en los datos obtenidos de
+ las imagenes multiespectrales de los cultivos de caña de azúcar y procesos
+ de simulación, por esta razón se explora también métodos para la comparación
+ de algoritmos de clasificación como los son los métodos de validación cruzada
+ que nos permitirá mediante procesos de simulación y remuestreo evaluar
+ distintos escenarios y calificar la precisión y eficiencia de cada uno
+ de los métodos evaluados.
  
 \end_layout
 
@@ -143,7 +154,7 @@ En este proyecto se propone desarrollar una metodología para la estimación
 
 \begin_layout Standard
 \begin_inset Note Note
-status collapsed
+status open
 
 \begin_layout Plain Layout
 .
@@ -505,12 +516,12 @@ key "rosado2009clasificacion"
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename C:/Users/SAMSUNG/Desktop/Proyecto Maestria/Figures/Electromagnetic_spectrum-es.png
+	filename ../Figures/Electromagnetic_spectrum-es.png
 	lyxscale 45
 	scale 45
 
@@ -520,7 +531,7 @@ status collapsed
 \end_layout
 
 \begin_layout Plain Layout
-\begin_inset Caption
+\begin_inset Caption Standard
 
 \begin_layout Plain Layout
 Regiones del espectro electromagnético.
