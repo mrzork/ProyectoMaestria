@@ -1,5 +1,5 @@
-#LyX 2.0 created this file. For more info see http://www.lyx.org/
-\lyxformat 413
+#LyX 2.1 created this file. For more info see http://www.lyx.org/
+\lyxformat 474
 \begin_document
 \begin_header
 \textclass article
@@ -12,13 +12,13 @@
 \font_roman default
 \font_sans default
 \font_typewriter default
+\font_math auto
 \font_default_family default
 \use_non_tex_fonts false
 \font_sc false
 \font_osf false
 \font_sf_scale 100
 \font_tt_scale 100
-
 \graphics default
 \default_output_format default
 \output_sync 0
@@ -29,15 +29,24 @@
 \use_hyperref false
 \papersize default
 \use_geometry false
-\use_amsmath 1
-\use_esint 1
-\use_mhchem 1
-\use_mathdots 1
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 0
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 0
+\use_package mhchem 1
+\use_package stackrel 0
+\use_package stmaryrd 0
+\use_package undertilde 0
 \cite_engine basic
+\cite_engine_type default
+\biblio_style plain
 \use_bibtopic false
 \use_indices false
 \paperorientation portrait
 \suppress_date false
+\justification true
 \use_refstyle 1
 \index Index
 \shortcut idx
@@ -66,36 +75,16 @@
 Objetivos
 \end_layout
 
-\begin_layout Standard
-Este proyecto pretende hacer uso de herramientas novedosas, integrando métodos
- estadísticos  y sistemas de visión artificial o visión por computador,
- para mejorar la comprensión de procesos naturales que son reflejados por
- los cultivos y captados por los sensores remotos, que facilitan la toma
- de información para lograr el reconocimiento de patrones espaciales presentes
- en el campo.
-\end_layout
-
-\begin_layout Standard
-Adicionalmente se desea cubrir la necesidad cada vez mayor de automatizar
- y mejorar procesos costosos o de características destructivas relacionados
- a la toma de información, permitiendo hacer un mejor manejo agronómico
- y apuntando a sistemas de agricultura de precisión y manejo sitio-específico
- en cultivos de caña en el Valle del Cauca Colombiano.
-\end_layout
-
 \begin_layout Subsection*
 
 \size normal
 Objetivo general: 
 \end_layout
 
-\begin_layout Enumerate
-Realizar estimaciones de variables biofísicas (área foliar absoluta, índice
- de área foliar) y de población (el número de tallos por hectárea) a nivel
- de cultivo de la caña de azúcar a partir de imágenes multi-espectrales
- tomadas desde plataformas aéreas, en plantaciones experimentales y comerciales
- del cultivo de caña de azúcar en la región del Valle de Río Cauca.
- 
+\begin_layout Standard
+Integrar métodos estadísticos y sistemas de visión artificial o visión por
+ computador, para mejorar la comprensión de procesos naturales, reflejados
+ por cultivos y captados por sensores remotos.
 \end_layout
 
 \begin_layout Subsection*
@@ -105,126 +94,21 @@ Objetivos específicos:
 \end_layout
 
 \begin_layout Enumerate
-Estimar el área foliar (AF) y el índice de área foliar (IAF) en cultivos
- de caña de azúcar y la cantidad de tallos (NT) en cultivos de caña de azúcar.
-\begin_inset Note Note
-status collapsed
-
-\begin_layout Plain Layout
- en lotes productivos 
-\end_layout
-
-\end_inset
-
-
+Evaluar el funcionamiento, adaptación, eficiencia y precisión de tres algoritmos
+ de inteligencia artificial.[Aprendizaje por cuantificación vectorial (LVQ)],
+ [La Regresión por mínimos cuadrados Parciales] y [Random Forest] aplicados
+ en imagenes multiespectrales de cultivos de caña.
 \end_layout
 
 \begin_layout Enumerate
-Seleccionar índices espectrales de vegetación que mejor expresen la relación
- con las variables de cultivo estimadas a campo.
-\begin_inset Note Note
-status collapsed
-
-\begin_layout Plain Layout
-espectrales
-\end_layout
-
-\end_inset
-
-
+Estimar el área foliar (AF) y el índice de área foliar (IAF) en cultivos
+ de caña de azúcar y la cantidad de tallos (NT) en cultivos de caña de azúcar.
 \end_layout
 
 \begin_layout Enumerate
 Ajustar modelos estadísticos y de inteligencia artificial que relacionen
  correctamente la información de las imágenes multiespectrales a las variables
  de cultivo (AF), (IAF) y (NT).
-\begin_inset Note Note
-status collapsed
-
-\begin_layout Plain Layout
-estadísticos que relacionen las variables de cultivo con los indices espectrales
- 
-\end_layout
-
-\end_inset
-
-
-\begin_inset Note Note
-status collapsed
-
-\begin_layout Plain Layout
-a parámetros que relacionan
-\end_layout
-
-\end_inset
-
- 
-\begin_inset Note Note
-status collapsed
-
-\begin_layout Plain Layout
-principalmente se desea determinar el 
-\begin_inset Note Note
-status collapsed
-
-\begin_layout Plain Layout
-área foliar, el índice de área foliar
-\end_layout
-
-\end_inset
-
- y 
-\begin_inset Note Note
-status collapsed
-
-\begin_layout Plain Layout
-el número de tallos por hectárea
-\end_layout
-
-\end_inset
-
- 
-\begin_inset Note Note
-status collapsed
-
-\begin_layout Plain Layout
-a partir de imágenes aéreas
-\end_layout
-
-\end_inset
-
- 
-\end_layout
-
-\end_inset
-
-
-\begin_inset Note Note
-status collapsed
-
-\begin_layout Title
-Estimación de Area Foliar y Poblacion de Cultivos Caña de Azucar Apartir
- de Imagenes Multiespectrales
-\end_layout
-
-\begin_layout Plain Layout
-Determinacion de Poblacion de Caña de cultivos de caña de azucar 
-\end_layout
-
-\end_inset
-
-
-\begin_inset Note Note
-status collapsed
-
-\begin_layout Plain Layout
-Capturar imágenes (Fotografias Aéreas) Multiespectral de las suertes de
- caña seleccionadas.
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \end_body

@@ -79,18 +79,16 @@ Resumen
 En la actualidad existe una gran variedad de métodos y algoritmos de inteligenci
 a artificial los cuales poco han sido explorados desde la agroindustria
  y pueden ser aplicados en la solución de problemas de estimación.
- Es de mucho interés evaluar el funcionamiento,adaptación, eficiencia y
+ Es de mucho interés evaluar el funcionamiento, adaptación, eficiencia y
  precisión de estos métodos y sus posibles aplicaciones el sector agroindustrial
  de la caña de azúcar.
- 
 \end_layout
 
 \begin_layout Standard
 En este trabajo presentaremos la comparación entre 3 métodos de inteligencia
  artificial [Aprendizaje por cuantificación vectorial (LVQ)], [La Regresión
  por mínimos cuadrados Parciales] y [Random Forest], aplicados en datos
- obtendidos mediante el uso de imágenes multiespectrales y procesos de simulació
-n.
+ obtenidos mediante el uso de imágenes multiespectrales y procesos de simulación.
  Se espera de este modo mejorar la comprensión de procesos a nivel de cultivo
  reflejados en sistemas de sensores, los cuales facilitan la toma de gran
  cantidad de información.
@@ -98,14 +96,13 @@ n.
  en lotes productivos, para poder automatizar y mejorar procesos costosos
  o de características destructivas relacionados a la toma de información
  tal como se realiza hoy día.
- Se espera mediante estos procesos de estimacion realizar un mejor manejo
+ Se espera mediante estos procesos de estimación realizar un mejor manejo
  agronómico del cultivo apuntando a sistemas de agricultura de precisión
  y manejo sitio-específico en cultivos de caña.
- 
 \end_layout
 
 \begin_layout Standard
-Estos 3 métodos contiene la mayoría de conceptos implícitos en lo que hoy
+Estos 3 métodos contienen la mayoría de conceptos implícitos en lo que hoy
  llamamos algoritmos de inteligencia artificial, ya que hacen un recorrido
  por distintos métodos y estrategias de aprendizaje desde el concepto inicial
  de la regresión, pasando por sistemas de agrupación por vecino más cercano
@@ -113,65 +110,16 @@ Estos 3 métodos contiene la mayoría de conceptos implícitos en lo que hoy
  de agregación o “bagging” relacionado directamente con sistemas de remuesreo
  (bootstrap).
  Estos métodos se pueden considerar para distintas aplicaciones, pero en
- este caso se enfocaran directamente a métodos para realizar estimación
+ este caso se enfocarán directamente a métodos para realizar estimación
  y clasificación de características presentes en los datos obtenidos de
- las imagenes multiespectrales de los cultivos de caña de azúcar y procesos
- de simulación, por esta razón se explora también métodos para la comparación
- de algoritmos de clasificación como los son los métodos de validación cruzada
- que nos permitirá mediante procesos de simulación y remuestreo evaluar
- distintos escenarios y calificar la precisión y eficiencia de cada uno
- de los métodos evaluados.
+ las imágenes multiespectrales de los cultivos de caña de azúcar y procesos
+ de simulación.
+ Por esta razón se explora también métodos para la comparación de algoritmos
+ de clasificación como los son los métodos de validación cruzada que nos
+ permitirán mediante procesos de simulación y remuestreo evaluar distintos
+ escenarios y calificar la precisión y eficiencia de cada uno de los métodos
+ evaluados.
  
-\end_layout
-
-\begin_layout Standard
-\begin_inset Note Note
-status collapsed
-
-\begin_layout Plain Layout
-En este proyecto se propone desarrollar una metodología para la estimación
- de variables biofísicas (área foliar e índice de área foliar) y de población
- sembrada en cultivos de caña de azúcar, a partir de imágenes multiespectrales
- y métodos derivados de la inteligencia artificial (métodos estadísticos
- y algoritmos de máquinas de aprendizaje).
- Se espera de este modo mejorar la comprensión de procesos a nivel de cultivo
- reflejados por sistemas de sensores, los cuales facilitan la toma de gran
- cantidad de información.
- Igualmente, se espera lograr el reconocimiento de patrones espaciales presentes
- en lotes productivos, para poder automatizar y mejorar procesos costosos
- o de características destructivas relacionados a la toma de información
- tal como se realiza hoy día.
- De esta manera, será posible hacer un mejor manejo agronómico del cultivo
- apuntando a sistemas de agricultura de precisión y manejo sitio-específico
- en cultivos de caña en el Valle del Cauca Colombiano.
- 
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-.
- Para esto se utilizarán métodos estadísticos y algoritmos desarrollados
- en el marco conceptual de las máquinas de aprendizaje.
- Esto permitirá mejorar la comprensión de procesos naturales reflejados
- por los cultivos y captados por sistemas de sensores, los cuales facilitan
- la toma de información.
- Igualmente, se espera lograr el reconocimiento de patrones espaciales presentes
- en lotes productivos, para cubrir la necesidad cada vez mayor de automatizar
- y mejorar procesos costosos o de características destructivas relacionados
- a la toma de información como se realiza hoy día.
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Section*
@@ -181,42 +129,28 @@ Introducción
 \end_layout
 
 \begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Empezar con descripcion de metodos una intro
+En la actualidad existe una gran cantidad de métodos estadísticos donde
+ cada uno de estos tiene una infinidad de variaciones y posibles aplicaciones.
+ En este contexto hemos seleccionado una serie de métodos que se encuentran
+ catalogados entre las llamadas maquinas de aprendizaje automático o algoritmos
+ de inteligencia artificial, estos métodos han sido seleccionados con la
+ premisa de que son métodos interesantes para su aplicación en casos de
+ clasificación como el que deseamos aplicar a lo largo de este proyecto.
+ Los métodos a evaluar serian PLS, Random Forest y El aprendizaje por cuantifica
+ción vectorial (LVQ).
+ 
 \end_layout
 
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Existe una gran cantidad de metodos estadisticos en la actualidad y cada
- uno de estos tiene una infiniadad de variaciones y posibles aplicaciones,
- En este contexto hemos seleccionado una serie de metodos que se encuentran
- catalogados entre los llamados maquinas de aprendizaje automatico o algoritmos
- de inteligencia artificial, estos han sido seleccionados con la premisa
- de que son metodos interesantes para su aplicacion en casos de clasificacion
- como el que deseamos aplicar a lo largo de este proyecto.
-\end_layout
-
-\begin_layout Standard
-Los metodos a evaluar serian PLS, Random Forest y El aprendizaje por cuantificac
-ión vectorial (LVQ)
-\end_layout
-
-\begin_layout Standard
-PLS o Regresion por Minimos cuadrados Parciales:
+\begin_layout Subsubsection*
+PLS o Regresión por mínimos cuadrados parciales: 
 \end_layout
 
 \begin_layout Standard
 La Regresión por mínimos cuadrados se introdujo hace casi treinta años y
- actualmente se utiliza en Quimiometría, donde se analizan datos que se
- caracterizan por muchas variables predictoras, con problemas de multicolinealid
-ad, y pocas unidades experimentales en estudio (Geladi and Kowalski
+ ha tenido un gran desarrollo en áreas como la Quimiometría, donde se analizan
+ datos que se caracterizan por muchas variables predictoras, con problemas
+ de multicolinealidad, y pocas unidades experimentales en estudio (Geladi
+ and Kowalski
 \begin_inset Note Note
 status collapsed
 
@@ -249,45 +183,32 @@ Martens, H.
 \end_layout
 
 \begin_layout Standard
-Es una particular forma de analisis multivariante, este metodo relacionado
- con la regresion de componentes principales, PCR (
-\begin_inset Quotes eld
-\end_inset
-
-Principal components regression
-\begin_inset Quotes erd
-\end_inset
-
-) posee valiosas ventajas teoricas y computacionales que han llevado a innumerab
-les aplicaciones.
+Es una particular forma de análisis multivariante, este método relacionado
+ con la regresión de componentes principales, PCR (“Principal components
+ regression”) posee valiosas ventajas teóricas y computacionales que han
+ llevado a innumerables aplicaciones.
  PLS se utiliza para encontrar las relaciones fundamentales entre dos matrices
  (X e Y), es decir, un enfoque de variable latente para el modelado de las
- estructuras de covarianza en estos dos espacios.
+ estructuras de co varianza en estos dos espacios.
 \end_layout
 
 \begin_layout Standard
 Un modelo de PLS trata de encontrar el sentido multidimensional en el espacio
  X que explica la dirección de la máxima varianza multidimensional en el
  espacio Y.
-\end_layout
-
-\begin_layout Standard
-Estos métodos tienen ventajas intrínsecas cuando se le compara con métodos
- univariados.
- Todas las variables relevantes son incluidas en el modelo PLS.
- En lo que sigue, se hará referencia al llamado modelo PLS1, donde se considera
- una variable dependiente, representada por el vector y.
- Cuando se consideran varias variables dependientes, el modelo es denominado
- PLS2, y las variables se representan por una matriz Y.
+ Estos métodos tienen ventajas intrínsecas cuando se le compara con métodos
+ univariados, Todas las variables relevantes son incluidas en el modelo
+ PLS.
  La suposición básica de todos estos modelos es que el sistema o proceso
  estudiado depende de un número pequeño de variables latentes (V.L.).
  Este concepto es similar al de componentes principales.
  Las variables latentes son estimadas como combinaciones lineales de las
  variables observadas.
+ 
 \end_layout
 
-\begin_layout Standard
-Random Forest o Arboles Aleatorios:
+\begin_layout Subsubsection*
+Random Forest o Árboles Aleatorios: 
 \end_layout
 
 \begin_layout Standard
@@ -331,31 +252,29 @@ status collapsed
 
  demostraron que hay ganancias sustanciales en la clasificación y la exactitud
  de la regresión y se puede lograr mediante el uso de conjuntos de árboles,
- donde cada árbol en el conjunto que crece de acuerdo con un parametro de
- azar.
+ donde de acuerdo con un parámetro de azar crece cada árbol en cada conjunto
+ de árboles.
  Las predicciones finales se obtienen de las agregaciones sobre el conjunto
  de datos.
  Como los componentes de base del conjunto son predictores con estructura
  de árbol, y desde cada uno de estos árboles se construye utilizando una
- inyección de aleatoriedad, estos procedimientos son llamados "Random Forest."
+ inyección de aleatoriedad, estos procedimientos son llamados "Random Forest".
 \end_layout
 
 \begin_layout Standard
 El random Forest es una combinación de árboles predictores tal que cada
  árbol depende de los valores de un vector aleatorio probado independientemente
- y con la misma distribución para cada uno de estos.
+ y con la misma distribución para cada uno de éstos.
  Es una modificación sustancial de bagging que construye una larga colección
  de árboles no correlacionados y luego los promedia.
+ Random Forest es una unión entre métodos de clasificación y métodos de
+ regresión, esta opera por la construcción de una multitud de árboles de
+ decisión en el entrenamiento y en la salida una clase el cual es el modo
+ de salida de los árboles individuales.
+ 
 \end_layout
 
-\begin_layout Standard
-Random Forest es una unión entre métodos de clasificación y metodos de regresión
-, esta opera por la construcción de una multitud de árboles de decisión
- en el entrenamiento y en la salida una clase el cual es el modo de salida
- de los árboles individuales.
-\end_layout
-
-\begin_layout Standard
+\begin_layout Subsubsection*
 Aprendizaje por cuantificación vectorial (LVQ):
 \end_layout
 
@@ -363,8 +282,8 @@ Aprendizaje por cuantificación vectorial (LVQ):
 LVQ se puede entender como un caso especial de una red neuronal artificial,
  con mayor precisión, este aplica el concepto de ([winner-take-all] el ganador
  toma todo mediante el aprendizaje de Hebb) .
- Es un precursor de los mapas auto-organizados (SOM) y relacionado con el
- algoritmo de gas neural , y para el algoritmo de K vecinos más cercanos
+ Es un precursor de los mapas auto-organizados (SOM) y está relacionado
+ con el algoritmo de gas neural y con el algoritmo de K vecinos más cercanos
  (k-NN).
 \end_layout
 
@@ -374,17 +293,17 @@ El aprendizaje por cuantificación vectorial (LVQ) supone una extensión del
  Ahora, además de considerar la cercanía de un prototipo se puede evaluar
  la clase de éste e imponer, por lo tanto, correcciones de premio (acercamiento)
  o castigo (alejamiento).
+ En ciencias de la computación, aprendizaje cuantificación vectorial (LVQ),
+ está basado en prototipos de algoritmos de clasificación supervisada.
+ LVQ es la contraparte supervisada de los sistemas de cuantificación vectorial.
  
 \end_layout
 
 \begin_layout Standard
-En ciencias de la computación , aprendizaje cuantificación vectorial (LVQ)
- , esta basado en prototipos de algoritmos de clasificación supervisada.
- LVQ es la contraparte supervisada las sistemas de cuantificación vectorial.
-\end_layout
-
-\begin_layout Standard
-Estos metodos seran aplicados en 
+Los métodos recién introducidos serán aplicados sobre imágenes multiespectrales
+ y datos obtenidos mediante procesos de simulación del comportamiento de
+ cultivos de caña de azúcar.
+ 
 \end_layout
 
 \begin_layout Standard
@@ -395,57 +314,13 @@ Saccharum officinarum
 ) es un cultivo de zonas tropicales y subtropicales que se propaga mediante
  la plantación de trozos y/o vástagos de caña, donde de cada nudo sale una
  planta nueva e idéntica a la original.
- Una vez plantado, el vástago crece y acumula azúcar (sacarosa) en su tallo,
- su crecimiento total varía entre 11 y 17 meses, dependiendo de la variedad
- de caña y de la zona donde es plantada, el tallo se corta cuando está maduro
- y este proceso se puede repetir varias veces.
- A estos cortes sucesivos se les llama "zafras", de esta forma la planta
- retoña varias veces y puede seguir siendo cosechada, aunque se deteriora
- con el tiempo por cada corte y el uso de maquinaria pesada que pisa las
- raíces, así que el cultivo debe replantarse aproximadamente cada siete
- a diez años.
- 
-\end_layout
-
-\begin_layout Standard
-\begin_inset Note Note
-status collapsed
-
-\begin_layout Plain Layout
-Esta planta requiere de nitrógeno, fósforo, potasio y ciertos oligoelementos
- para su fertilización, de los elementos que obtiene del suelo para satisfacer
- sus necesidades nutricionales normales, probablemente el nitrógeno (N)
- es el nutrimento esencial que más limita su desarrollo.
- Este elemento determina el comportamiento productivo de la planta y con
- ello los rendimientos agro-industriales del cultivo .
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-La percepción remota o teledetección se define como el grupo de técnicas
+ La percepción remota o teledetección se define como el grupo de técnicas
  para la obtención de información confiable sobre las propiedades físicas
  de ciertas superficies u objetos y su entorno, desde distancias relativamente
  grandes, sin contacto físico con ellos 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "GEO:4427856"
-
-\end_inset
-
-
-\begin_inset Note Note
-status collapsed
-
-\begin_layout Plain Layout
- La radiación electromagnética que es reflejada o emitida desde la superficie
- de la tierra puede ser registrada por un sensor de la tierra, de una aeronave
- o de un satélite y estos datos pueden ser utilizados para medir y mapear
- entornos terrestres, acuáticos y de la atmósfera de la tierra.
-\end_layout
 
 \end_inset
 
@@ -468,31 +343,6 @@ key "Gutierrez2006"
 \begin_layout Standard
 Los sensores remotos perciben la radiación electromagnética reflejada o
  emitida por la superficie de la tierra.
- Las ondas electromagnéticas se diferencian por su respectiva longitud yendo
- desde los rayos gamma que tienen la longitud de onda más pequeña hasta
- llegar a las ondas de radio con las longitudes más amplias (Figura
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "fig:Espectro-electromagnético"
-
-\end_inset
-
-).
- De todo el conjunto de ondas que tiene el espectro electromagnético las
- porciones de los rayos visibles e infrarrojos son las más importantes para
- las aplicaciones agrícolas, ya que la luz del sol es la fuente de energía
- que activa el proceso de fotosíntesis de los cuerpos vegetales 
-\begin_inset CommandInset citation
-LatexCommand citep
-key "Sandoval2012"
-
-\end_inset
-
-.
  La mayor parte de los datos recogidos por los sensores remotos han sido
  utilizados en la forma de imagen para estudiar la disposición espacial
  de los objetos.
@@ -512,49 +362,6 @@ key "rosado2009clasificacion"
 \end_layout
 
 \begin_layout Standard
-\begin_inset Float figure
-placement H
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename ../Figures/Electromagnetic_spectrum-es.png
-	lyxscale 45
-	scale 45
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Regiones del espectro electromagnético.
-\begin_inset CommandInset label
-LatexCommand label
-name "fig:Espectro-electromagnético"
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
 Hoy en día un aumento de la resolución espectral, espacial, temporal y de
  la instrumentación radiométrica de teledetección, junto con un conocimiento
  cada vez mayor de la forma en que la radiación electromagnética interactúa
@@ -568,26 +375,6 @@ key "Blackmer1996"
 \end_inset
 
 .
-\begin_inset Note Note
-status collapsed
-
-\begin_layout Plain Layout
-, determinar la cantidad de humedad del suelo en un campo o la cantidad
- de sedimentos en suspensión en las aguas estuarinas.
-\end_layout
-
-\end_inset
-
- 
-\begin_inset Note Note
-status collapsed
-
-\begin_layout Plain Layout
-Un área muy prometedora de la estimación es e
-\end_layout
-
-\end_inset
-
  Existe un gran interés en el uso de reflectancia multi-espectral (que se
  define como la radiancia espectral normalizada por la irradiación espectral)
  para estimar el índice de área foliar (IAF).
@@ -628,31 +415,7 @@ s relaciones con estas variables, es necesario calibrar o comprender la
  La combinación de las diferentes regiones espectrales permite el cálculo
  de índices espectrales de vegetación para la estimación de parámetros biofísico
 s relacionados a la plantación.
- Los índices de vegetación espectrales, son combinaciones de las bandas
- espectrales, por ejemplo el índice NDVI es una función entre la banda de
- infrarrojo cercano y el rojo visible, así hay infinidad de combinaciones
- posibles que entran a jugar como pieza clave a la hora de hallar funciones
- relacionadas con variables biofísicas medidas en campo, como para la estimación
- de biomasa representante del número de tallos de caña en un cultivo.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Note Note
-status collapsed
-
-\begin_layout Plain Layout
-La evaluación de imágenes de alta resolución espacial y espectral, permite
- realizar estimaciones de producción, generar mapas de productividad en
- cañas, estimar la población o el  índice de área foliar de acuerdo a la
- edad de los campos.
- Es posible lograr una calibración entre medidas de estos parámetros en
- campo y lo capturado por sensores remotos.
  
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Standard
@@ -661,65 +424,8 @@ La Agricultura de precisión y manejo sitio-específico (AEPS) se define como
  vegetal, de acuerdo con las condiciones espaciales y temporales del sitio
  donde se cultiva, para obtener de ellas su rendimiento potencial.
  En este proyecto se propone el uso de imágenes multiespectrales obtenidas
- mediante aviones de fumigacion, para la toma de información de alta resolución
- como un método de mejorar la toma de datos, ya que actualmente se hace
- uso de imágenes provenientes de sensores de alta resolución espacial como
- el caso de 
-\begin_inset Formula $Landsat\,^{TM}$
-\end_inset
-
-, con un tamaño de pixel de 
-\begin_inset Formula $30\, m$
-\end_inset
-
-, aunque ofrecen una buena resolución (asumiendo que el tamaño promedio
- de 
-\begin_inset Quotes eld
-\end_inset
-
-suerte
-\begin_inset Quotes erd
-\end_inset
-
- o lote productivo en Colombia es de 8 hectáreas), la disponibilidad de
- estas imágenes, con frecuencia temporal de 16 días, disminuye en los trópicos
- por problemas de alta nubosidad 
-\begin_inset CommandInset citation
-LatexCommand citep
-key "Begue2008"
-
-\end_inset
-
-.
-\end_layout
-
-\begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-(aqui poner justificacion estdistica)
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Note Note
-status collapsed
-
-\begin_layout Plain Layout
-Este procedimiento de calibración hasta la fecha no se ha realizado en Colombia,
- y en el mundo tampoco se ha hecho con imágenes de alta resolución, por
- lo tanto se desconoce cuál es la equivalencia entre dichos valores de reflectan
-cia y las variables biofísicas del cultivo.
-\end_layout
-
-\end_inset
-
-
+ mediante aviones de fumigación, para la toma de información de alta resolución
+ como un método de mejorar la toma de datos.
 \end_layout
 
 \begin_layout Standard
@@ -729,10 +435,7 @@ Este proyecto pretende hacer uso de herramientas novedosas, integrando métodos
  los cultivos y captados por los sensores remotos, que facilitan la toma
  de información para lograr el reconocimiento de patrones espaciales presentes
  en el campo.
-\end_layout
-
-\begin_layout Standard
-Adicionalmente se desea cubrir la necesidad cada vez mayor de automatizar
+ Adicionalmente se desea cubrir la necesidad cada vez mayor de automatizar
  y mejorar procesos costosos o de características destructivas relacionados
  a la toma de información, permitiendo hacer un mejor manejo agronómico
  y apuntando a sistemas de agricultura de precisión y manejo sitio-específico
@@ -742,10 +445,16 @@ Adicionalmente se desea cubrir la necesidad cada vez mayor de automatizar
 \begin_layout Subsection*
 
 \size normal
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Subsection*
+
+\size normal
 Antecedentes
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset Box Frameless
 position "t"
 hor_pos "c"
@@ -771,7 +480,7 @@ El termino random forest proviene de los bosques de decisión aleatoria que
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset Box Frameless
 position "t"
 hor_pos "c"
@@ -838,11 +547,11 @@ http://www.cenicana.org/quienes_somos/agroindustria/historia.php
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 ----
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 Hace más de 50 años se realiza la toma de fotografías a color e infrarrojo
  para seguir el crecimiento de las plantas como se puede observar en 
 \begin_inset CommandInset citation
@@ -893,7 +602,7 @@ https://www.mdpi.com/journal/remotesensing/special_issues/uav
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 El análisis de imágenes es un proceso que consiste en identificar y comprender
  los patrones que son determinantes para la comprensión de procesos que
  pueden estar plasmados implícitamente en las imágenes y que no necesariamente
@@ -926,7 +635,7 @@ key "M.2005"
 .
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 El aprendizaje automático es una rama de la Inteligencia Artificial (IA)
  cuyo objetivo es desarrollar técnicas que permitan a las computadoras aprender.
  Una máquina es un sistema organizado capaz de transformar un cierto mensaje
@@ -947,7 +656,7 @@ key "citeulike:1720151"
  estar programado explícitamente.
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 El análisis de grandes bases de datos, requiere métodos estadísticos capaces
  de tratar con estructuras de datos multivariados y no lineales, herramientas
  matemáticas basadas en la minería de datos proporcionan un marco adecuado
@@ -962,7 +671,7 @@ key "Ferraro2008"
 .
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset Note Note
 status collapsed
 
@@ -1006,7 +715,7 @@ E
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 A nivel mundial países como Francia y Brasil han realizado trabajos para
  estimar algunos parámetros biofísicos e inclusive para pronosticar la producció
 n de caña de azúcar.
@@ -1028,7 +737,7 @@ key "Begue2008"
  de la situación de los cultivos o para aplicaciones en predicción.
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 En Brasil 
 \begin_inset CommandInset citation
 LatexCommand citet
@@ -1052,7 +761,7 @@ key "Almeida2006"
  imágenes síntesis.
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 Sudáfrica es el líder en producción de caña de azúcar en África y uno de
  los más grandes productores en el mundo, El monitoreo de estos factores
  de estrés del cultivo de caña es de vital importancia para tomar acciones
@@ -1071,7 +780,7 @@ key "abdel2010potential"
  variedades estudiadas.
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset Note Note
 status collapsed
 
@@ -1094,7 +803,7 @@ super importante escribir esta cita y completar el porque no es aplicable
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 En Cenicaña hasta la fecha no se han realizado trabajos que permita validar
  un modelo donde se use información tomada en campo, conjunto a la información
  capturada por el sensor (cámara multi-espectral), lo que sería un avance
@@ -1112,7 +821,7 @@ dad.
  
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset Note Note
 status collapsed
 
@@ -1140,7 +849,7 @@ status collapsed
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset Note Note
 status collapsed
 
@@ -1188,6 +897,11 @@ s directamente para estimar las áreas de cultivo debido a que la proporción
 Using Remote Sensing for Agricultural Statistics Author(s): Elisabetta Carfagna
  and F.
  Javier Gallego
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
