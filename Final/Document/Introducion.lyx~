@@ -151,7 +151,7 @@ En la actualidad existe una gran cantidad de métodos estadísticos donde
  cada uno de estos tiene una infinidad de variaciones y posibles aplicaciones.
  En este contexto hemos seleccionado una serie de métodos que se encuentran
  catalogados entre las llamadas maquinas de aprendizaje automático o modelos
- estadisticos de aprendizaje 
+ de aprendizaje estadistico 
 \begin_inset CommandInset citation
 LatexCommand citet
 key "Mitchell:1997:ML:541177"

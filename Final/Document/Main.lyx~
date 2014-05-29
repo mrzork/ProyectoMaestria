@@ -112,15 +112,28 @@ pagenumbering{Roman}
 \begin_layout Standard
 \noindent
 \align center
-EVALUACIÓN DE MODELOS DE APRENDIZAJE ESTADÍSTICO APLICADOS EN ESTIMACIÓN
- DE VARIABLES BIOFÍSICAS EN CULTIVOS DE CAÑA DE AZÚCAR 
 \begin_inset Note Note
 status collapsed
 
 \begin_layout Plain Layout
-modelos puede englobar el concepto ya que los algoritmos de inteligencia
- artificial son modelos de inteligencia artificial y pls son modelos de
- regresion por minimos cuadrados.DE ALGORITMOS DE INTELIGENCIA ARTIFICIAL
+\noindent
+\align center
+EVALUACIÓN DE TÉCNICAS DE INTELIGENCIA ARTIFICIAL APLICADAS EN LA ESTIMACIÓN
+ DE VARIABLES BIOFÍSICAS Y POBLACIÓN SEMBRADA EN CULTIVOS DE CAÑA DE AZÚCAR
+ A PARTIR DE IMÁGENES AÉREAS MULTIESPECTRALES Y PROCESOS DE SIMULACIÓN
+\end_layout
+
+\end_inset
+
+EVALUACIÓN DE ALGORITMOS DE INTELIGENCIA ARTIFICIAL APLICADOS EN ESTIMACIÓN
+ DE VARIABLES BIOFÍSICAS EN CULTIVOS DE CAÑA DE AZÚCAR
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+\noindent
+\align center
+ A PARTIR DE IMÁGENES AÉREAS
 \end_layout
 
 \end_inset
