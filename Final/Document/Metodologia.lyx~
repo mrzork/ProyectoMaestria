@@ -434,12 +434,12 @@ key "mitchell2010machine"
 placement H
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename ../Figures/Diagrama maestria.png
+	filename C:/Documents and Settings/cherrera/Mis documentos/GitHub/ProyectoMaestria/Final/Figures/Diagrama maestria.png
 	lyxscale 60
 	scale 30
 
