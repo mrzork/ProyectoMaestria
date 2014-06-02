@@ -84,7 +84,7 @@ Objetivo general:
 \begin_layout Standard
 Integrar métodos estadísticos y sistemas de visión artificial o visión por
  computador, para mejorar la comprensión de procesos naturales, reflejados
- por cultivos de caña de azúcar y captados por sensores remotos.
+ por cultivos y captados por sensores remotos.
 \end_layout
 
 \begin_layout Subsection*
@@ -95,9 +95,9 @@ Objetivos específicos:
 
 \begin_layout Enumerate
 Evaluar el funcionamiento, adaptación, eficiencia y precisión de tres algoritmos
- de inteligencia artificial [Aprendizaje por cuantificación vectorial (LVQ)],
+ de inteligencia artificial.[Aprendizaje por cuantificación vectorial (LVQ)],
  [La Regresión por mínimos cuadrados Parciales] y [Random Forest] aplicados
- en imagenes multiespectrales de cultivos de caña de azúcar.
+ en imagenes multiespectrales de cultivos de caña.
 \end_layout
 
 \begin_layout Enumerate
