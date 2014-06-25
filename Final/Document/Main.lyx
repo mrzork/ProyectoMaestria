@@ -303,10 +303,6 @@ filename "Objetivos.lyx"
 \end_layout
 
 \begin_layout Standard
-\begin_inset Note Note
-status collapsed
-
-\begin_layout Plain Layout
 \begin_inset CommandInset include
 LatexCommand include
 filename "Metodologia.lyx"
@@ -316,7 +312,7 @@ filename "Metodologia.lyx"
 
 \end_layout
 
-\begin_layout Plain Layout
+\begin_layout Standard
 \begin_inset CommandInset include
 LatexCommand include
 filename "Justificacion.lyx"
@@ -326,8 +322,7 @@ filename "Justificacion.lyx"
 
 \end_layout
 
-\end_inset
-
+\begin_layout Standard
 
 \end_layout
 

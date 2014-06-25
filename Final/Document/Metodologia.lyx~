@@ -288,10 +288,6 @@ name "fig:Rango-Espectral--"
 
 \end_layout
 
-\begin_layout Plain Layout
-
-\end_layout
-
 \end_inset
 
 
@@ -866,6 +862,19 @@ key "Devyver1982"
  Es una técnica muy utilizada en proyectos de inteligencia artificial para
  validar modelos generados.
  
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
