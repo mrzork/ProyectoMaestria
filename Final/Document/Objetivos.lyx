@@ -85,6 +85,7 @@ Objetivo general:
 Integrar métodos estadísticos y sistemas de visión artificial o visión por
  computador, para mejorar la comprensión de procesos naturales, reflejados
  por cultivos de caña de azúcar y captados por sensores remotos.
+ 
 \end_layout
 
 \begin_layout Subsection*
@@ -93,19 +94,19 @@ Integrar métodos estadísticos y sistemas de visión artificial o visión por
 Objetivos específicos:
 \end_layout
 
-\begin_layout Enumerate
+\begin_layout Itemize
 Evaluar el funcionamiento, adaptación, eficiencia y precisión de tres algoritmos
  de inteligencia artificial [Aprendizaje por cuantificación vectorial (LVQ)],
  [La Regresión por mínimos cuadrados Parciales] y [Random Forest] aplicados
  en imagenes multiespectrales de cultivos de caña de azúcar.
 \end_layout
 
-\begin_layout Enumerate
+\begin_layout Itemize
 Estimar el área foliar (AF) y el índice de área foliar (IAF) en cultivos
  de caña de azúcar y la cantidad de tallos (NT) en cultivos de caña de azúcar.
 \end_layout
 
-\begin_layout Enumerate
+\begin_layout Itemize
 Ajustar modelos estadísticos y de inteligencia artificial que relacionen
  correctamente la información de las imágenes multiespectrales a las variables
  de cultivo (AF), (IAF) y (NT).
