@@ -72,6 +72,12 @@
 \begin_layout Section*
 
 \size normal
+\begin_inset Note Note
+status open
+
+\begin_layout Section*
+
+\size normal
 Objetivos
 \end_layout
 
@@ -81,7 +87,7 @@ Objetivos
 Objetivo general: 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Plain Layout
 Integrar métodos estadísticos y sistemas de visión artificial o visión por
  computador, para mejorar la comprensión de procesos naturales, reflejados
  por cultivos de caña de azúcar y captados por sensores remotos.
@@ -110,6 +116,11 @@ Estimar el área foliar (AF) y el índice de área foliar (IAF) en cultivos
 Ajustar modelos estadísticos y de inteligencia artificial que relacionen
  correctamente la información de las imágenes multiespectrales a las variables
  de cultivo (AF), (IAF) y (NT).
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_body
