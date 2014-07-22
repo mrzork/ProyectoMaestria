@@ -216,7 +216,7 @@ s.
 placement H
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -344,7 +344,7 @@ status collapsed
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename C:/Users/SAMSUNG/Documents/GitHub/ProyectoMaestria/Final/Figures/Diagrama maestria (2).png
+	filename ../Figures/Diagrama maestria (2).png
 	lyxscale 80
 	scale 70
 

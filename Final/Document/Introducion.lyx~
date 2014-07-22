@@ -555,7 +555,7 @@ Sería ideal que, en caso que tuviéramos datos suficientes, dejáramos de
  para evaluar el desempeño de nuestro modelo de predicción.
  En general no es posible dado que los datos son a menudo escasos, y la
  precisión de la validación es perjudicada.
- Alternativamente si repetimos el procedimiento en K ocasiones cada una
+ Alternativamente si repetimos el procedimiento en K ocasiones, cada una
  con datos distintos para entrenamiento y validación, ganamos en precisión.
  Para ello se dividen los datos en K partes más o menos del mismo tamaño;
  por ejemplo, cuando 
@@ -605,9 +605,9 @@ k-fold
 \begin_layout Standard
 Para el grafico anterior en k=3, ajustamos el modelo con las otras k-1 partes
  de los datos es decir con (k=1 , k=2 , k=4 , k=5) y se calcula el error
- de predicción del modelo para la k-esima, esto para predecir la parte de
- orden k (en este caso la parte 3) de los datos, se realiza este proceso
- para cada k=1,2,3,..,K y se combinan las estimaciónes del error de predicción.
+ de predicción del modelo para la k-esima parte, esto para predecir la parte
+ de orden k (en este caso la parte 3) de los datos, se realiza este proceso
+ para cada k=1,2,3,..,K y se combinan las estimaciones del error de predicción.
 \end_layout
 
 \begin_layout Standard
@@ -617,14 +617,14 @@ Ahora sea κ : {1,.
  , N} → {1,.
  .
  .
- , K} una funcion de indexación la cual que indica a que partición es asignada
+ , K} una función de indexación la cual que indica a que partición es asignada
  la observación i por la aleatorización.
  Denotemos por 
 \begin_inset Formula $\hat{f}^{-k}\left(X\right)$
 \end_inset
 
-   la función de ajuste, computada con la k-esima parte de los datos eliminados,
- entonces la validacion cruzada estimada del error de prediccion es: 
+   la función de ajuste, computada con la k-esima parte de los datos eliminada,
+ entonces la validación cruzada estimada del error de predicción  es: 
 \end_layout
 
 \begin_layout Standard
