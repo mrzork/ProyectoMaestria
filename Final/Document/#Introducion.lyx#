@@ -69,9 +69,7 @@
 
 \begin_body
 
-\begin_layout Section*
-
-\size normal
+\begin_layout Section
 Introducción
 \end_layout
 
@@ -90,22 +88,22 @@ key "Sandoval2012"
  La medición de variables biofísicas como lo son Área foliar (AF) o Índices
  de área foliar (IAF) en cultivos de caña de azúcar se realiza en la actualidad
  por medio de procesos destructivos.
- También realizar el conteo de cantidad de tallos (NT) en cultivos de caña
- de azúcar es un proceso de estimación empírico y poco preciso, estas dos
- características plantean un panorama interesante de investigación con la
- finalidad de lograr generar nuevos métodos de estimación indirecta y precisa,
- a los cuales la estadística pueden ser una ayuda invaluable.
+ El conteo de la cantidad de tallos (NT) en cultivos de caña de azúcar es
+ tambien un proceso de estimación empírico y poco preciso; estas dos característ
+icas plantean un panorama interesante de investigación con la finalidad
+ de utilizar nuevos métodos de estimación indirecta y precisa, a los cuales
+ la estadística pueden ser una ayuda invaluable.
 \end_layout
 
 \begin_layout Standard
-En tal sentido, existen actualmente una gran cantidad de métodos estadísticos
- que permiten realizar infinidad de análisis distintos y cubrir cualquier
- variable y aplicación.
+En tal sentido, existen hoy una gran cantidad de métodos estadísticos que
+ permiten realizar infinidad de análisis distintos y cubrir cualquier variable
+ y aplicación.
  El uso de la inteligencia artificial (visión computacional, sistemas expertos,
- sistemas de ayuda de decisión, etc.) y otras técnicas prometedoras de esta
- (redes neuronales, lógica difusa y bioinformática) pueden proporcionar
- soluciones a los problemas analíticos en sistemas agrícolas complejos de
- manera eficaz 
+ sistemas de ayuda de decisión, etc.) y otras técnicas potenciales (redes
+ neuronales, lógica difusa y bioinformática) pueden proporcionar soluciones
+ a los problemas analíticos en sistemas agrícolas complejos de manera eficaz
+ 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "M.2005"
@@ -116,8 +114,8 @@ key "M.2005"
  En este contexto, para analizar estructuras de datos como los que se mencionan
  en el párrafo anterior, tres métodos son de particular interés.
  Se desea evaluar el funcionamiento, la adaptación, la eficiencia y la precisión
- de los mismos, ya que son herramientas potencialmente importantes de aplicar
- en casos de aprendizaje y clasificación estadística 
+ de los mismos, dado que son herramientas potencialmente importantes de
+ aplicar en casos de aprendizaje y clasificación estadística 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "Mitchell:1997:ML:541177"
@@ -167,7 +165,7 @@ key "hough1991satellite"
 
 \begin_layout Standard
 En este proyecto de tesis se pretende integrar métodos estadísticos y sistemas
- de visión artificial o visión por computadora
+ de visión artificial o visión por computadora 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "gonzalez1996tratamiento"
@@ -200,7 +198,7 @@ key "Gutierrez2006"
 Evaluar el funcionamiento, adaptación, eficiencia y precisión de tres algoritmos
  de inteligencia artificial [Aprendizaje por cuantificación vectorial (LVQ)],
  [La Regresión por mínimos cuadrados Parciales] y [Random Forest] aplicados
- en imagenes multiespectrales de cultivos de caña de azúcar.
+ en imágenes multiespectrales de cultivos de caña de azúcar.
 \end_layout
 
 \begin_layout Itemize
@@ -214,42 +212,18 @@ Ajustar modelos estadísticos y de inteligencia artificial que relacionen
  de cultivo (AF), (IAF) y (NT).
 \end_layout
 
-\begin_layout Section*
-Revision literaria
+\begin_layout Section
+Revisión de la literatura
 \end_layout
 
 \begin_layout Standard
-La caña de azúcar (Saccharum officinarum) es un cultivo de zonas tropicales
- y subtropicales que se propaga mediante la plantación de trozos y/o vástagos
- de caña, donde de cada nudo sale una planta nueva e idéntica a la original.
-\begin_inset Note Note
-status collapsed
-
-\begin_layout Plain Layout
- La caña de azúcar tiene un periodo de crecimiento rápido el cual se da
- entre los 4 - 8 meses del cultivo, aproximadamente a partir de los cinco
- meses se da la estabilización de la población del cultivo de caña de azúcar
- 
-\begin_inset CommandInset citation
-LatexCommand citep
-key "Sandoval2012"
-
-\end_inset
-
-;
-\begin_inset CommandInset citation
-LatexCommand citep
-key "S.Mutanga2013"
-
-\end_inset
-
-, es decir que a partir de los 5 meses se puede contar la cantidad de tallos
- de caña de azúcar que ha crecido correctamente y que aportarían en el proceso
- productivo de la plantación, e
-\end_layout
-
-\end_inset
-
+La caña de azúcar (
+\emph on
+Saccharum officinarum
+\emph default
+) es un cultivo de zonas tropicales y subtropicales que se propaga mediante
+ la plantación de trozos y/o vástagos de caña, donde de cada nudo sale una
+ planta nueva e idéntica a la original.
  Existe una infinidad de métodos relacionados con la medición del desarrollo
  de los cultivos entre estos métodos encontramos nuevas aplicaciones como
  lo son la percepción remota o teledetección, la cual se define como el
@@ -274,19 +248,6 @@ key "Gutierrez2006"
 
 .
  
-\begin_inset Note Note
-status collapsed
-
-\begin_layout Plain Layout
-En particular para la agroindustria azucarera colombiana se comenzó con
- la exploración de la utilidad de los sensores disponibles para obtener
- imágenes representativas del espacio terrestre, en este caso en las tierras
- dedicadas al cultivo de caña de azúcar en el valle del río Cauca.
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Standard
@@ -330,23 +291,11 @@ key "Sandoval2012"
 \end_layout
 
 \begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-En términos de medición de variables relacionadas a los cultivos existen
- una gran cantidad de métodos estadísticos desarrollados para realizar la
- estimación de variables que dan un panorama del desarrollo del cultivo
- entre otras aplicaciones que pueden ser de ayuda para el agricultor, dentro
- de estas técnicas hoy en día tenemos
-\end_layout
-
-\end_inset
-
- Hoy en dia existen muchas tecnicas estadisticas que el agricultor puede
- aprovechar para la estimacion de variables del cultivo el aprendizaje automátic
-o que es una rama de la Inteligencia Artificial (IA) cuyo objetivo es desarrolla
-r técnicas que permitan a las computadoras aprender.
+Hoy en día existen muchas técnicas estadísticas que el agricultor puede
+ aprovechar para la estimación de variables del cultivo, entre estas está
+ el aprendizaje automático que es una rama de la Inteligencia Artificial
+ (IA) cuyo objetivo es desarrollar técnicas que permitan a las computadoras
+ aprender.
  Una máquina es un sistema organizado capaz de transformar un cierto mensaje
  de entrada en otro de salida, de acuerdo con algún principio de transformación.
  Si tal principio está sujeto a cierto criterio de validez de funcionamiento,
@@ -354,23 +303,26 @@ r técnicas que permitan a las computadoras aprender.
  el funcionamiento del sistema de acuerdo con este criterio, se dice que
  el sistema aprende.
  
+\end_layout
+
+\begin_layout Standard
+En 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "citeulike:1720151"
 
 \end_inset
 
- define las máquinas de aprendizaje o el aprendizaje automático como el
- campo de estudio que da a las computadoras la capacidad de aprender sin
- estar programado explícitamente, lo cual sería un gran avance en las técnicas
- de estimación en cultivos de caña de azúcar, sobre todo cuando la información
- proviene de imágenes digitales, lo cual genera un flujo grande de información
- generando la necesidad de realizar el análisis de grandes bases de datos,
- el cual requiere métodos estadísticos capaces de tratar con estructuras
- de datos multivariados y no lineales, herramientas matemáticas basadas
- en la minería de datos proporcionan un marco adecuado para la extracción
- de información útil a partir de grandes bases de datos, así como también
- pueden conducir al descubrimiento de conocimiento 
+ se define las máquinas de aprendizaje o el aprendizaje automático como
+ el campo de estudio que da a las computadoras la capacidad de aprender
+ sin estar programado explícitamente, lo que sería un gran avance en las
+ técnicas de estimación en cultivos de caña de azúcar, sobre todo cuando
+ la información proviene de imágenes digitales, proceso que genera un flujo
+ grande de información, el cual requiere métodos estadísticos capaces de
+ tratar con estructuras de datos multivariados y no lineales, las herramientas
+ matemáticas basadas en la minería de datos proporcionan un marco adecuado
+ para la extracción de información útil a partir de grandes bases de datos,
+ así como también pueden conducir al descubrimiento de conocimiento 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "Ferraro2008"
@@ -391,8 +343,8 @@ La regresión por mínimos cuadrados parciales o PLS, el algoritmo de random
  no se han probado sobre cultivos de caña.
 \end_layout
 
-\begin_layout Subsubsection*
-PLS o Regresión por mínimos cuadrados parciales: 
+\begin_layout Subsection
+PLS o Regresión por mínimos cuadrados parciales
 \end_layout
 
 \begin_layout Standard
@@ -418,7 +370,7 @@ key "CEM:CEM1180040607"
 
 \begin_layout Standard
 Es una particular forma de análisis multivariante, este método relacionado
- con la regresión de componentes principales, PCR (“Principal components
+ con la regresión de componentes principales, PCR (“Principal component
  regression”) posee valiosas ventajas teóricas y computacionales que han
  llevado a innumerables aplicaciones.
  PLS se utiliza para encontrar las relaciones fundamentales entre dos matrices
@@ -445,6 +397,10 @@ key "Tenenhaus2005"
  Este concepto es similar al de componentes principales.
  Las variables latentes son estimadas como combinaciones lineales de las
  variables observadas.
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
  En 2002 se publicó un nuevo método llamado proyecciones ortogonales a las
  estructuras latentes (OPLS).
  En OPLS, datos variables continuas se separa en información predictiva
@@ -462,8 +418,13 @@ key "Saebo2008"
 .
 \end_layout
 
-\begin_layout Subsubsection*
-Random Forest o Árboles Aleatorios: 
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Random Forest o Árboles Aleatorios
 \end_layout
 
 \begin_layout Standard
@@ -495,10 +456,9 @@ key "Breim2004"
 
 \end_inset
 
-) demostraron que hay ganancias sustanciales en la clasificación y la exactitud
- de la regresión y se puede lograr mediante el uso de conjuntos de árboles,
- donde de acuerdo con un parámetro de azar crece cada árbol en cada conjunto
- de árboles.
+) demostró que hay una ganancia sustancial en la precisión en clasificación
+ y regresión mediante el uso de conjuntos de arboles donde cada arbol en
+ el conjunto se cultiva de acuerdo a un parametro aleatorio.
  Las predicciones finales se obtienen de las agregaciones sobre el conjunto
  de datos.
  Como los componentes de base del conjunto son predictores con estructura
@@ -519,8 +479,8 @@ El random Forest es una combinación de árboles predictores tal que cada
  
 \end_layout
 
-\begin_layout Subsubsection*
-Aprendizaje por cuantificación vectorial (LVQ):
+\begin_layout Subsection
+Aprendizaje por cuantificación vectorial (LVQ)
 \end_layout
 
 \begin_layout Standard
@@ -552,49 +512,57 @@ key "hastie_09_elements-of.statistical-learning"
  
 \end_layout
 
-\begin_layout Subsubsection*
+\begin_layout Subsection
 Validación cruzada
 \end_layout
 
 \begin_layout Standard
-Probablemente el mas simple y ampliamente usado metodo para estimar el error
- en prediccion es la validacion cruzada, este metodo estima directamente
+Probablemente el más simple y ampliamente usado método para estimar el error
+ en predicción es la validación cruzada, este método estima directamente
  el error esperado de una muestra-extra 
 \begin_inset Formula $Err=E\left[L\left(Y,\hat{f}\left(X\right)\right)\right]$
 \end_inset
 
-, el error medio generalizado cuando el metodo 
+, el error medio generalizado cuando el método 
 \begin_inset Formula $\hat{f}\left(X\right)$
 \end_inset
 
 , se aplica a una muestra de prueba independiente de la distribución conjunta
  de X e Y.
  Como se mencionó anteriormente, podríamos esperar que la validación cruzada
- estima el error condicional, con el conjunto de entrenamiento 
+ estime el error condicional, con el conjunto de entrenamiento 
 \begin_inset Formula $\tau$
 \end_inset
 
  el cual se mantiene fijo.
 \end_layout
 
-\begin_layout Paragraph
-Validación cruzada K-Fold
+\begin_layout Subsection
+Validación cruzada K-veces (
+\begin_inset Quotes eld
+\end_inset
+
+K-Fold
+\begin_inset Quotes erd
+\end_inset
+
+)
 \end_layout
 
 \begin_layout Standard
-Lo ideal sería que si tuviéramos suficientes datos, asi tendríamos que dejar
- de lado un conjunto de validación y se utiliza para evaluar el desempeño
- de nuestro modelo de predicción.
- Puesto que los datos a menudo son escasos, esto no suele ser posible.
- A la delicadeza del problema, la validación cruzada K veces utiliza parte
- de los datos disponibles para ajustar el modelo, y una parte distinta para
- comprobarlo.
- Donde dividimos los datos en K partes más o menos del mismo tamaño; Por
- ejemplo, cuando 
+Sería ideal que, en caso que tuviéramos datos suficientes, dejáramos de
+ lado un conjunto de datos para la validación y los restantes se usaran
+ para evaluar el desempeño de nuestro modelo de predicción.
+ En general no es posible dado que los datos son a menudo escasos, y la
+ precisión de la validación es perjudicada.
+ Alternativamente si repetimos el procedimiento en K ocasiones cada una
+ con datos distintos para entrenamiento y validación, ganamos en precisión.
+ Para ello se dividen los datos en K partes más o menos del mismo tamaño;
+ por ejemplo, cuando 
 \begin_inset Formula $K=5$
 \end_inset
 
-, el escenarios seria asi :
+, el escenario podría ser como sigue: 
 \end_layout
 
 \begin_layout Standard
@@ -602,7 +570,7 @@ Lo ideal sería que si tuviéramos suficientes datos, asi tendríamos que dejar
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -635,6 +603,35 @@ k-fold
 \end_layout
 
 \begin_layout Standard
+Para el grafico anterior en k=3, ajustamos el modelo con las otras k-1 partes
+ de los datos es decir con (k=1 , k=2 , k=4 , k=5) y se calcula el error
+ de predicción del modelo para la k-esima, esto para predecir la parte de
+ orden k (en este caso la parte 3) de los datos, se realiza este proceso
+ para cada k=1,2,3,..,K y se combinan las estimaciónes del error de predicción.
+\end_layout
+
+\begin_layout Standard
+Ahora sea κ : {1,.
+ .
+ .
+ , N} → {1,.
+ .
+ .
+ , K} una funcion de indexación la cual que indica a que partición es asignada
+ la observación i por la aleatorización.
+ Denotemos por 
+\begin_inset Formula $\hat{f}^{-k}\left(X\right)$
+\end_inset
+
+   la función de ajuste, computada con la k-esima parte de los datos eliminados,
+ entonces la validacion cruzada estimada del error de prediccion es: 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
 Para la parte de orden k (k=3), nos ajustamos el modelo a la otra K - 1
  parte de los datos, y se calcula el error de predicción del modelo ajustado
  la k-th para predecir la parte de orden k de los datos.
@@ -644,9 +641,8 @@ Para la parte de orden k (k=3), nos ajustamos el modelo a la otra K - 1
  , K y se combinan las estimaciones del error de predicción de K.
 \end_layout
 
-\begin_layout Standard
-Aquí hay más detalles.
- Deje κ : {1,.
+\begin_layout Plain Layout
+Suponga κ : {1,.
  .
  .
  , N} → {1,.
@@ -664,6 +660,11 @@ Aquí hay más detalles.
  es:
 \end_layout
 
+\end_inset
+
+
+\end_layout
+
 \begin_layout Standard
 \begin_inset Formula 
 \[
@@ -676,13 +677,14 @@ CV\left(\hat{f}\right)=\frac{1}{N}\overset{N}{\underset{i=1}{\sum}L\left(y_{i},\
 \end_layout
 
 \begin_layout Standard
-La típica elección para k es 5 o 10, pero incluso podríamos tener una elección
- de K=N lo que es conocido como una validación cruzada “leave-one-out ”
- donde el estimador de validación cruzada es aproximadamente insesgado,
- pero no se utiliza mucho este caso ya que cuando tenemos tantos conjuntos
- de validación, existen muchos conjuntos casi iguales, por esta razón en
- la mayoría de las veces de opta por selección de un K un poco más conservador
- como lo es 5 o 10 lo que es suficiente para obtener buenos resultados 
+La típica elección es k = 5 o 10, pero incluso podríamos tener una elección
+ de K=N lo que es conocido como una validación cruzada dejando solo uno
+ fuera “leave-one-out ” y donde el estimador de validación cruzada es aproximada
+mente insesgado, pero no se utiliza mucho este caso ya que cuando tenemos
+ tantos conjuntos de validación, existen muchos conjuntos casi iguales,
+ por esta razón en la mayoría de las veces de opta por selección de un K
+ un poco más conservador como lo es 5 o 10 lo que es suficiente para obtener
+ buenos resultados 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "hastie_09_elements-of.statistical-learning"
@@ -692,15 +694,13 @@ key "hastie_09_elements-of.statistical-learning"
 .
 \end_layout
 
-\begin_layout Subsection*
-
-\size normal
+\begin_layout Section
 Antecedentes
 \end_layout
 
 \begin_layout Standard
-Hace más de 50 años se realiza la toma de fotografías a color e infrarrojo
- para seguir el crecimiento de las plantas como se puede observar en 
+Hace más de 50 años que se toman fotografías a color e infrarrojo para seguir
+ el crecimiento de las plantas 
 \begin_inset CommandInset citation
 LatexCommand citet
 key "Colwell1956"
@@ -770,20 +770,15 @@ key "Almeida2006"
 
 \end_inset
 
- propone un método para realizar predicción del rendimiento sobre cultivos
+ ha propuesto un método para realizar predicción del rendimiento sobre cultivos
  de caña de azúcar usando índices de vegetación espectral, mediante análisis
  de componentes principales e información histórica de los cultivos.
- Para este estudio se utilizaron imágenes (ETM +) / Landsat-7 e imágenes
+ Para dicho estudio se utilizaron imágenes (ETM +) / Landsat-7 e imágenes
  ASTER/Terra.
- Este método presentado comprende varias etapas, desde la selección de las
- respuestas espectrales que mejor describen los componentes de la vegetación,
- seguido por la reducción de la dimensionalidad espectral priorizando la
- repuesta relacionada con el área foliar.
- Así toda esta información puede ser reducida a una sola imagen.
- Esto lo que logra es una síntesis de toda la información tanto de la imagen
- como de la información histórica permitiendo la normalización de todas
- las variables en conjunto, haciendo posible expresar todos los datos en
- imágenes síntesis.
+ Este método presentado comprende varias etapas que finalmente e logra una
+ síntesis de toda la información tanto de la imagen como de la información
+ histórica permitiendo la normalización de todas las variables en conjunto,
+ haciendo posible expresar todos los datos en imágenes síntesis.
 \end_layout
 
 \begin_layout Standard

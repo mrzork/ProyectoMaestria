@@ -1,0 +1,641 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="generator" content="http://www.nongnu.org/elyxer/">
+<meta name="create-date" content="2014-07-20">
+<link rel="stylesheet" href="http://elyxer.nongnu.org/lyx.css" type="text/css" media="all">
+<title>Converted document</title>
+</head>
+<body>
+<div id="globalWrapper">
+<div class="Standard">
+<div class="center">
+<span class="large">  <span class="unknown">\pagenumbering</span>Roman</span>
+</div>
+
+</div>
+<div class="Standard">
+<div class="center">
+EVALUACIÓN DE MODELOS DE APRENDIZAJE ESTADÍSTICO APLICADOS EN ESTIMACIÓN DE VARIABLES BIOFÍSICAS EN CULTIVOS DE CAÑA DE AZÚCAR <div class="vspace" style="height: 1cm;">
+
+</div>
+
+</div>
+
+</div>
+<div class="Standard">
+<div class="center">
+Proyecto de Maestría<br>
+<div class="vspace" style="height: 0.7cm;">
+
+</div>
+
+</div>
+
+</div>
+<div class="Standard">
+<div class="center">
+<img class="embedded" src="Figures/LOGO UBA.jpg" alt="figure Figures/LOGO UBA.jpg" style="width: 69px; max-width: 233px; height: 64px; max-height: 216px;">
+
+</div>
+
+</div>
+<div class="Standard">
+<div class="center">
+CAMILO ALBERTO HERRERA ROZO
+</div>
+
+</div>
+<div class="Standard">
+<div class="vspace" style="height: 0.7cm;">
+
+</div>
+
+</div>
+<div class="Standard">
+<div class="center">
+Director<br>
+PABLO A. CIPRIOTTI<br>
+Ingeniero Agrónomo - Dr. Ciencias Agropecuarias
+</div>
+
+</div>
+<div class="Standard">
+<div class="vspace" style="height: 0.7cm;">
+
+</div>
+
+</div>
+<div class="Standard">
+<div class="center">
+<div class="vspace" style="height: 0.7cm;">
+
+</div>
+
+</div>
+
+</div>
+<div class="Standard">
+<div class="center">
+UNIVERSIDAD DE BUENOS AIRES<br>
+FACULTAD DE AGRONOMIA<br>
+MAESTRÍA EN BIOMETRÍA Y MEJORAMIENTO<br>
+Buenos Aires - Argentina, Junio <br>
+2014
+</div>
+
+</div>
+<div class="Standard">
+<p><br>
+</p>
+
+</div>
+<div class="Standard">
+ 
+</div>
+<div class="Standard">
+
+</div>
+<h1 class="Section-">
+<a class="toc" name="toc-Section--1"></a>Introducción
+</h1>
+<div class="Standard">
+La Agricultura de precisión y manejo sitio-específico (AEPS), se define como el arte de realizar las prácticas agronómicas requeridas por una especie vegetal, de acuerdo con las condiciones espaciales y temporales del sitio donde se cultiva, para obtener de ellas su rendimiento potencial <span class="bibcites">[<a class="bibliocite" name="cite-29" href="#biblio-29"><span class="bib-index">29</span></a>]</span>. La medición de variables biofísicas como lo son Área foliar (AF) o Índices de área foliar (IAF) en cultivos de caña de azúcar se realiza en la actualidad por medio de procesos destructivos. También realizar el conteo de cantidad de tallos (NT) en cultivos de caña de azúcar es un proceso de estimación empírico y poco preciso, estas dos características plantean un panorama interesante de investigación con la finalidad de lograr generar nuevos métodos de estimación indirecta y precisa, a los cuales la estadística pueden ser una ayuda invaluable.
+</div>
+<div class="Standard">
+En tal sentido, existen actualmente una gran cantidad de métodos estadísticos que permiten realizar infinidad de análisis distintos y cubrir cualquier variable y aplicación. El uso de la inteligencia artificial (visión computacional, sistemas expertos, sistemas de ayuda de decisión, etc.) y otras técnicas prometedoras de esta (redes neuronales, lógica difusa y bioinformática) pueden proporcionar soluciones a los problemas analíticos en sistemas agrícolas complejos de manera eficaz <span class="bibcites">[<a class="bibliocite" name="cite-7" href="#biblio-7"><span class="bib-index">7</span></a>]</span>. En este contexto, para analizar estructuras de datos como los que se mencionan en el párrafo anterior, tres métodos son de particular interés. Se desea evaluar el funcionamiento, la adaptación, la eficiencia y la precisión de los mismos, ya que son herramientas potencialmente importantes de aplicar en casos de aprendizaje y clasificación estadística <span class="bibcites">[<a class="bibliocite" name="cite-26" href="#biblio-26"><span class="bib-index">26</span></a>]</span><span class="bibcites">[<a class="bibliocite" name="cite-28" href="#biblio-28"><span class="bib-index">28</span></a>]</span>, Las metodologías son: PLS o Regresión por mínimos cuadrados parciales <span class="bibcites">[<a class="bibliocite" name="cite-13" href="#biblio-13"><span class="bib-index">13</span></a>]</span>, Random Forest <span class="bibcites">[<a class="bibliocite" name="cite-6" href="#biblio-6"><span class="bib-index">6</span></a>]</span> y el Aprendizaje por cuantificación vectorial (LVQ) <span class="bibcites">[<a class="bibliocite" name="cite-1" href="#biblio-1"><span class="bib-index">1</span></a>]</span>. Estos tres métodos serán aplicados a imágenes multiespectrales <span class="bibcites">[<a class="bibliocite" name="cite-21" href="#biblio-21"><span class="bib-index">21</span></a>]</span> y datos obtenidos mediante procesos de simulación del comportamiento de cultivos de caña de azúcar.
+</div>
+<div class="Standard">
+En este proyecto de tesis se pretende integrar métodos estadísticos y sistemas de visión artificial o visión por computadora<span class="bibcites">[<a class="bibliocite" name="cite-16" href="#biblio-16"><span class="bib-index">16</span></a>]</span>, para mejorar la comprensión de procesos naturales que ocurren en los cultivos. Dichos procesos son captados por sensores remotos, y revelan patrones espaciales presentes en los cultivos <span class="bibcites">[<a class="bibliocite" name="cite-17" href="#biblio-17"><span class="bib-index">17</span></a>]</span>. Adicionalmente se desea cubrir la necesidad cada vez mayor de automatizar y mejorar procesos costosos o de características destructivas relacionados a la toma de información, permitiendo hacer un mejor manejo agronómico y apuntando a sistemas de agricultura de precisión y manejo sitio-específico en cultivos de caña de azúcar. Consecuentemente, el objetivo general de este proyecto es el de integrar métodos estadísticos y sistemas de visión artificial o visión por computador, para mejorar la comprensión de procesos naturales, reflejados por cultivos de caña de azúcar y captados por sensores remotos. Son objetivos específicos los siguientes:
+</div>
+<ul>
+<li>
+Evaluar el funcionamiento, adaptación, eficiencia y precisión de tres algoritmos de inteligencia artificial [Aprendizaje por cuantificación vectorial (LVQ)], [La Regresión por mínimos cuadrados Parciales] y [Random Forest] aplicados en imagenes multiespectrales de cultivos de caña de azúcar.
+</li>
+<li>
+Estimar el área foliar (AF) y el índice de área foliar (IAF) en cultivos de caña de azúcar y la cantidad de tallos (NT) en cultivos de caña de azúcar.
+</li>
+<li>
+Ajustar modelos estadísticos y de inteligencia artificial que relacionen correctamente la información de las imágenes multiespectrales a las variables de cultivo (AF), (IAF) y (NT).
+</li>
+
+</ul>
+<h1 class="Section-">
+<a class="toc" name="toc-Section--2"></a>Revisión literaria
+</h1>
+<div class="Standard">
+La caña de azúcar (Saccharum officinarum) es un cultivo de zonas tropicales y subtropicales que se propaga mediante la plantación de trozos y/o vástagos de caña, donde de cada nudo sale una planta nueva e idéntica a la original. Existe una infinidad de métodos relacionados con la medición del desarrollo de los cultivos entre estos métodos encontramos nuevas aplicaciones como lo son la percepción remota o teledetección, la cual se define como el grupo de técnicas para la obtención de información confiable sobre las propiedades físicas de ciertas superficies u objetos y su entorno, desde distancias relativamente grandes, sin contacto físico con ellos <span class="bibcites">[<a class="bibliocite" name="cite-14" href="#biblio-14"><span class="bib-index">14</span></a>]</span>. Las imágenes adquiridas por sensores en plataformas aéreas o satelitales en el mundo agropecuario tienen un potencial que se ha venido explorando con mayor énfasis en la última década <span class="bibcites">[<a class="bibliocite" name="cite-17" href="#biblio-17"><span class="bib-index">17</span></a>]</span>. 
+</div>
+<div class="Standard">
+El IAF es el área ocupada por hojas verdes en relación con la unidad de superficie de suelo. La información precisa y oportuna sobre IAF tiene gran importancia y aplicaciones en la agricultura para la estimación del rendimiento y la evaluación del estrés en los cultivos, y en la ecología para el estudio de la producción primaria y el cambio ambiental <span class="bibcites">[<a class="bibliocite" name="cite-11" href="#biblio-11"><span class="bib-index">11</span></a>]</span>. Las principales aplicaciones de las técnicas de teledetección están dentro de los campos de la inteligencia agrícola, la gestión agrícola y la investigación ecológica <span class="bibcites">[<a class="bibliocite" name="cite-11" href="#biblio-11"><span class="bib-index">11</span></a>]</span>. Desde los inicios de la percepción remota los índices espectrales de vegetación han sido útiles y fáciles de calcular para relacionarlos con diversas variables agronómicas. Aunque los índices espectrales de vegetación en muchos casos muestran excelentes relaciones con estas variables, es necesario calibrar o comprender la equivalencia de sus valores en la estimación de contenidos de clorofila, IAF o biomasa <span class="bibcites">[<a class="bibliocite" name="cite-29" href="#biblio-29"><span class="bib-index">29</span></a>]</span>.
+</div>
+<div class="Standard">
+Hoy en día existen muchas técnicas estadísticas que el agricultor puede aprovechar para la estimación de variables del cultivo, entre estas está el aprendizaje automático que es una rama de la Inteligencia Artificial (IA) cuyo objetivo es desarrollar técnicas que permitan a las computadoras aprender. Una máquina es un sistema organizado capaz de transformar un cierto mensaje de entrada en otro de salida, de acuerdo con algún principio de transformación. Si tal principio está sujeto a cierto criterio de validez de funcionamiento, y si el método de transformación se ajusta a fin de que tienda a mejorar el funcionamiento del sistema de acuerdo con este criterio, se dice que el sistema aprende. 
+</div>
+<div class="Standard">
+<span class="bibcites">[<a class="bibliocite" name="cite-28" href="#biblio-28"><span class="bib-index">28</span></a>]</span> define las máquinas de aprendizaje o el aprendizaje automático como el campo de estudio que da a las computadoras la capacidad de aprender sin estar programado explícitamente, lo que sería un gran avance en las técnicas de estimación en cultivos de caña de azúcar, sobre todo cuando la información proviene de imágenes digitales, proceso que genera un flujo grande de información, el cual requiere métodos estadísticos capaces de tratar con estructuras de datos multivariados y no lineales, las herramientas matemáticas basadas en la minería de datos proporcionan un marco adecuado para la extracción de información útil a partir de grandes bases de datos, así como también pueden conducir al descubrimiento de conocimiento <span class="bibcites">[<a class="bibliocite" name="cite-12" href="#biblio-12"><span class="bib-index">12</span></a>]</span>. 
+</div>
+<div class="Standard">
+La regresión por mínimos cuadrados parciales o PLS, el algoritmo de random forest o arboles aleatorios y el aprendizaje por cuantificación vectorial (LVQ) son tres metodologías de mucho interés para el desarrollo de esta investigación ya que aunque son métodos cada uno desarrollado para diferentes aplicaciones en un principio son altamente escalables y se espera obtener resultados interesantes con la aplicación de métodos que con anterioridad no se han probado sobre cultivos de caña.
+</div>
+<h3 class="Subsubsection-">
+<a class="toc" name="toc-Subsubsection--1"></a>PLS o Regresión por mínimos cuadrados parciales: 
+</h3>
+<div class="Standard">
+La Regresión por mínimos cuadrados se introdujo hace casi treinta años y ha tenido un gran desarrollo en áreas como la Quimiometría, donde se analizan datos que se caracterizan por muchas variables predictoras, con problemas de multicolinealidad, y pocas unidades experimentales en estudio (<span class="bibcites">[<a class="bibliocite" name="cite-27" href="#biblio-27"><span class="bib-index">27</span></a>]</span> , <span class="bibcites">[<a class="bibliocite" name="cite-13" href="#biblio-13"><span class="bib-index">13</span></a>]</span>).
+</div>
+<div class="Standard">
+Es una particular forma de análisis multivariante, este método relacionado con la regresión de componentes principales, PCR (“Principal components regression”) posee valiosas ventajas teóricas y computacionales que han llevado a innumerables aplicaciones. PLS se utiliza para encontrar las relaciones fundamentales entre dos matrices (X e Y), es decir, un enfoque de variable latente para el modelado de las estructuras de co varianza en estos dos espacios.
+</div>
+<div class="Standard">
+Un modelo de PLS trata de encontrar el sentido multidimensional en el espacio X que explica la dirección de la máxima varianza multidimensional en el espacio Y <span class="bibcites">[<a class="bibliocite" name="cite-25" href="#biblio-25"><span class="bib-index">25</span></a>]</span>. Estos métodos tienen ventajas intrínsecas cuando se le compara con métodos univariados, Todas las variables relevantes son incluidas en el modelo PLS. La suposición básica de todos estos modelos es que el sistema o proceso estudiado depende de un número pequeño de variables latentes (V.L.). Este concepto es similar al de componentes principales. Las variables latentes son estimadas como combinaciones lineales de las variables observadas.
+</div>
+<h3 class="Subsubsection-">
+<a class="toc" name="toc-Subsubsection--2"></a>Random Forest o Árboles Aleatorios: 
+</h3>
+<div class="Standard">
+En una serie de documentos e informes técnicos, Breiman (<span class="bibcites">[<a class="bibliocite" name="cite-5" href="#biblio-5"><span class="bib-index">5</span></a>]</span>, <span class="bibcites">[<a class="bibliocite" name="cite-24" href="#biblio-24"><span class="bib-index">24</span></a>]</span>, <span class="bibcites">[<a class="bibliocite" name="cite-6" href="#biblio-6"><span class="bib-index">6</span></a>]</span>, <span class="bibcites">[<a class="bibliocite" name="cite-23" href="#biblio-23"><span class="bib-index">23</span></a>]</span>) demostraron que hay ganancias sustanciales en la clasificación y la exactitud de la regresión y se puede lograr mediante el uso de conjuntos de árboles, donde de acuerdo con un parámetro de azar crece cada árbol en cada conjunto de árboles. Las predicciones finales se obtienen de las agregaciones sobre el conjunto de datos. Como los componentes de base del conjunto son predictores con estructura de árbol, y desde cada uno de estos árboles se construye utilizando una inyección de aleatoriedad, estos procedimientos son llamados "Random Forest".
+</div>
+<div class="Standard">
+El random Forest es una combinación de árboles predictores tal que cada árbol depende de los valores de un vector aleatorio probado independientemente y con la misma distribución para cada uno de éstos. Es una modificación sustancial de bagging que construye una larga colección de árboles no correlacionados y luego los promedia. Random Forest es una unión entre métodos de clasificación y métodos de regresión, esta opera por la construcción de una multitud de árboles de decisión en el entrenamiento y en la salida una clase el cual es el modo de salida de los árboles individuales. 
+</div>
+<h3 class="Subsubsection-">
+<a class="toc" name="toc-Subsubsection--3"></a>Aprendizaje por cuantificación vectorial (LVQ):
+</h3>
+<div class="Standard">
+LVQ se puede entender como un caso especial de una red neuronal artificial, con mayor precisión, este aplica el concepto de ([winner-take-all] el ganador toma todo mediante el aprendizaje de Hebb) . Es un precursor de los mapas auto-organizados (SOM) y está relacionado con el algoritmo de gas neural y con el algoritmo de K vecinos más cercanos (k-NN).
+</div>
+<div class="Standard">
+El aprendizaje por cuantificación vectorial (LVQ) supone una extensión del aprendizaje competitivo donde los prototipos están etiquetados. Ahora, además de considerar la cercanía de un prototipo se puede evaluar la clase de éste e imponer, por lo tanto, correcciones de premio (acercamiento) o castigo (alejamiento). En ciencias de la computación, aprendizaje cuantificación vectorial (LVQ), está basado en prototipos de algoritmos de clasificación supervisada. LVQ es la contraparte supervisada de los sistemas de cuantificación vectorial <span class="bibcites">[<a class="bibliocite" name="cite-20" href="#biblio-20"><span class="bib-index">20</span></a>]</span>. 
+</div>
+<h3 class="Subsubsection-">
+<a class="toc" name="toc-Subsubsection--4"></a>Validación cruzada
+</h3>
+<div class="Standard">
+Probablemente el más simple y ampliamente usado método para estimar el error en predicción es la validación cruzada, este método estima directamente el error esperado de una muestra-extra <span class="formula"><i>Err</i> = <i>E</i><span class="symbol">[</span><i>L</i><span class="symbol">(</span><i>Y</i>, <i>f̂</i><span class="symbol">(</span><i>X</i><span class="symbol">)</span><span class="symbol">)</span><span class="symbol">]</span></span>, el error medio generalizado cuando el método <span class="formula"><i>f̂</i><span class="symbol">(</span><i>X</i><span class="symbol">)</span></span>, se aplica a una muestra de prueba independiente de la distribución conjunta de X e Y. Como se mencionó anteriormente, podríamos esperar que la validación cruzada estima el error condicional, con el conjunto de entrenamiento <span class="formula"><i>τ</i></span> el cual se mantiene fijo.
+</div>
+<div class="Paragraph">
+<a class="toc" name="toc-Paragraph-1"></a>Validación cruzada K-Fold
+</div>
+<div class="Standard">
+Lo ideal sería que si tuviéramos suficientes datos, así tendríamos que dejar de lado un conjunto de validación y se utiliza para evaluar el desempeño de nuestro modelo de predicción. Puesto que los datos a menudo son escasos, esto no suele ser posible. A la delicadeza del problema, la validación cruzada K veces utiliza parte de los datos disponibles para ajustar el modelo, y una parte distinta para comprobarlo. Donde dividimos los datos en K partes más o menos del mismo tamaño; Por ejemplo, cuando <span class="formula"><i>K</i> = 5</span>, el escenarios seria así :
+</div>
+<div class="Standard">
+<div class="float">
+<a class="Label" name="Figure-1"> </a><div class="figure">
+<div class="PlainVisible">
+<div class="center">
+<img class="embedded" src="kfold.png" alt="figure kfold.png" style="width: 279px; max-width: 559px; height: 77px; max-height: 154px;">
+
+</div>
+<br>
+<div class="center">
+<div class="caption">
+Figure 1 k-fold
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+<div class="Standard">
+Para la parte de orden k (k=3), nos ajustamos el modelo a la otra K - 1 parte de los datos, y se calcula el error de predicción del modelo ajustado la k-th para predecir la parte de orden k de los datos. Hacemos esto para k = 1, 2,. . . , K y se combinan las estimaciones del error de predicción de K.
+</div>
+<div class="Standard">
+Suponga κ : {1,. . . , N} → {1,. . . , K} una función de indexación que indica la partición a la que la observación i es asignada por la aleatorización. Denotemos por <span class="formula"><i>f̂</i><sup> − <i>k</i></sup><span class="symbol">(</span><i>X</i><span class="symbol">)</span></span>   la función de módulos, calculado con la parte de orden k de los datos eliminados. A continuación, la estimación de la validación cruzada de error de predicción es:
+</div>
+<div class="Standard">
+<div class="formula">
+<i>CV</i><span class="symbol">(</span><i>f̂</i><span class="symbol">)</span> = <span class="fraction"><span class="ignored">(</span><span class="numerator">1</span><span class="ignored">)/(</span><span class="denominator"><i>N</i></span><span class="ignored">)</span></span><span class="unknown">\overset</span><i>N</i><span class="unknown">\underset</span><i>i</i> = 1<span class="limits"><span class="limit">∑</span></span><i>L</i><span class="symbol">(</span><i>y</i><sub><i>i</i></sub>, <i>f̂</i><sup> − <i>k</i><span class="symbol">(</span><i>i</i><span class="symbol">)</span></sup><span class="symbol">(</span><i>x</i><sub><i>i</i></sub><span class="symbol">)</span><span class="symbol">)</span>
+</div>
+
+</div>
+<div class="Standard">
+La típica elección para k es 5 o 10, pero incluso podríamos tener una elección de K=N lo que es conocido como una validación cruzada “leave-one-out ” donde el estimador de validación cruzada es aproximadamente insesgado, pero no se utiliza mucho este caso ya que cuando tenemos tantos conjuntos de validación, existen muchos conjuntos casi iguales, por esta razón en la mayoría de las veces de opta por selección de un K un poco más conservador como lo es 5 o 10 lo que es suficiente para obtener buenos resultados <span class="bibcites">[<a class="bibliocite" name="cite-20" href="#biblio-20"><span class="bib-index">20</span></a>]</span>.
+</div>
+<h2 class="Subsection-">
+<a class="toc" name="toc-Subsection--1"></a>Antecedentes
+</h2>
+<div class="Standard">
+Hace más de 50 años se realiza la toma de fotografías a color e infrarrojo para seguir el crecimiento de las plantas como se puede observar en <span class="bibcites">[<a class="bibliocite" name="cite-10" href="#biblio-10"><span class="bib-index">10</span></a>]</span>. En la actualidad, estos métodos están siendo reevaluados para realizar análisis dentro de la variabilidad espacial en la agricultura de precisión, ya que las imágenes aéreas se pueden adquirir rápidamente durante los períodos críticos del crecimiento rápido de las plantas <span class="bibcites">[<a class="bibliocite" name="cite-4" href="#biblio-4"><span class="bib-index">4</span></a>]</span>.
+</div>
+<div class="Standard">
+A nivel mundial países como Francia y Brasil han realizado trabajos para estimar algunos parámetros biofísicos e inclusive para pronosticar la producción de caña de azúcar. En Francia <span class="bibcites">[<a class="bibliocite" name="cite-8" href="#biblio-8"><span class="bib-index">8</span></a>]</span> haciendo uso del índice de vegetación normalizado (NDVI) en cultivos de variabilidad espacial (independiente a las etapas de crecimiento de los cultivos), demostraron que en una escala estacional, el patrón de crecimiento dentro de un campo depende de la etapa fenológica del cultivo, a escala anual los mapas NDVI revelaron patrones estables. Lo anterior permite concluir que es necesario conocer el ciclo de crecimiento del cultivo para interpretar correctamente los patrones espaciales. Las imágenes de una fecha única pueden ser insuficientes para el diagnóstico de la situación de los cultivos o para aplicaciones en predicción.
+</div>
+<div class="Standard">
+En <span class="bibcites">[<a class="bibliocite" name="cite-18" href="#biblio-18"><span class="bib-index">18</span></a>]</span> se evaluaron las calificaciones visuales subjetivas de crecimiento del cultivo de la caña de azúcar para la estimación de parámetros de rendimiento del cultivo y paralelamente se realizaron mediciones de los IAF, donde se encontró que existe relaciones importantes entre estos sistemas de evaluación visual, los índices IAF y la estimación de la población, pero estas relaciones son válidas solo en algunos estados del crecimiento del cultivo, por lo tanto las estimaciones no eran buenas fuera de algunos periodos del desarrollo del cultivo, sobre todo en las primeras etapas del crecimiento, lo que impide tomar decisiones tempranas respecto al manejo del cultivo.
+</div>
+<div class="Standard">
+En Brasil <span class="bibcites">[<a class="bibliocite" name="cite-3" href="#biblio-3"><span class="bib-index">3</span></a>]</span> propone un método para realizar predicción del rendimiento sobre cultivos de caña de azúcar usando índices de vegetación espectral, mediante análisis de componentes principales e información histórica de los cultivos. Para este estudio se utilizaron imágenes (ETM +) / Landsat-7 e imágenes ASTER/Terra. Este método presentado comprende varias etapas que finalmente e logra una síntesis de toda la información tanto de la imagen como de la información histórica permitiendo la normalización de todas las variables en conjunto, haciendo posible expresar todos los datos en imágenes síntesis.
+</div>
+<div class="Standard">
+Sudáfrica es el líder en producción de caña de azúcar en África y uno de los más grandes productores en el mundo, El monitoreo de estos factores de estrés del cultivo de caña es de vital importancia para tomar acciones preventivas y de mitigación sobre el cultivo. <span class="bibcites">[<a class="bibliocite" name="cite-2" href="#biblio-2"><span class="bib-index">2</span></a>]</span> exploró el potencial de usar sensores remotos en cultivos de caña de azúcar, mediante el uso de imágenes Lansat TM y ETM+ con las cuales generó modelos de predicción de rendimiento de caña aplicando algoritmos de random forest optimizados, logrando una estimación bastante buena para algunas de las variedades estudiadas.
+</div>
+<div class="Standard">
+
+</div>
+<h1 class="Section-">
+<a class="toc" name="toc-Section--3"></a>Metodología
+</h1>
+<div class="Standard">
+En el desarrollo de este proyecto de investigación se cuenta con 2 escenarios a desarrollar sobre este cultivo, donde una parte del estudio se realizara en cultivos experimentales y la otra parte del estudio se realizará sobre cultivos de caña comerciales, cada uno de estos cultivos se encuentran ubicados en el valle geográfico del río Cauca. 
+</div>
+<div class="Standard">
+Los cultivos experimentales se utilizarán inicialmente por la necesidad de realizar pruebas sobre cultivos donde se puedan controlar las distintas fuentes de variación como lo son el sistemas de riego, el tamaño del lote productivo, la fecha y densidad de siembra, el manejo del suelo, el seguimiento del cultivo durante el crecimiento, y su fertilización, entre otros factores que en un cultivo comercial no es posible. Así, se limitará la variabilidad para realizar una correcta calibración y aproximación de las variables a estimar. Estos cultivos son campos de investigación de Cenicaña que han sido designados para este fin. Los cultivos comerciales serán un objetivo estratégico a evaluar, pues al depender de las políticas de plantación de los ingenios, no es posible controlar muchos de los factores relacionados con el crecimiento del cultivo.
+</div>
+<div class="Standard">
+Estos dos escenarios involucrados poseen unas características específicas como el tipo de suelo en el que se encuentran, además de las características climáticas e inclusive en muchos casos se tienen registros históricos de su producción. Respecto a los tipos de suelos y características del área de estudio, los cultivos evaluados estarán sobre áreas agroecológicas catalogadas como<b> 6H1 </b>(Suelos de texturas finas y contenidos de arcilla entre 35% y 60%, moderadamente bien drenados que poseen características de permeabilidad baja &lt;200 mm/año) área predominante en el Valle del Cauca, de acuerdo a clasificación presentada en <span class="bibcites">[<a class="bibliocite" name="cite-9" href="#biblio-9"><span class="bib-index">9</span></a>]</span> y se evaluarán las variedades genéticas de caña CC-8592 y CC-934418, las cuales son de gran interés de estudio para el centro de investigación.
+</div>
+<div class="Standard">
+Una vez realizadas las pruebas de estimación sobre los cultivos experimentales, se tendrá una metodología definida para la estimación de las variables biofísicas y del tamaño la población del cultivo partir de imágenes multiespectrales de alta resolución. Posteriormente, los cultivos comerciales servirán para realizar la validación del método desarrollado inicialmente con los cultivos experimentales.
+</div>
+<div class="Standard">
+El procedimiento de toma de información se realizará mediante aviones ultra-livianos de fumigación del cultivo con una cámara multi-espectral <span class="FootOuter"><span class="SupFootMarker"> [A] </span><span class="HoverFoot"><span class="SupFootMarker"> [A] </span>http://www.tetracam.com/Products-Mini_MCA.htm</span></span> (Figura: <a class="Reference" href="#fig:Camara-Multiespectral">2↓</a> ) para toma de imágenes en campo enlazada a sistemas de GPS, que permitirán una mejor geolocalización de las tomas (imágenes) realizadas.
+</div>
+<div class="Standard">
+<div class="float">
+<a class="Label" name="fig:Camara-Multiespectral"> </a><div class="figure" style="max-width: 40%;">
+<div class="center">
+<img class="figure" src="Figures/tetracam.jpg" alt="figure Figures/tetracam.jpg" style="max-width: 838px; height: 15%; max-height: 490px;">
+
+</div>
+<div class="caption">
+Figure 2 Cámara Multi-espectral  
+</div>
+
+</div>
+
+</div>
+
+</div>
+<div class="Standard">
+Se estudiará la información reflectada por el cultivo mediante imágenes multiespectrales en formato raster (imagen matricial), donde la información de cada imagen se considera como una matriz de datos de dimensiones (n x m), siendo n el número de píxel verticales y m el número de píxel horizontales. Estas dimensiones están determinadas por la resolución de la cámara mediante la cual se realiza la toma de la información. Además en este caso al tratarse de imágenes multiespectrales cada imagen cuenta con 6 bandas espectrales las cuales corresponden a un rango del espectro.
+</div>
+<div class="Standard">
+<div class="float">
+<a class="Label" name="fig:Rango-Espectral--"> </a><div class="figure">
+<div class="center">
+<img class="embedded" src="Figures/bandas2.png" alt="figure Figures/bandas2.png" style="max-width: 144px; max-height: 117px;">
+<img class="embedded" src="Figures/bandas.png" alt="figure Figures/bandas.png" style="width: 318px; max-width: 637px; height: 193px; max-height: 386px;">
+
+</div>
+<div class="caption">
+Figure 3 Rango Espectral - mini-MCA
+</div>
+
+</div>
+
+</div>
+
+</div>
+<div class="Standard">
+Para el caso específico de la cámara tetracam mini-MCA de 6 lentes las bandas espectrales para cada lente están definidas así: 490FS10-25 , 550FS10-25, 680FS10-25, 720FS10-25, 800FS10-25 , 900FS20-25, con esta configuración de lentes se abarca la mayoría del espectro visible e infrarrojo (Figura: <a class="Reference" href="#fig:Rango-Espectral--">3↑</a> ). Cada imagen debe ser corregida de deformaciones y sobrepuesta en un SIG que delimitará el área de estudio, así se evitará que ingrese información adicional que dificulte el correcto análisis de información contenida en los datos, esto permitirá realizar un análisis sobre cada lote productivo.
+</div>
+<div class="Standard">
+En campo se tomarán muestras directas en los cultivos evaluados, con la finalidad de realizar una calibración del procedimiento de estimación. Esta calibración se llevará a cabo mediante la toma de información de caracterización de suelos y principalmente de variables biofísicas y de población que se desea estimar. Se realizará un conteo manual del número de tallos mientras que en áreas pequeñas al interior del campo se realizara una muestra (destructiva) para el caso de la medición de las variables biofísicas. Así, con esta información de muestreo será posible realizar un proceso de validación cruzada junto a las imágenes tomadas del campo lo que permita mejorar mucho más las estimaciones finales realizadas a partir de las imágenes.
+</div>
+<div class="Standard">
+Lograr estimar la cantidad de toneladas de caña por hectárea de manera temprana es uno de los objetivos a nivel de industrial, en la teoría es posible estimar estas cantidades haciendo uso de las variables biofísicas y de población antes señaladas, pero en la práctica no se realiza, ya que algunas de las variables biofísicas son medidas mediante tomas de información de carácter destructivo y con costos elevados por lo cual no es posible hoy día.
+</div>
+<div class="Standard">
+En la actualidad se está cambiando del paradigma de cómo obtener la información al referente a como almacenarla y analizarla adecuadamente. Anteriormente la información se recolectaba mediante métodos tradicionales que no entregaban volúmenes de datos muy grandes, ahora se posee un gran cantidad de sensores que pueden recolectar una cantidad inmensa de información, la cual será la que alimentara nuestros modelos que finalmente realizará una aproximación (modelación) a los sucesos o procesos naturales involucrados, esto con la necesidad de maximizar los beneficios de dichos datos capturados. Dado este panorama hoy en día existe una gama más amplia de algoritmos y métodos estadísticos que permiten realizar un tratamiento y modelado de información más amplio <span class="bibcites">[<a class="bibliocite" name="cite-26" href="#biblio-26"><span class="bib-index">26</span></a>]</span>. 
+</div>
+<div class="Standard">
+Es de gran importancia poder elegir con claridad cuál es el método más adecuado en pro de la calidad de los resultados obtenidos del procesamiento y modelado de la información, por lo cual se presenta una metodología general donde se nombran técnicas de gran interés que podrán ser evaluadas en el proceso de esta investigación, a continuación se ve una propuesta analítica básica de cómo se pretende abordar el problema de investigación.
+</div>
+<div class="Standard">
+<div class="float">
+<a class="Label" name="Figure-4"> </a><div class="figure">
+<div class="center">
+<img class="embedded" src="Diagrama maestria (2).png" alt="figure Diagrama maestria (2).png" style="width: 421px; max-width: 602px; height: 464px; max-height: 663px;">
+<div class="caption">
+Figure 4 Propuesta Analítica Básica
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+<h3 class="Subsubsection-">
+<a class="toc" name="toc-Subsubsection--5"></a><b>Flujo de procesos a realizar en esta investigación:</b>
+</h3>
+<div class="Standard">
+El insumo inicial para el desarrollo de este proyecto son las imágenes multiespectrales tomadas sobre los cultivos de caña que se desean evaluar, estas imágenes deben ser georeferenciadas y puestas sobre un SIG una vez estas imágenes tienen estas características se procederá a realizaran los siguientes procesos sobre la información disponible:
+</div>
+<div class="Standard">
+ 
+</div>
+<div class="Standard">
+Primero vamos a definir los sets de datos involucrados en el proceso y que características están relacionadas a dichos datos:
+</div>
+<ol>
+<li>
+Variables Iniciales<ol>
+<li>
+Usar los valores de las bandas espectrales de las imágenes como variables. 
+</li>
+<li>
+Generar índices espectrales a partir de las bandas espectrales para agregarlos como variables.
+</li>
+<li>
+Recopilar información adicional tomada al principio del proyecto en campo por ejemplo: Variables relacionadas a suelos y otras variables medidas por muestreo que caractericen el área de estudio.<br>
+<div class="float">
+<a class="Label" name="Figure-5"> </a><div class="figure">
+<div class="center">
+<img class="embedded" src="Figures/iniciales.png" alt="figure Figures/iniciales.png" style="width: 192px; max-width: 771px; height: 129px; max-height: 516px;">
+
+</div>
+<div class="caption">
+Figure 5 Variables Iniciales
+</div>
+
+</div>
+
+</div>
+
+</li>
+
+</ol>
+
+</li>
+<li>
+Variables Respuesta<ol>
+<li>
+Recopilar información de Área Foliar e IAF por muestreo 
+</li>
+<li>
+Recopilar información de cantidad de tallos por lote productivo<br>
+<div class="float">
+<a class="Label" name="Figure-6"> </a><div class="figure">
+<div class="center">
+<img class="embedded" src="Figures/fianles.png" alt="figure Figures/fianles.png" style="width: 208px; max-width: 771px; height: 108px; max-height: 400px;">
+
+</div>
+<div class="caption">
+Figure 6 Variables Respuesta
+</div>
+
+</div>
+
+</div>
+
+</li>
+
+</ol>
+
+</li>
+
+</ol>
+<div class="Standard">
+ 
+</div>
+<div class="Standard">
+Con la información de las variables iniciales se realizaran los siguientes procesos:
+</div>
+<ol>
+<li>
+Estandarizar toda la información al tamaño de pixel adecuado para maximizar la eficiencia del proceso y manejar la misma resolución espacial en todo el proceso.
+</li>
+<li>
+Se realizará un proceso de reducción de dimensionalidad considerando distintos sets de variables. [Mediante Análisis de Componentes Principales <span class="bibcites">[<a class="bibliocite" name="cite-22" href="#biblio-22"><span class="bib-index">22</span></a>]</span>] 
+</li>
+<li>
+Realizar un proceso de clusterización o agrupamiento de pixeles con características de respuesta espectral ajustando pixeles similares a categoría encontradas en los datos, donde dentro de cada clase se minimiza la variabilidad y entre clases se maximiza la diferencia entre estos. [Algoritmo K-medias <span class="bibcites">[<a class="bibliocite" name="cite-19" href="#biblio-19"><span class="bib-index">19</span></a>]</span>].
+</li>
+
+</ol>
+<div class="Standard">
+ 
+</div>
+<div class="Standard">
+Con la información denominada variables respuesta se realizará el siguiente proceso:
+</div>
+<ol>
+<li>
+Estandarizar toda la información al tamaño de pixel o resolución a igual escala a la tomada en los datos de variables iniciales.
+</li>
+
+</ol>
+<div class="Standard">
+ 
+</div>
+<div class="Standard">
+Después de realizar estos procesos previos existen 2 posibilidades para abordar el problema:
+</div>
+<ol>
+<li>
+Usar solo los pixeles que tienen información tanto para las variables iniciales como para las variables respuesta (dependerá de la cantidad de muestras tomados sobre el lote productivo) , con esta información entrenar sistemas de aprendizaje o modelos estadísticos.
+</li>
+<li>
+Realizar una interpolación en las variables respuesta a pixeles sin información que contengan características de similar comportamiento en la clasificación de los datos iniciales (no dependerá necesariamente de la cantidad de muestras tomados sobre el lote productivo), con esta información entrenar sistemas de aprendizaje o modelos estadísticos.
+</li>
+
+</ol>
+<div class="Standard">
+Cualquiera de los dos procesos tomados tendrá como resultado un modelo de aproximación a la respuesta de las variables biofísicas o de población que se pretenden estimar, por lo cual es de gran importancia escoger un adecuado proceso que permita registrar las estructuras de interacción compleja en los datos de una forma adecuada.
+</div>
+<div class="Standard">
+La Regresión por mínimos cuadrados parciales o PLS , Los Arboles Aleatorios o Random Forest y el Aprendizaje por cuantificación vectorial (LVQ) son metodologías de un gran interes ya que una potencial aplicabilidad desde la teoría <span class="bibcites">[<a class="bibliocite" name="cite-6" href="#biblio-6"><span class="bib-index">6</span></a>]</span>;<span class="bibcites">[<a class="bibliocite" name="cite-20" href="#biblio-20"><span class="bib-index">20</span></a>]</span>;<span class="bibcites">[<a class="bibliocite" name="cite-1" href="#biblio-1"><span class="bib-index">1</span></a>]</span>, pero se hará uso de aquel método que entregue mejores resultados respecto variables a estimar AF , IAF y NT, y se validara mediante un proceso de validación cruzada.
+</div>
+<div class="Standard">
+Una vez se han evaluado todas estas alternativas, se seleccionará el método que permita realizar una mejor estimación de las variables biofísicas y de cantidad poblacional o en su defecto una combinación de métodos que mejore los resultados esperados, esta selección se realizará mediante un proceso de validación cruzada el cual consta de dos subsets del total de los datos, donde uno de los subsets se utiliza para entrenamiento del modelo evaluado y el otro para la validación del resultado obtenido mediante las imágenes multiespectrales en términos de la respuesta observada. La validación cruzada o cross-validation es una técnica utilizada para evaluar los resultados de un análisis estadístico y garantizar que son independientes de la partición entre datos de entrenamiento y datos de prueba. Se utiliza en entornos donde el objetivo principal es la predicción y se quiere estimar cómo de preciso es un modelo que se llevará a cabo a la práctica.<span class="bibcites">[<a class="bibliocite" name="cite-15" href="#biblio-15"><span class="bib-index">15</span></a>]</span> Es una técnica muy utilizada en proyectos de inteligencia artificial para validar modelos generados. 
+</div>
+<h3 class="Subsubsection-">
+<a class="toc" name="toc-Subsubsection--6"></a><b>Consideraciones respecto a la cantidad de información a ser procesada en esta investigación: </b>
+</h3>
+<div class="Standard">
+Se considerará una cantidad de imágenes de lotes productivos, que sea muestreable tanto mediante toma de imágenes como de muestreadores en campo, además de considerar la capacidad de análisis de la información muestreada. Por último, se evaluará la resolución final mediante la cual se realizará el análisis de los datos, esto se definiría intentando lograr un balance entre la ganancia en resolución y la capacidad computacional para realizar el procesamiento de los datos, con el propósito de asegurar el pos-procesamiento de toda la información y extraer el máximo beneficio de los datos adquiridos. Además, dependiendo de la resolución lograda en las imágenes, es posible explorar metodologías de segmentación artificial sobre estas imágenes, que permita una mejor visualización de las estructuras espaciales intrínsecas presentes en los cultivos.
+</div>
+<div class="Standard">
+
+</div>
+<h1 class="Section-">
+<a class="toc" name="toc-Section--4"></a><span class="small">Justificación</span>
+</h1>
+<div class="Standard">
+<span class="small">En Colombia los costos para producir una tonelada de azúcar son mayores que en otros países, a causa de múltiples factores como el precio de la tierra, la mano de obra, los insumos, los impuestos, la seguridad, el valor de los derechos de uso del agua, el costo de fertilizantes e inclusive los costos de inspecciones para la detección de plagas y enfermedades. Igualmente, los recursos necesarios para medir la sacarosa en la caña en evaluaciones de pre cosecha, y otros rubros de importancia. Una manera de disminuir estos costos de producción y mejorar la productividad de los campos es mediante la utilización de herramientas para identificar las condiciones anormales en los cultivos, de manera que se pueden tomar medidas de control o de prevención oportunas. El uso de percepción remota en combinación con sistemas de información geográfica (SIG) y sistemas de posicionamiento global (GPS), generan una oportunidad para mejorar la competitividad de la producción agrícola asegurando el desarrollo sostenible de la actividad.</span>
+</div>
+<div class="Standard">
+<span class="small">Las variables que se desean estimar por medio de esta metodología propuesta son de vital importancia para poder efectuar pronósticos tempranos de producción y sistemas de manejo sitio especifico en el cultivo caña de azúcar entre otras aplicaciones, lo que generaría avances importantes en el sector agro industrial de caña de azúcar en el Valle del Cauca relacionados a los siguientes factores:</span>
+</div>
+<ol>
+<li>
+<span class="footnotesize">Innovación</span><ul>
+<li>
+<span class="footnotesize">Actualmente no se utiliza fotografía aérea para conocer el estado del cultivo y tampoco se ha desarrollado algoritmos de inteligencia artificial para vincular imágenes con la estimación de parámetros biofísicos del cultivo.</span>
+</li>
+
+</ul>
+
+</li>
+<li>
+<span class="footnotesize">Utilidad Económica</span><ul>
+<li>
+<span class="footnotesize">Actualmente se utilizan métodos de medición sobre cultivos de caña de azúcar que conllevan altos costos económicos y logísticos.</span>
+</li>
+
+</ul>
+
+</li>
+<li>
+<span class="footnotesize">Facilidad de aplicación</span><ul>
+<li>
+<span class="footnotesize">El sensor puede instalarse en plataformas aéreas, como aviones de fumigacion, UAVs, grúas u otros y la información puede ser procesada facilmente una vez se establezca un protocolo estandar resultante de esta investigación.</span>
+</li>
+
+</ul>
+
+</li>
+<li>
+<span class="footnotesize">Impacto ambiental</span><ul>
+<li>
+<span class="footnotesize">Conocer el comportamiento del cultivo en una etapa temprana (4 meses - 6 meses) donde se expresan características como su crecimiento y desarrollo, permitiría realizar tanto estimaciones tempranas de producción como también evaluar el estado del cultivo. Esto permitiría realizar acciones de corrección cuando estas son necesarias, logrando minimizar el impacto en costos y sobre el suelo, que se podrían producir si estas acciones se toman en una etapa posterior al periodo de desarrollo del cultivo.</span>
+</li>
+
+</ul>
+
+</li>
+
+</ol>
+<div class="Standard">
+<span class="small">Los ingenios tienen la necesidad de cuantificar el rendimiento de los cultivos de caña de azúcar, ya sea como un método de seguimiento del cultivo. Al lograr mejorar la resolución de la toma de información se enriquece mucho más el conocimiento del cultivo y así puede llevar a tener en cuenta prácticas realizadas sobre el cultivo que harían más preciso y menos empírico el manejo de los cultivos en pro del rendimiento y calidad en la producción. </span>
+</div>
+<div class="Standard">
+<span class="small">Realizar un proceso adecuado de estimación de parámetros biofísicos en el cultivo de caña a partir de imágenes multiespectrales genera una gran ganancia al estudio del comportamiento de la caña a nivel de cultivo, además de proveer información que hasta el momento solo es capturada mediante costosos instrumentos, muchas veces necesariamente estos procesos de medición deben ser destructivos. Además logrando capturar una mayor resolución en imágenes multiespectrales unido a sistemas de SIG es posible generar mapas mucho más detallados de importantes características, tanto del cultivo como del comportamiento de los suelos dándole un valor agregado a cada área estudiada.</span>
+</div>
+<h3 class="Subsubsection-">
+<a class="toc" name="toc-Subsubsection--7"></a><span class="small">Significado de la investigación</span>
+</h3>
+<div class="Standard">
+<span class="small">Se desea mostrar que el proceso de estimación de características, tanto de población como biofísicas, presente en cultivos de caña es posible por medio del uso de imágenes multiespectrales y un correcto procesamiento estadístico de los datos mediante algoritmos no explorados respecto a su aplicación en cultivos de caña de azúcar. Además se espera lograr la aplicabilidad real de este proceso de estimación para medir de forma no destructiva las variables biofísicas, sobre cultivos de caña que de otra manera no es posible. Adicionalmente, se analizará la factibilidad de implementar nuevas estrategias de modelación del cultivo y captura de datos para aprovechar al máximo toda la información presente en el cultivo.</span>
+</div>
+<h3 class="Subsubsection-">
+<a class="toc" name="toc-Subsubsection--8"></a><span class="small">Facilidades Disponibles</span>
+</h3>
+<div class="Standard">
+<span class="small">El trabajo se desarrollará contando con información y datos a portados por el programa de agronomía del Centro de Investigación de la Caña de Azúcar de Colombia y el área de biometría de esta entidad. Los gastos adicionales distintos a la toma de información (computo, papelería , etc.) serán solventados por el investigador.</span>
+</div>
+<div class="Standard">
+<p><br>
+</p>
+
+</div>
+<div class="Standard">
+
+</div>
+<h1 class="Section-">
+<a class="toc" name="toc-Section--5"></a>Bibliografía
+</h1>
+<div class="Standard">
+<span class="small"><h1 class="biblio">
+References
+</h1>
+<p class="biblio">
+<span class="entry">[<a class="biblioentry" name="biblio-1"><span class="bib-index">1</span></a>] </span> <i><span class="bib-title">Self-organizing Maps</span></i> (<span class="bib-editor">Kohonen, Teuvo</span>, ed.). <span class="bib-publisher">Springer-Verlag New York, Inc.</span>, <span class="bib-year">1997</span>.
+</p>
+<p class="biblio">
+<span class="entry">[<a class="biblioentry" name="biblio-2"><span class="bib-index">2</span></a>] </span> <span class="bib-authors">E.M. Abdel-Rahman</span>: <i><span class="bib-title">The Potential for Using Remote Sensing to Quantify Stress in and Predict Yield of Sugarcane (Saccharun Spp. Hybrid)</span></i>. <span class="bib-publisher">University of KwaZulu-Natal, Pietermaritzburg</span>, <span class="bib-year">2010</span>. URL <a href="http://books.google.com.ar/books?id=SvsFcgAACAAJ"><span class="bib-url">http://books.google.com.ar/books?id=SvsFcgAACAAJ</span></a>.
+</p>
+<p class="biblio">
+<span class="entry">[<a class="biblioentry" name="biblio-3"><span class="bib-index">3</span></a>] </span> <span class="bib-authors">T. I. R. Almeida, C. R. De Souza Filho, R. Rossetto</span>: “<span class="bib-title">ASTER and Landsat ETM+ images applied to sugarcane yield forecast</span>”, <i><span class="bib-journal">International Journal of Remote Sensing</span></i>, pp. <span class="bib-pages">4057-4069</span>, <span class="bib-year">2006</span>. URL <a href="http://www.tandfonline.com/doi/abs/10.1080/01431160600857451"><span class="bib-url">http://www.tandfonline.com/doi/abs/10.1080/01431160600857451</span></a>.
+</p>
+<p class="biblio">
+<span class="entry">[<a class="biblioentry" name="biblio-4"><span class="bib-index">4</span></a>] </span> <span class="bib-authors">Tracy M Blackmer, James S Schepers, Gary E Varvel, George E Meyer</span>: “<span class="bib-title">Analysis of aerial photography for nitrogen stress within corn fields</span>”, <i><span class="bib-journal">Agronomy Journal</span></i>, pp. <span class="bib-pages">729—733</span>, <span class="bib-year">1996</span>.
+</p>
+<p class="biblio">
+<span class="entry">[<a class="biblioentry" name="biblio-5"><span class="bib-index">5</span></a>] </span> <span class="bib-authors">Leo Breiman</span>: “<span class="bib-title">Bagging Predictors</span>”, <i><span class="bib-journal">Machine Learning</span></i>, pp. <span class="bib-pages">123-140</span>, <span class="bib-year">1996</span>. URL <a href="http://dx.doi.org/10.1023/A"><span class="bib-url">http://dx.doi.org/10.1023/A</span></a>.
+</p>
+<p class="biblio">
+<span class="entry">[<a class="biblioentry" name="biblio-6"><span class="bib-index">6</span></a>] </span> <span class="bib-authors">Leo Breiman</span>: “<span class="bib-title">Random Forests</span>”, <i><span class="bib-journal">Machine Learning</span></i>, pp. <span class="bib-pages">5-32</span>, <span class="bib-year">2001</span>. URL <a href="http://dx.doi.org/10.1023/A"><span class="bib-url">http://dx.doi.org/10.1023/A</span></a>.
+</p>
+<p class="biblio">
+<span class="entry">[<a class="biblioentry" name="biblio-7"><span class="bib-index">7</span></a>] </span> <span class="bib-authors">José Ricardo Bustos M</span>: “<span class="bib-title">Inteligencia Artificial en el Sector agropecuario</span>”, <i><span class="bib-journal">Seminario Investigativo</span></i>, <span class="bib-year">2005</span>.
+</p>
+<p class="biblio">
+<span class="entry">[<a class="biblioentry" name="biblio-8"><span class="bib-index">8</span></a>] </span> <span class="bib-authors">Agnès Bégué, Pierre Todoroff, Johanna Pater</span>: “<span class="bib-title">Multi-time scale analysis of sugarcane within-field variability: improved crop diagnosis using satellite time series</span>”, <i><span class="bib-journal">Precision Agriculture</span></i>, pp. <span class="bib-pages">161-171</span>, <span class="bib-year">2008</span>. URL <a href="http://dx.doi.org/10.1007/s11119-008-9063-3"><span class="bib-url">http://dx.doi.org/10.1007/s11119-008-9063-3</span></a>.
+</p>
+<p class="biblio">
+<span class="entry">[<a class="biblioentry" name="biblio-9"><span class="bib-index">9</span></a>] </span> <span class="bib-authors">AMAYA E. A. Carbonell G. J.</span>: <i><span class="bib-title">Zonificación agroecológica para el cultivo de caña de azúcar en el valle del río Cauca. Cuarta aproximación.</span></i>, <span class="bib-year">2001</span>. URL <a href="http://www.cenicana.org/pdf/serie_tecnica/st_38/st_38.pdf"><span class="bib-url">http://www.cenicana.org/pdf/serie_tecnica/st_38/st_38.pdf</span></a>.
+</p>
+<p class="biblio">
+<span class="entry">[<a class="biblioentry" name="biblio-10"><span class="bib-index">10</span></a>] </span> <span class="bib-authors">R.N. Colwell</span>: <i><span class="bib-title">Determining the Prevalence of Certain Cereal Crop Diseases by Means of Aerial Photography</span></i>. <span class="bib-publisher">University of California</span>, <span class="bib-year">1956</span>. URL <a href="http://books.google.com.ar/books?id=CVIOHQAACAAJ"><span class="bib-url">http://books.google.com.ar/books?id=CVIOHQAACAAJ</span></a>.
+</p>
+<p class="biblio">
+<span class="entry">[<a class="biblioentry" name="biblio-11"><span class="bib-index">11</span></a>] </span> <span class="bib-authors">P. J. Curran, M. D. Steven</span>: “<span class="bib-title">Multispectral Remote Sensing for the Estimation of Green Leaf Area Index [and Discussion]</span>”, <i><span class="bib-journal">Philosophical Transactions of the Royal Society of London. Series A, Mathematical and Physical Sciences</span></i>, pp. <span class="bib-pages">257-270</span>, <span class="bib-year">1983</span>. URL <a href="http://rsta.royalsocietypublishing.org/content/309/1508/257.abstract"><span class="bib-url">http://rsta.royalsocietypublishing.org/content/309/1508/257.abstract</span></a>.
+</p>
+<p class="biblio">
+<span class="entry">[<a class="biblioentry" name="biblio-12"><span class="bib-index">12</span></a>] </span> <span class="bib-authors">D.O Ferraro</span>: “<span class="bib-title">Data mining using k-means clustering and classification and regression trees (CART) as post-processing methods: identifying management and environmental factors for explaining sugarcane yield in Northern Argentina (1971-2005)</span>”, <i><span class="bib-journal">Proceedings of the iEMSs Fourth Biennial Meeting: International Congress on Environmental Modelling and Software (iEMSs 2008)</span></i>, pp. <span class="bib-pages">1959-1960</span>, <span class="bib-year">2008</span>.
+</p>
+<p class="biblio">
+<span class="entry">[<a class="biblioentry" name="biblio-13"><span class="bib-index">13</span></a>] </span> <span class="bib-authors">Sijmen De Jong</span>: “<span class="bib-title">Multivariate calibration, H. Martens and T. Naes, Wiley, New York, 1989. ISBN 0 471 90979 3 No. of pages: 504</span>”, <i><span class="bib-journal">Journal of Chemometrics</span></i>, pp. <span class="bib-pages">441—441</span>, <span class="bib-year">1990</span>. URL <a href="http://dx.doi.org/10.1002/cem.1180040607"><span class="bib-url">http://dx.doi.org/10.1002/cem.1180040607</span></a>.
+</p>
+<p class="biblio">
+<span class="entry">[<a class="biblioentry" name="biblio-14"><span class="bib-index">14</span></a>] </span> <span class="bib-authors">Anthony Denniss</span>: “<span class="bib-title">T. M. Lillesand, & R. W. Kiefer, 1994. Remote Sensing and Image Interpretation, 3rd ed. xvi + 750 pp. New York, Chichester, Brisbane, Toronto, Singapore: John Wiley & Sons.</span>”, <i><span class="bib-journal">Geological Magazine</span></i>, pp. <span class="bib-pages">248—249</span>, <span class="bib-year">1995</span>. URL <a href="http://journals.cambridge.org/article_S0016756800012024"><span class="bib-url">http://journals.cambridge.org/article_S0016756800012024</span></a>.
+</p>
+<p class="biblio">
+<span class="entry">[<a class="biblioentry" name="biblio-15"><span class="bib-index">15</span></a>] </span> <span class="bib-authors">P.A. Devyver, J. Kittler</span>: <i><span class="bib-title">Pattern Recognition: A Statistical Approach</span></i>. <span class="bib-publisher">Prentice-Hall</span>, <span class="bib-year">1982</span>. URL <a href="http://books.google.com.ar/books?id=Em9QAAAAMAAJ"><span class="bib-url">http://books.google.com.ar/books?id=Em9QAAAAMAAJ</span></a>.
+</p>
+<p class="biblio">
+<span class="entry">[<a class="biblioentry" name="biblio-16"><span class="bib-index">16</span></a>] </span> <span class="bib-authors">R.C. Gonzalez, R.E. Woods</span>: <i><span class="bib-title">Tratamiento digital de imágenes</span></i>. <span class="bib-publisher">Editorial Díaz de Santos, S.A.</span>, <span class="bib-year">1996</span>. URL <a href="http://books.google.com.ar/books?id=TQT6DF3_YgkC"><span class="bib-url">http://books.google.com.ar/books?id=TQT6DF3_YgkC</span></a>.
+</p>
+<p class="biblio">
+<span class="entry">[<a class="biblioentry" name="biblio-17"><span class="bib-index">17</span></a>] </span> <span class="bib-authors">C.P. y Nieto Gutiérrez</span>: <i><span class="bib-title">Teledetección: nociones y aplicaciones</span></i>. <span class="bib-publisher">Carlos Pérez Gutiérrez, Ángel Luis Muñoz Nieto</span>, <span class="bib-year">2006</span>. URL <a href="http://books.google.com.ar/books?id=SfrGxbO1DT0C"><span class="bib-url">http://books.google.com.ar/books?id=SfrGxbO1DT0C</span></a>.
+</p>
+<p class="biblio">
+<span class="entry">[<a class="biblioentry" name="biblio-18"><span class="bib-index">18</span></a>] </span> <span class="bib-authors">H. S. Sandhu, J. M. McCray R. A. Gilbert, G. Montes</span>: “<span class="bib-title">Relationships Among Leaf Area Index, Visual Growth Ratings, and Sugarcane Yield</span>”, <i><span class="bib-journal">Journal of the American Society of Sugar Cane Technologists</span></i>, pp. <span class="bib-pages">1-14</span>, <span class="bib-year">2012</span>.
+</p>
+<p class="biblio">
+<span class="entry">[<a class="biblioentry" name="biblio-19"><span class="bib-index">19</span></a>] </span> <span class="bib-authors">John A. Hartigan</span>: <i><span class="bib-title">Clustering Algorithms</span></i>. <span class="bib-publisher">John Wiley & Sons, Inc.</span>, <span class="bib-year">1975</span>.
+</p>
+<p class="biblio">
+<span class="entry">[<a class="biblioentry" name="biblio-20"><span class="bib-index">20</span></a>] </span> <span class="bib-authors">Trevor Hastie, Robert Tibshirani, Jerome Friedman</span>: <i><span class="bib-title">The elements of statistical learning: data mining, inference and prediction</span></i>. <span class="bib-publisher">Springer</span>, <span class="bib-year">2009</span>. URL <a href="http://www-stat.stanford.edu/~tibs/ElemStatLearn/"><span class="bib-url">http://www-stat.stanford.edu/~tibs/ElemStatLearn/</span></a>.
+</p>
+<p class="biblio">
+<span class="entry">[<a class="biblioentry" name="biblio-21"><span class="bib-index">21</span></a>] </span> <span class="bib-authors">H. Hough</span>: <i><span class="bib-title">Satellite Surveillance</span></i>. <span class="bib-publisher">Loompanics Unlimited</span>, <span class="bib-year">1991</span>. URL <a href="http://books.google.com.ar/books?id=Oa8qAAAAYAAJ"><span class="bib-url">http://books.google.com.ar/books?id=Oa8qAAAAYAAJ</span></a>.
+</p>
+<p class="biblio">
+<span class="entry">[<a class="biblioentry" name="biblio-22"><span class="bib-index">22</span></a>] </span> <span class="bib-authors">Jonathon Shlens</span>: “<span class="bib-title">A tutorial on Principal Component Analysis</span>”, <i><span class="bib-booktitle">Systems Neurobiology Laboratory, Salk Institute for Biological Studies</span></i>, <span class="bib-year">2005</span>.
+</p>
+<p class="biblio">
+<span class="entry">[<a class="biblioentry" name="biblio-23"><span class="bib-index">23</span></a>] </span> <span class="bib-authors">L. Breiman</span>: <i><span class="bib-title">Consistency For a Simple Model of Random Forests</span></i>, <span class="bib-year">2004</span>. URL <a href="http://www.stat.berkeley.edu/~breiman."><span class="bib-url">http://www.stat.berkeley.edu/~breiman.</span></a>.
+</p>
+<p class="biblio">
+<span class="entry">[<a class="biblioentry" name="biblio-24"><span class="bib-index">24</span></a>] </span> <span class="bib-authors">L. Breiman</span>: <i><span class="bib-title">Some Infinity Theory for Predictor Ensembles</span></i>, <span class="bib-year">2000</span>. URL <a href="http://www.stat.berkeley.edu/~breiman"><span class="bib-url">http://www.stat.berkeley.edu/~breiman</span></a>.
+</p>
+<p class="biblio">
+<span class="entry">[<a class="biblioentry" name="biblio-25"><span class="bib-index">25</span></a>] </span> <span class="bib-authors">Michel Tenenhaus, Vincenzo Esposito Vinzi, Yves-Marie Chatelin, Carlo Lauro</span>: “<span class="bib-title">PLS path modeling</span>”, <i><span class="bib-journal">Computational Statistics & Data Analysis</span></i>, pp. <span class="bib-pages">159 - 205</span>, <span class="bib-year">2005</span>. URL <a href="http://www.sciencedirect.com/science/article/pii/S0167947304000519"><span class="bib-url">http://www.sciencedirect.com/science/article/pii/S0167947304000519</span></a>. <span class="bib-note">Partial Least Square</span>.
+</p>
+<p class="biblio">
+<span class="entry">[<a class="biblioentry" name="biblio-26"><span class="bib-index">26</span></a>] </span> <span class="bib-authors">Thomas M. Mitchell</span>: <i><span class="bib-title">Machine Learning</span></i>. <span class="bib-publisher">McGraw-Hill, Inc.</span>, <span class="bib-year">1997</span>.
+</p>
+<p class="biblio">
+<span class="entry">[<a class="biblioentry" name="biblio-27"><span class="bib-index">27</span></a>] </span> <span class="bib-authors">Paul Geladi, Bruce R. Kowalski</span>: “<span class="bib-title">Partial least-squares regression: a tutorial </span>”, <i><span class="bib-journal">Analytica Chimica Acta </span></i>, pp. <span class="bib-pages">1 - 17</span>, <span class="bib-year">1986</span>. URL <a href="http://www.sciencedirect.com/science/article/pii/0003267086800289"><span class="bib-url">http://www.sciencedirect.com/science/article/pii/0003267086800289</span></a>.
+</p>
+<p class="biblio">
+<span class="entry">[<a class="biblioentry" name="biblio-28"><span class="bib-index">28</span></a>] </span> <span class="bib-authors">A. L. Samuel</span>: “<span class="bib-title">Some studies in machine learning using the game of checkers</span>”, <i><span class="bib-journal">IBM Journal of Research and Development</span></i>, pp. <span class="bib-pages">210—229</span>, <span class="bib-year">1959</span>. URL <a href="http://www.research.ibm.com/journal/rd/033/ibmrd0303B.pdf"><span class="bib-url">http://www.research.ibm.com/journal/rd/033/ibmrd0303B.pdf</span></a>.
+</p>
+<p class="biblio">
+<span class="entry">[<a class="biblioentry" name="biblio-29"><span class="bib-index">29</span></a>] </span> <span class="bib-authors">P.J.M. Sandoval, J.A.C. González, Centro de Investigación de la Caña de Azúcar de Colombia, Tecnología e Innovación Colombia. Departamento Administrativo de Ciencia</span>: <i><span class="bib-title">Principios y aplicaciones de la percepción remota en el cultivo de la caña de azúcar en Colombia</span></i>. <span class="bib-publisher">Centro de Investigación de la Caña de Azúcar de Colombia</span>, <span class="bib-year">2012</span>. URL <a href="http://books.google.com.ar/books?id=47BakgEACAAJ"><span class="bib-url">http://books.google.com.ar/books?id=47BakgEACAAJ</span></a>.
+</p>
+<p class="biblio">
+<span class="entry">[<a class="biblioentry" name="biblio-30"><span class="bib-index">30</span></a>] </span> <span class="bib-authors">Solve Saebo, Trygve Almoy, Arnar Flatberg, Are H. Aastveit, Harald Martens</span>: “<span class="bib-title">LPLS-regression: a method for prediction and classification under the influence of background information on predictor variables </span>”, <i><span class="bib-journal">Chemometrics and Intelligent Laboratory Systems </span></i>, pp. <span class="bib-pages">121 - 132</span>, <span class="bib-year">2008</span>. URL <a href="http://www.sciencedirect.com/science/article/pii/S016974390700202X"><span class="bib-url">http://www.sciencedirect.com/science/article/pii/S016974390700202X</span></a>.
+</p>
+</span>
+</div>
+
+<hr class="footer">
+<div class="footer" id="generated-by">
+Document generated by <a href="http://elyxer.nongnu.org/">eLyXer 1.2.5 (2013-03-10)</a> on <span class="create-date">2014-07-20T22:16:12.567000</span>
+</div>
+</div>
+</body>
+</html>

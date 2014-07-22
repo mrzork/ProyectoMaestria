@@ -69,9 +69,7 @@
 
 \begin_body
 
-\begin_layout Section*
-
-\size small
+\begin_layout Section
 Justificación
 \end_layout
 
@@ -232,9 +230,7 @@ Realizar un proceso adecuado de estimación de parámetros biofísicos en el
  de los suelos dándole un valor agregado a cada área estudiada.
 \end_layout
 
-\begin_layout Subsubsection*
-
-\size small
+\begin_layout Section
 Significado de la investigación
 \end_layout
 
@@ -254,9 +250,7 @@ Se desea mostrar que el proceso de estimación de características, tanto
  toda la información presente en el cultivo.
 \end_layout
 
-\begin_layout Subsubsection*
-
-\size small
+\begin_layout Section*
 Facilidades Disponibles
 \end_layout
 

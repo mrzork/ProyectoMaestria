@@ -69,7 +69,7 @@
 
 \begin_body
 
-\begin_layout Section*
+\begin_layout Section
 
 \size normal
 Metodología
@@ -120,16 +120,6 @@ key "CarbonellG.2001"
 
 \end_inset
 
- 
-\begin_inset Note Note
-status collapsed
-
-\begin_layout Plain Layout
-(descripción en Pag 63 ) 
-\end_layout
-
-\end_inset
-
  y se evaluarán las variedades genéticas de caña CC-8592 y CC-934418, las
  cuales son de gran interés de estudio para el centro de investigación.
 \end_layout
@@ -145,7 +135,7 @@ rales de alta resolución.
 
 \begin_layout Standard
 El procedimiento de toma de información se realizará mediante aviones ultra-livi
-anos de fumigacion del cultivo con una cámara multi-espectral 
+anos de fumigación del cultivo con una cámara multi-espectral 
 \begin_inset Foot
 status collapsed
 
@@ -379,18 +369,18 @@ Propuesta Analítica Básica
 
 \end_layout
 
-\begin_layout Subsubsection*
+\begin_layout Section
 
 \series bold
-Flujo de procesos a realizar en esta investigación:
+Flujo de procesos: 
 \end_layout
 
 \begin_layout Standard
-El insumo inicial para el desarrollo de este proyecto son las imagenes multiespe
+El insumo inicial para el desarrollo de este proyecto son las imágenes multiespe
 ctrales tomadas sobre los cultivos de caña que se desean evaluar, estas
- imagenes deben ser georeferenciadas y puestas sobre un SIG una vez estas
- imagenes son georeferenciadas y puestas sobre un SIG se procederá a realizaran
- los siguientes procesos sobre la información disponible:
+ imágenes deben ser georeferenciadas y puestas sobre un SIG una vez estas
+ imágenes tienen estas características se procederá a realizaran los siguientes
+ procesos sobre la información disponible:
 \end_layout
 
 \begin_layout Standard
@@ -606,7 +596,7 @@ Realizar una interpolación en las variables respuesta a pixeles sin informació
 \end_layout
 
 \begin_layout Standard
-Cualquiera de los 2 procesos tomados tendrá como resultado un modelo de
+Cualquiera de los dos procesos tomados tendrá como resultado un modelo de
  aproximación a la respuesta de las variables biofísicas o de población
  que se pretenden estimar, por lo cual es de gran importancia escoger un
  adecuado proceso que permita registrar las estructuras de interacción compleja
@@ -616,7 +606,7 @@ Cualquiera de los 2 procesos tomados tendrá como resultado un modelo de
 \begin_layout Standard
 La Regresión por mínimos cuadrados parciales o PLS , Los Arboles Aleatorios
  o Random Forest y el Aprendizaje por cuantificación vectorial (LVQ) son
- metodologias de un gran interes ya que una potencial aplicabilidad desde
+ metodologías de un gran interes ya que una potencial aplicabilidad desde
  la teoría 
 \begin_inset CommandInset citation
 LatexCommand citep
@@ -639,16 +629,16 @@ key "Kohonen:1997:SM:261082"
 \end_inset
 
 , pero se hará uso de aquel método que entregue mejores resultados respecto
- variables a estimar AF , IAF y NT, y se validara mediente un proceso de
+ variables a estimar AF , IAF y NT, y se validara mediante un proceso de
  validación cruzada.
 \end_layout
 
 \begin_layout Standard
 Una vez se han evaluado todas estas alternativas, se seleccionará el método
  que permita realizar una mejor estimación de las variables biofísicas y
- de cantidad poblacional o en su defecto una combinacion de metodos que
+ de cantidad poblacional o en su defecto una combinación de métodos que
  mejore los resultados esperados, esta selección se realizará mediante un
- proceso de validación cruzada el cual consta de 2 subsets del total de
+ proceso de validación cruzada el cual consta de dos subsets del total de
  los datos, donde uno de los subsets se utiliza para entrenamiento del modelo
  evaluado y el otro para la validación del resultado obtenido mediante las
  imágenes multiespectrales en términos de la respuesta observada.
@@ -670,7 +660,7 @@ key "Devyver1982"
  
 \end_layout
 
-\begin_layout Subsubsection*
+\begin_layout Section
 
 \series bold
 Consideraciones respecto a la cantidad de información a ser procesada en

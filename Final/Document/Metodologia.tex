@@ -1,0 +1,267 @@
+
+\section*{{\normalsize{}Metodología}}
+
+En el desarrollo de este proyecto de investigación se cuenta con 2
+escenarios a desarrollar sobre este cultivo, donde una parte del estudio
+se realizara en cultivos experimentales y la otra parte del estudio
+se realizará sobre cultivos de caña comerciales, cada uno de estos
+cultivos se encuentran ubicados en el valle geográfico del río Cauca. 
+
+Los cultivos experimentales se utilizarán inicialmente por la necesidad
+de realizar pruebas sobre cultivos donde se puedan controlar las distintas
+fuentes de variación como lo son el sistemas de riego, el tamaño del
+lote productivo, la fecha y densidad de siembra, el manejo del suelo,
+el seguimiento del cultivo durante el crecimiento, y su fertilización,
+entre otros factores que en un cultivo comercial no es posible. Así,
+se limitará la variabilidad para realizar una correcta calibración
+y aproximación de las variables a estimar. Estos cultivos son campos
+de investigación de Cenicaña que han sido designados para este fin.
+Los cultivos comerciales serán un objetivo estratégico a evaluar,
+pues al depender de las políticas de plantación de los ingenios, no
+es posible controlar muchos de los factores relacionados con el crecimiento
+del cultivo.
+
+Estos dos escenarios involucrados poseen unas características específicas
+como el tipo de suelo en el que se encuentran, además de las características
+climáticas e inclusive en muchos casos se tienen registros históricos
+de su producción. Respecto a los tipos de suelos y características
+del área de estudio, los cultivos evaluados estarán sobre áreas agroecológicas
+catalogadas como\textbf{ 6H1 }(Suelos de texturas finas y contenidos
+de arcilla entre 35\% y 60\%, moderadamente bien drenados que poseen
+características de permeabilidad baja <200 mm/año) área predominante
+en el Valle del Cauca, de acuerdo a clasificación presentada en \citealp{CarbonellG.2001}
+ y se evaluarán las variedades genéticas de caña CC-8592 y CC-934418,
+las cuales son de gran interés de estudio para el centro de investigación.
+
+Una vez realizadas las pruebas de estimación sobre los cultivos experimentales,
+se tendrá una metodología definida para la estimación de las variables
+biofísicas y del tamaño la población del cultivo partir de imágenes
+multiespectrales de alta resolución. Posteriormente, los cultivos
+comerciales servirán para realizar la validación del método desarrollado
+inicialmente con los cultivos experimentales.
+
+El procedimiento de toma de información se realizará mediante aviones
+ultra-livianos de fumigación del cultivo con una cámara multi-espectral
+\footnote{http://www.tetracam.com/Products-Mini\_MCA.htm%
+} (Figura: \ref{fig:Camara-Multiespectral} ) para toma de imágenes
+en campo enlazada a sistemas de GPS, que permitirán una mejor geolocalización
+de las tomas (imágenes) realizadas.
+
+\begin{figure}[H]
+\begin{centering}
+\includegraphics[width=0.4\paperwidth,height=0.15\textheight]{../Figures/tetracam}
+\par\end{centering}
+
+\protect\caption{Cámara Multi-espectral \label{fig:Camara-Multiespectral} }
+\end{figure}
+
+
+Se estudiará la información reflectada por el cultivo mediante imágenes
+multiespectrales en formato raster (imagen matricial), donde la información
+de cada imagen se considera como una matriz de datos de dimensiones
+(n x m), siendo n el número de píxel verticales y m el número de píxel
+horizontales. Estas dimensiones están determinadas por la resolución
+de la cámara mediante la cual se realiza la toma de la información.
+Además en este caso al tratarse de imágenes multiespectrales cada
+imagen cuenta con 6 bandas espectrales las cuales corresponden a un
+rango del espectro.
+
+\begin{figure}[H]
+\begin{centering}
+\includegraphics{../Figures/bandas2}\includegraphics[scale=0.5]{../Figures/bandas}
+\par\end{centering}
+
+\protect\caption{Rango Espectral - mini-MCA\label{fig:Rango-Espectral--}}
+\end{figure}
+
+
+Para el caso específico de la cámara tetracam mini-MCA de 6 lentes
+las bandas espectrales para cada lente están definidas así: 490FS10-25
+, 550FS10-25, 680FS10-25, 720FS10-25, 800FS10-25 , 900FS20-25, con
+esta configuración de lentes se abarca la mayoría del espectro visible
+e infrarrojo (Figura: \ref{fig:Rango-Espectral--} ). Cada imagen
+debe ser corregida de deformaciones y sobrepuesta en un SIG que delimitará
+el área de estudio, así se evitará que ingrese información adicional
+que dificulte el correcto análisis de información contenida en los
+datos, esto permitirá realizar un análisis sobre cada lote productivo.
+
+En campo se tomarán muestras directas en los cultivos evaluados, con
+la finalidad de realizar una calibración del procedimiento de estimación.
+Esta calibración se llevará a cabo mediante la toma de información
+de caracterización de suelos y principalmente de variables biofísicas
+y de población que se desea estimar. Se realizará un conteo manual
+del número de tallos mientras que en áreas pequeñas al interior del
+campo se realizara una muestra (destructiva) para el caso de la medición
+de las variables biofísicas. Así, con esta información de muestreo
+será posible realizar un proceso de validación cruzada junto a las
+imágenes tomadas del campo lo que permita mejorar mucho más las estimaciones
+finales realizadas a partir de las imágenes.
+
+Lograr estimar la cantidad de toneladas de caña por hectárea de manera
+temprana es uno de los objetivos a nivel de industrial, en la teoría
+es posible estimar estas cantidades haciendo uso de las variables
+biofísicas y de población antes señaladas, pero en la práctica no
+se realiza, ya que algunas de las variables biofísicas son medidas
+mediante tomas de información de carácter destructivo y con costos
+elevados por lo cual no es posible hoy día.
+
+En la actualidad se está cambiando del paradigma de cómo obtener la
+información al referente a como almacenarla y analizarla adecuadamente.
+Anteriormente la información se recolectaba mediante métodos tradicionales
+que no entregaban volúmenes de datos muy grandes, ahora se posee un
+gran cantidad de sensores que pueden recolectar una cantidad inmensa
+de información, la cual será la que alimentara nuestros modelos que
+finalmente realizará una aproximación (modelación) a los sucesos o
+procesos naturales involucrados, esto con la necesidad de maximizar
+los beneficios de dichos datos capturados. Dado este panorama hoy
+en día existe una gama más amplia de algoritmos y métodos estadísticos
+que permiten realizar un tratamiento y modelado de información más
+amplio \citep{Mitchell:1997:ML:541177}. 
+
+Es de gran importancia poder elegir con claridad cuál es el método
+más adecuado en pro de la calidad de los resultados obtenidos del
+procesamiento y modelado de la información, por lo cual se presenta
+una metodología general donde se nombran técnicas de gran interés
+que podrán ser evaluadas en el proceso de esta investigación, a continuación
+se ve una propuesta analítica básica de cómo se pretende abordar el
+problema de investigación.
+
+\begin{figure}[H]
+\centering{}\includegraphics[scale=0.7]{\string"C:/Users/SAMSUNG/Documents/GitHub/ProyectoMaestria/Final/Figures/Diagrama maestria (2)\string".png}\protect\caption{Propuesta Analítica Básica}
+\end{figure}
+
+
+
+\subsubsection*{Flujo de procesos a realizar en esta investigación:}
+
+El insumo inicial para el desarrollo de este proyecto son las imágenes
+multiespectrales tomadas sobre los cultivos de caña que se desean
+evaluar, estas imágenes deben ser georeferenciadas y puestas sobre
+un SIG una vez estas imágenes tienen estas características se procederá
+a realizaran los siguientes procesos sobre la información disponible:
+
+~
+
+Primero vamos a definir los sets de datos involucrados en el proceso
+y que características están relacionadas a dichos datos:
+\begin{enumerate}
+\item Variables Iniciales
+
+\begin{enumerate}
+\item Usar los valores de las bandas espectrales de las imágenes como variables. 
+\item Generar índices espectrales a partir de las bandas espectrales para
+agregarlos como variables.
+\item Recopilar información adicional tomada al principio del proyecto en
+campo por ejemplo: Variables relacionadas a suelos y otras variables
+medidas por muestreo que caractericen el área de estudio.\\
+\begin{figure}[H]
+\begin{centering}
+\includegraphics[scale=0.25]{../Figures/iniciales}
+\par\end{centering}
+
+\protect\caption{Variables Iniciales}
+\end{figure}
+
+\end{enumerate}
+\item Variables Respuesta
+
+\begin{enumerate}
+\item Recopilar información de Área Foliar e IAF por muestreo 
+\item Recopilar información de cantidad de tallos por lote productivo\\
+\begin{figure}[H]
+\begin{centering}
+\includegraphics[scale=0.27]{../Figures/fianles}
+\par\end{centering}
+
+\protect\caption{Variables Respuesta}
+\end{figure}
+
+\end{enumerate}
+\end{enumerate}
+~
+
+Con la información de las variables iniciales se realizaran los siguientes
+procesos:
+\begin{enumerate}
+\item Estandarizar toda la información al tamaño de pixel adecuado para
+maximizar la eficiencia del proceso y manejar la misma resolución
+espacial en todo el proceso.
+\item Se realizará un proceso de reducción de dimensionalidad considerando
+distintos sets de variables. {[}Mediante Análisis de Componentes Principales
+\citep{Shlens05atutorial}{]} 
+\item Realizar un proceso de clusterización o agrupamiento de pixeles con
+características de respuesta espectral ajustando pixeles similares
+a categoría encontradas en los datos, donde dentro de cada clase se
+minimiza la variabilidad y entre clases se maximiza la diferencia
+entre estos. {[}Algoritmo K-medias \citep{Hartigan:1975:CA:540298}{]}.
+\end{enumerate}
+~
+
+Con la información denominada variables respuesta se realizará el
+siguiente proceso:
+\begin{enumerate}
+\item Estandarizar toda la información al tamaño de pixel o resolución a
+igual escala a la tomada en los datos de variables iniciales.
+\end{enumerate}
+~
+
+Después de realizar estos procesos previos existen 2 posibilidades
+para abordar el problema:
+\begin{enumerate}
+\item Usar solo los pixeles que tienen información tanto para las variables
+iniciales como para las variables respuesta (dependerá de la cantidad
+de muestras tomados sobre el lote productivo) , con esta información
+entrenar sistemas de aprendizaje o modelos estadísticos.
+\item Realizar una interpolación en las variables respuesta a pixeles sin
+información que contengan características de similar comportamiento
+en la clasificación de los datos iniciales (no dependerá necesariamente
+de la cantidad de muestras tomados sobre el lote productivo), con
+esta información entrenar sistemas de aprendizaje o modelos estadísticos.
+\end{enumerate}
+Cualquiera de los dos procesos tomados tendrá como resultado un modelo
+de aproximación a la respuesta de las variables biofísicas o de población
+que se pretenden estimar, por lo cual es de gran importancia escoger
+un adecuado proceso que permita registrar las estructuras de interacción
+compleja en los datos de una forma adecuada.
+
+La Regresión por mínimos cuadrados parciales o PLS , Los Arboles Aleatorios
+o Random Forest y el Aprendizaje por cuantificación vectorial (LVQ)
+son metodologías de un gran interes ya que una potencial aplicabilidad
+desde la teoría \citep{Breiman2001};\citep{hastie_09_elements-of.statistical-learning};\citep{Kohonen:1997:SM:261082},
+pero se hará uso de aquel método que entregue mejores resultados respecto
+variables a estimar AF , IAF y NT, y se validara mediante un proceso
+de validación cruzada.
+
+Una vez se han evaluado todas estas alternativas, se seleccionará
+el método que permita realizar una mejor estimación de las variables
+biofísicas y de cantidad poblacional o en su defecto una combinación
+de métodos que mejore los resultados esperados, esta selección se
+realizará mediante un proceso de validación cruzada el cual consta
+de dos subsets del total de los datos, donde uno de los subsets se
+utiliza para entrenamiento del modelo evaluado y el otro para la validación
+del resultado obtenido mediante las imágenes multiespectrales en términos
+de la respuesta observada. La validación cruzada o cross-validation
+es una técnica utilizada para evaluar los resultados de un análisis
+estadístico y garantizar que son independientes de la partición entre
+datos de entrenamiento y datos de prueba. Se utiliza en entornos donde
+el objetivo principal es la predicción y se quiere estimar cómo de
+preciso es un modelo que se llevará a cabo a la práctica.\citep{Devyver1982}
+Es una técnica muy utilizada en proyectos de inteligencia artificial
+para validar modelos generados. 
+
+
+\subsubsection*{Consideraciones respecto a la cantidad de información a ser procesada
+en esta investigación: }
+
+Se considerará una cantidad de imágenes de lotes productivos, que
+sea muestreable tanto mediante toma de imágenes como de muestreadores
+en campo, además de considerar la capacidad de análisis de la información
+muestreada. Por último, se evaluará la resolución final mediante la
+cual se realizará el análisis de los datos, esto se definiría intentando
+lograr un balance entre la ganancia en resolución y la capacidad computacional
+para realizar el procesamiento de los datos, con el propósito de asegurar
+el pos-procesamiento de toda la información y extraer el máximo beneficio
+de los datos adquiridos. Además, dependiendo de la resolución lograda
+en las imágenes, es posible explorar metodologías de segmentación
+artificial sobre estas imágenes, que permita una mejor visualización
+de las estructuras espaciales intrínsecas presentes en los cultivos.

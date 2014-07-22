@@ -69,7 +69,7 @@
 
 \begin_body
 
-\begin_layout Section*
+\begin_layout Section
 
 \size small
 Justificación
@@ -232,7 +232,7 @@ Realizar un proceso adecuado de estimación de parámetros biofísicos en el
  de los suelos dándole un valor agregado a cada área estudiada.
 \end_layout
 
-\begin_layout Subsubsection*
+\begin_layout Section
 
 \size small
 Significado de la investigación
@@ -245,7 +245,7 @@ Se desea mostrar que el proceso de estimación de características, tanto
  de población como biofísicas, presente en cultivos de caña es posible por
  medio del uso de imágenes multiespectrales y un correcto procesamiento
  estadístico de los datos mediante algoritmos no explorados respecto a su
- aplicacion en cultivos de caña de azúcar.
+ aplicación en cultivos de caña de azúcar.
  Además se espera lograr la aplicabilidad real de este proceso de estimación
  para medir de forma no destructiva las variables biofísicas, sobre cultivos
  de caña que de otra manera no es posible.
@@ -254,7 +254,7 @@ Se desea mostrar que el proceso de estimación de características, tanto
  toda la información presente en el cultivo.
 \end_layout
 
-\begin_layout Subsubsection*
+\begin_layout Section*
 
 \size small
 Facilidades Disponibles
