@@ -344,16 +344,12 @@ status open
 \backslash
 renewcommand{
 \backslash
-refname}{}
+refname}{Bibliografía}
 \end_layout
 
 \end_inset
 
 
-\end_layout
-
-\begin_layout Section*
-Bibliografía
 \end_layout
 
 \begin_layout Standard

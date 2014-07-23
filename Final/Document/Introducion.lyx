@@ -457,8 +457,8 @@ key "Breim2004"
 \end_inset
 
 ) demostró que hay una ganancia sustancial en la precisión en clasificación
- y regresión mediante el uso de conjuntos de arboles donde cada arbol en
- el conjunto se cultiva de acuerdo a un parametro aleatorio.
+ y regresión mediante el uso de conjuntos de árboles donde cada árbol en
+ el conjunto se cultiva de acuerdo a un parámetro aleatorio.
  Las predicciones finales se obtienen de las agregaciones sobre el conjunto
  de datos.
  Como los componentes de base del conjunto son predictores con estructura

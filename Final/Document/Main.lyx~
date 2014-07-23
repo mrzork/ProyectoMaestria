@@ -351,16 +351,12 @@ status open
 \backslash
 renewcommand{
 \backslash
-refname}{}
+refname}{Bibliografía}
 \end_layout
 
 \end_inset
 
 
-\end_layout
-
-\begin_layout Section*
-Bibliografía
 \end_layout
 
 \begin_layout Standard
@@ -369,7 +365,7 @@ Bibliografía
 \begin_inset CommandInset bibtex
 LatexCommand bibtex
 bibfiles "../Cites/bibliototal"
-options "../Cites/apalike"
+options "C:/Users/SAMSUNG/Documents/GitHub/ProyectoMaestria/Final/Cites/apalike - copia"
 
 \end_inset
 
