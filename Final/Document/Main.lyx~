@@ -365,7 +365,7 @@ refname}{Bibliografía}
 \begin_inset CommandInset bibtex
 LatexCommand bibtex
 bibfiles "../Cites/bibliototal"
-options "C:/Users/SAMSUNG/Documents/GitHub/ProyectoMaestria/Final/Cites/apalike - copia"
+options "C:/Users/SAMSUNG/Documents/GitHub/ProyectoMaestria/Final/Cites/apalike"
 
 \end_inset
 

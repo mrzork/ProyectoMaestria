@@ -39,8 +39,8 @@
 \use_package stackrel 0
 \use_package stmaryrd 0
 \use_package undertilde 0
-\cite_engine basic
-\cite_engine_type default
+\cite_engine natbib
+\cite_engine_type authoryear
 \biblio_style plain
 \use_bibtopic false
 \use_indices false
@@ -78,16 +78,23 @@ Justificación
 \size small
 En Colombia los costos para producir una tonelada de azúcar son mayores
  que en otros países, a causa de múltiples factores como el precio de la
- tierra, la mano de obra, los insumos, los impuestos, la seguridad, el valor
- de los derechos de uso del agua, el costo de fertilizantes e inclusive
- los costos de inspecciones para la detección de plagas y enfermedades.
+ tierra, el costo de la mano de obra, los insumos, los impuestos, la seguridad,
+ el valor de los derechos de uso del agua, el costo de fertilizantes e inclusive
+ los costos de inspecciones para la detección de plagas y enfermedades 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Sandoval2012"
+
+\end_inset
+
+.
  Igualmente, los recursos necesarios para medir la sacarosa en la caña en
  evaluaciones de pre cosecha, y otros rubros de importancia.
  Una manera de disminuir estos costos de producción y mejorar la productividad
  de los campos es mediante la utilización de herramientas para identificar
- las condiciones anormales en los cultivos, de manera que se pueden tomar
- medidas de control o de prevención oportunas.
- El uso de percepción remota en combinación con sistemas de información
+ tempranamente las condiciones anormales en los cultivos, de manera que
+ se pueden tomar medidas de control o de prevención oportunas.
+ El uso de la percepción remota en combinación con sistemas de información
  geográfica (SIG) y sistemas de posicionamiento global (GPS), generan una
  oportunidad para mejorar la competitividad de la producción agrícola asegurando
  el desarrollo sostenible de la actividad.
@@ -224,10 +231,10 @@ Realizar un proceso adecuado de estimación de parámetros biofísicos en el
  proveer información que hasta el momento solo es capturada mediante costosos
  instrumentos, muchas veces necesariamente estos procesos de medición deben
  ser destructivos.
- Además logrando capturar una mayor resolución en imágenes multiespectrales
- unido a sistemas de SIG es posible generar mapas mucho más detallados de
- importantes características, tanto del cultivo como del comportamiento
- de los suelos dándole un valor agregado a cada área estudiada.
+ Además logrando capturar una mejor resolución espacial en imágenes multiespectr
+ales junto con SIG es posible generar mapas de mayor nivel de detalle para
+ características importantes tanto del cultivo como de los suelos, dándole
+ un valor agregado a cada área estudiada.
 \end_layout
 
 \begin_layout Section
@@ -238,10 +245,10 @@ Significado de la investigación
 
 \size small
 Se desea mostrar que el proceso de estimación de características, tanto
- de población como biofísicas, presente en cultivos de caña es posible por
- medio del uso de imágenes multiespectrales y un correcto procesamiento
- estadístico de los datos mediante algoritmos no explorados respecto a su
- aplicación en cultivos de caña de azúcar.
+ de la población (número de tallos) como biofísicas, (IAF) , presente en
+ cultivos de caña es posible por medio del uso de imágenes multiespectrales
+ y un correcto procesamiento estadístico de los datos mediante algoritmos
+ no explorados respecto a su aplicación en cultivos de caña de azúcar.
  Además se espera lograr la aplicabilidad real de este proceso de estimación
  para medir de forma no destructiva las variables biofísicas, sobre cultivos
  de caña que de otra manera no es posible.
@@ -257,7 +264,7 @@ Facilidades Disponibles
 \begin_layout Standard
 
 \size small
-El trabajo se desarrollará contando con información y datos a portados por
+El trabajo se desarrollará contando con información y datos aportados por
  el programa de agronomía del Centro de Investigación de la Caña de Azúcar
  de Colombia y el área de biometría de esta entidad.
  Los gastos adicionales distintos a la toma de información (computo, papelería

@@ -114,20 +114,8 @@ pagenumbering{Roman}
 \align center
 
 \size larger
-Evaluación de modelos de aprendizaje estadístico aplicados en estimación
- de variables biofísicas en cultivos de caña de azúcar 
-\begin_inset Note Note
-status collapsed
-
-\begin_layout Plain Layout
-modelos puede englobar el concepto ya que los algoritmos de inteligencia
- artificial son modelos de inteligencia artificial y pls son modelos de
- regresion por minimos cuadrados.DE ALGORITMOS DE INTELIGENCIA ARTIFICIAL
-\end_layout
-
-\end_inset
-
-
+Evaluación de modelos de aprendizaje estadístico para la estimación de variables
+ biofísicas en cultivos de caña de azúcar mediante sensores remotos
 \begin_inset VSpace 1cm
 \end_inset
 

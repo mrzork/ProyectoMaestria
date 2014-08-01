@@ -75,10 +75,19 @@ Metodología
 
 \begin_layout Standard
 En el desarrollo de este proyecto de investigación se cuenta con 2 escenarios
- a desarrollar sobre este cultivo, donde una parte del estudio se realizara
- en cultivos experimentales y la otra parte del estudio se realizará sobre
- cultivos de caña comerciales, cada uno de estos cultivos se encuentran
- ubicados en el valle geográfico del río Cauca.
+ a desarrollar sobre este cultivo, donde una parte del estudio se realizará
+ en cultivos experimentales 
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+y la otra parte del estudio se realizará sobre cultivos de caña comerciales,
+ cada uno de
+\end_layout
+
+\end_inset
+
+ estos cultivos se encuentran ubicados en el valle geográfico del río Cauca.
  
 \end_layout
 
@@ -88,21 +97,38 @@ Los cultivos experimentales se utilizarán inicialmente por la necesidad
  fuentes de variación como lo son el sistemas de riego, el tamaño del lote
  productivo, la fecha y densidad de siembra, el manejo del suelo, el seguimiento
  del cultivo durante el crecimiento, y su fertilización, entre otros factores
- que en un cultivo comercial no es posible.
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+que en un cultivo comercial no es posible
+\end_layout
+
+\end_inset
+
+.
  Así, se limitará la variabilidad para realizar una correcta calibración
  y aproximación de las variables a estimar.
- Estos cultivos son campos de investigación de Cenicaña que han sido designados
- para este fin.
+ Estos cultivos son campos de investigación de [CENICAÑA - Centro de Investigaci
+ón de la Caña de Azúcar de Colombia] que han sido designados para este fin.
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
  Los cultivos comerciales serán un objetivo estratégico a evaluar, pues
  al depender de las políticas de plantación de los ingenios, no es posible
  controlar muchos de los factores relacionados con el crecimiento del cultivo.
 \end_layout
 
+\end_inset
+
+
+\end_layout
+
 \begin_layout Standard
-Estos dos escenarios involucrados poseen unas características específicas
- como el tipo de suelo en el que se encuentran, además de las características
- climáticas e inclusive en muchos casos se tienen registros históricos de
- su producción.
+Estos cultivos poseen unas características específicas como el tipo de suelo
+ en el que se encuentran, además de las características climáticas e inclusive
+ en muchos casos se tienen registros históricos de su producción.
  Respecto a los tipos de suelos y características del área de estudio, los
  cultivos evaluados estarán sobre áreas agroecológicas catalogadas como
 \series bold
@@ -110,10 +136,10 @@ Estos dos escenarios involucrados poseen unas características específicas
 \series default
 (Suelos de texturas finas y contenidos de arcilla entre 35% y 60%, moderadamente
  bien drenados que poseen características de permeabilidad baja <200 mm/año)
- área predominante en el Valle del Cauca, de acuerdo a clasificación presentada
- en 
+ área predominante en el Valle del Cauca, de acuerdo a la clasificación
+ presentada en 
 \begin_inset CommandInset citation
-LatexCommand citealp
+LatexCommand citep
 key "CarbonellG.2001"
 
 \end_inset
@@ -127,13 +153,8 @@ Una vez realizadas las pruebas de estimación sobre los cultivos experimentales,
  se tendrá una metodología definida para la estimación de las variables
  biofísicas y del tamaño la población del cultivo partir de imágenes multiespect
 rales de alta resolución.
- Posteriormente, los cultivos comerciales servirán para realizar la validación
- del método desarrollado inicialmente con los cultivos experimentales.
-\end_layout
-
-\begin_layout Standard
-El procedimiento de toma de información se realizará mediante aviones ultra-livi
-anos de fumigación del cultivo con una cámara multi-espectral 
+ El procedimiento de toma de información se realizará mediante aviones ultra-liv
+ianos de fumigación del cultivo con una cámara multi-espectral 
 \begin_inset Foot
 status collapsed
 
@@ -216,7 +237,7 @@ s.
 placement H
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -287,7 +308,7 @@ zación de suelos y principalmente de variables biofísicas y de población
  que se desea estimar.
  Se realizará un conteo manual del número de tallos mientras que en áreas
  pequeñas al interior del campo se realizara una muestra (destructiva) para
- el caso de la medición de las variables biofísicas.
+ la medición de las variables biofísicas (AF , IAF).
  Así, con esta información de muestreo será posible realizar un proceso
  de validación cruzada junto a las imágenes tomadas del campo lo que permita
  mejorar mucho más las estimaciones finales realizadas a partir de las imágenes.
@@ -295,16 +316,15 @@ zación de suelos y principalmente de variables biofísicas y de población
 
 \begin_layout Standard
 Lograr estimar la cantidad de toneladas de caña por hectárea de manera temprana
- es uno de los objetivos a nivel de industrial, en la teoría es posible
- estimar estas cantidades haciendo uso de las variables biofísicas y de
- población antes señaladas, pero en la práctica no se realiza, ya que algunas
- de las variables biofísicas son medidas mediante tomas de información de
- carácter destructivo y con costos elevados por lo cual no es posible hoy
- día.
+ es uno de los objetivos a nivel industrial, en la teoría es posible estimar
+ estas cantidades haciendo uso de las variables biofísicas y de población
+ antes señaladas, pero en la práctica no se realiza, ya que algunas de las
+ variables biofísicas son medidas mediante tomas de información de carácter
+ destructivo y con costos elevados por lo cual no es posible hoy día.
 \end_layout
 
 \begin_layout Standard
-En la actualidad se está cambiando del paradigma de cómo obtener la información
+En la actualidad está cambiando el paradigma de cómo obtener la información
  al referente a como almacenarla y analizarla adecuadamente.
  Anteriormente la información se recolectaba mediante métodos tradicionales
  que no entregaban volúmenes de datos muy grandes, ahora se posee un gran
@@ -327,7 +347,7 @@ key "Mitchell:1997:ML:541177"
 
 \begin_layout Standard
 Es de gran importancia poder elegir con claridad cuál es el método más adecuado
- en pro de la calidad de los resultados obtenidos del procesamiento y modelado
+ en pro de la calidad de los resultados obtenidos, del procesamiento y modelado
  de la información, por lo cual se presenta una metodología general donde
  se nombran técnicas de gran interés que podrán ser evaluadas en el proceso
  de esta investigación, a continuación se ve una propuesta analítica básica
@@ -344,7 +364,7 @@ status collapsed
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename C:/Users/SAMSUNG/Documents/GitHub/ProyectoMaestria/Final/Figures/Diagrama maestria (2).png
+	filename ../Figures/Diagrama maestria (2).png
 	lyxscale 80
 	scale 70
 
@@ -456,7 +476,7 @@ Variables Respuesta
 
 \begin_deeper
 \begin_layout Enumerate
-Recopilar información de Área Foliar e IAF por muestreo 
+Recopilar información de área foliar e IAF por muestreo 
 \end_layout
 
 \begin_layout Enumerate
@@ -509,7 +529,7 @@ Variables Respuesta
 \end_layout
 
 \begin_layout Standard
-Con la información de las variables iniciales se realizaran los siguientes
+Con la información de las variables iniciales se realizarán los siguientes
  procesos:
 \end_layout
 
@@ -600,10 +620,9 @@ Cualquiera de los dos procesos tomados tendrá como resultado un modelo de
 \end_layout
 
 \begin_layout Standard
-La Regresión por mínimos cuadrados parciales o PLS , Los Arboles Aleatorios
- o Random Forest y el Aprendizaje por cuantificación vectorial (LVQ) son
- metodologías de un gran interes ya que una potencial aplicabilidad desde
- la teoría 
+La regresión por mínimos cuadrados parciales (PLS) , los árboles aleatorios
+ y el aprendizaje por cuantificación vectorial (LVQ) son metodologías de
+ un gran interés ya que una potencial aplicabilidad desde la teoría 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "Breiman2001"
@@ -625,14 +644,28 @@ key "Kohonen:1997:SM:261082"
 \end_inset
 
 , pero se hará uso de aquel método que entregue mejores resultados respecto
- variables a estimar AF , IAF y NT, y se validara mediante un proceso de
- validación cruzada.
+ de las variables a estimar AF , IAF y NT, y se validará mediante un proceso
+ de validación cruzada.
+\end_layout
+
+\begin_layout Standard
+\begin_inset space ~
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset space ~
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
 Una vez se han evaluado todas estas alternativas, se seleccionará el método
  que permita realizar una mejor estimación de las variables biofísicas y
- de cantidad poblacional o en su defecto una combinación de métodos que
+ de densidad poblacional o en su defecto una combinación de métodos que
  mejore los resultados esperados, esta selección se realizará mediante un
  proceso de validación cruzada el cual consta de dos subsets del total de
  los datos, donde uno de los subsets se utiliza para entrenamiento del modelo
@@ -656,24 +689,42 @@ key "Devyver1982"
  
 \end_layout
 
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+OJO en algún lugar debés especificár rigurosamente como medirás funcionamiento,
+ adaptación, eficiencia y precisión de cada algoritmo que es lo que decís
+ que vas a hacer como obj.
+ De tu tesis.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Section
 Consideraciones respecto a la cantidad de información a ser procesada en
  esta investigación: 
 \end_layout
 
 \begin_layout Standard
-Se considerará una cantidad de imágenes de lotes productivos, que sea muestreabl
-e tanto mediante toma de imágenes como de muestreadores en campo, además
- de considerar la capacidad de análisis de la información muestreada.
- Por último, se evaluará la resolución final mediante la cual se realizará
- el análisis de los datos, esto se definiría intentando lograr un balance
- entre la ganancia en resolución y la capacidad computacional para realizar
- el procesamiento de los datos, con el propósito de asegurar el pos-procesamient
-o de toda la información y extraer el máximo beneficio de los datos adquiridos.
- Además, dependiendo de la resolución lograda en las imágenes, es posible
- explorar metodologías de segmentación artificial sobre estas imágenes,
- que permita una mejor visualización de las estructuras espaciales intrínsecas
- presentes en los cultivos.
+Se considerará una cantidad de imágenes de lotes productivos, que sea efectivame
+nte muestreable tanto mediante la toma de imágenes como a partir del personal
+ a campo, además de considerar la capacidad de análisis de la información
+ muestreada.
+ Por último, se evaluará la resolución espacial final (tamaño del pixel)
+ mediante la cual se realizará el análisis de los datos, esto se definiría
+ intentando lograr un balance entre la ganancia en resolución espacial y
+ la capacidad computacional para realizar el procesamiento de los datos,
+ con el propósito de asegurar el pos-procesamiento de toda la información
+ y extraer el máximo beneficio de los datos adquiridos.
+ Además, dependiendo de la resolución espacial lograda en las imágenes,
+ es posible explorar metodologías de segmentación artificial sobre estas
+ imágenes, que permita una mejor visualización de las estructuras espaciales
+ intrínsecas presentes en los cultivos.
 \end_layout
 
 \end_body

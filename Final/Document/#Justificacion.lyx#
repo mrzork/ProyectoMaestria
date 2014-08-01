@@ -69,9 +69,7 @@
 
 \begin_body
 
-\begin_layout Section*
-
-\size small
+\begin_layout Section
 Justificación
 \end_layout
 
@@ -108,14 +106,14 @@ s factores:
 
 \begin_layout Enumerate
 
-\size small
+\size footnotesize
 Innovación
 \end_layout
 
 \begin_deeper
 \begin_layout Itemize
 
-\size small
+\size footnotesize
 Actualmente no se utiliza fotografía aérea para conocer el estado del cultivo
  y tampoco se ha desarrollado algoritmos de inteligencia artificial para
  vincular imágenes con la estimación de parámetros biofísicos del cultivo.
@@ -124,14 +122,14 @@ Actualmente no se utiliza fotografía aérea para conocer el estado del cultivo
 \end_deeper
 \begin_layout Enumerate
 
-\size small
+\size footnotesize
 Utilidad Económica
 \end_layout
 
 \begin_deeper
 \begin_layout Itemize
 
-\size small
+\size footnotesize
 Actualmente se utilizan métodos de medición sobre cultivos de caña de azúcar
  que conllevan altos costos económicos y logísticos.
 \end_layout
@@ -139,14 +137,14 @@ Actualmente se utilizan métodos de medición sobre cultivos de caña de azúcar
 \end_deeper
 \begin_layout Enumerate
 
-\size small
+\size footnotesize
 Facilidad de aplicación
 \end_layout
 
 \begin_deeper
 \begin_layout Itemize
 
-\size small
+\size footnotesize
 El sensor puede instalarse en plataformas aéreas, como aviones de fumigacion,
  UAVs, grúas u otros y la información puede ser procesada facilmente una
  vez se establezca un protocolo estandar resultante de esta investigación.
@@ -155,14 +153,14 @@ El sensor puede instalarse en plataformas aéreas, como aviones de fumigacion,
 \end_deeper
 \begin_layout Enumerate
 
-\size small
+\size footnotesize
 Impacto ambiental
 \end_layout
 
 \begin_deeper
 \begin_layout Itemize
 
-\size small
+\size footnotesize
 Conocer el comportamiento del cultivo en una etapa temprana (4 meses - 6
  meses) donde se expresan características como su crecimiento y desarrollo,
  permitiría realizar tanto estimaciones tempranas de producción como también
@@ -182,9 +180,15 @@ Conocer el comportamiento del cultivo en una etapa temprana (4 meses - 6
 
 \size small
 Los ingenios tienen la necesidad de cuantificar el rendimiento de los cultivos
- de caña de azúcar, ya sea como un método de seguimiento del cultivo o para
- el respectivo pago de los derechos relacionados con los lotes productivos
- (
+ de caña de azúcar, ya sea como un método de seguimiento del cultivo
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+
+\size small
+ o para el respectivo pago de los derechos relacionados con los lotes productivo
+s (
 \begin_inset Quotes eld
 \end_inset
 
@@ -198,7 +202,12 @@ suertes
  promedio de grandes áreas de cultivo, lo que significa que se pierde resolución
  a la hora de considerar el rendimiento específico de sitios del cultivo,
  lo que conlleva una pérdida de información importante, tanto para el ingenio
- como para el agricultor.
+ como para el agricultor
+\end_layout
+
+\end_inset
+
+.
  Al lograr mejorar la resolución de la toma de información se enriquece
  mucho más el conocimiento del cultivo y así puede llevar a tener en cuenta
  prácticas realizadas sobre el cultivo que harían más preciso y menos empírico
@@ -215,15 +224,13 @@ Realizar un proceso adecuado de estimación de parámetros biofísicos en el
  proveer información que hasta el momento solo es capturada mediante costosos
  instrumentos, muchas veces necesariamente estos procesos de medición deben
  ser destructivos.
- Además logrando capturar una mayor resolución en imágenes multiespectrales
- unido a sistemas de SIG es posible generar mapas mucho más detallados de
- importantes características, tanto del cultivo como del comportamiento
- de los suelos dándole un valor agregado a cada área estudiada.
+ Además logrando capturar una mejor resolución espacial en imágenes multiespectr
+ales junto con SIG es posible generar mapas de mayor nivel de detalle para
+ características importantes, tanto del cultivo como de los suelos dándole
+ un valor agregado a cada área estudiada.
 \end_layout
 
-\begin_layout Subsubsection*
-
-\size small
+\begin_layout Section
 Significado de la investigación
 \end_layout
 
@@ -231,10 +238,10 @@ Significado de la investigación
 
 \size small
 Se desea mostrar que el proceso de estimación de características, tanto
- de población como biofísicas, presente en cultivos de caña es posible por
- medio del uso de imágenes multiespectrales y un correcto procesamiento
- estadístico de los datos medianta algoritmos novedosos respecto a su aplicacion
- en cultivos de caña de azúcar.
+ de la población (número de tallos) como biofísicas, (IAF) , presente en
+ cultivos de caña es posible por medio del uso de imágenes multiespectrales
+ y un correcto procesamiento estadístico de los datos mediante algoritmos
+ no explorados respecto a su aplicación en cultivos de caña de azúcar.
  Además se espera lograr la aplicabilidad real de este proceso de estimación
  para medir de forma no destructiva las variables biofísicas, sobre cultivos
  de caña que de otra manera no es posible.
@@ -243,18 +250,16 @@ Se desea mostrar que el proceso de estimación de características, tanto
  toda la información presente en el cultivo.
 \end_layout
 
-\begin_layout Subsubsection*
-
-\size small
+\begin_layout Section*
 Facilidades Disponibles
 \end_layout
 
 \begin_layout Standard
 
 \size small
-El trabajo se desarrollará contando con información y datos a portados por
- el Programa de Agronomía del Centro de Investigación de la Caña de Azúcar
- de Colombia y el área de Biometría de esta entidad.
+El trabajo se desarrollará contando con información y datos aportados por
+ el programa de agronomía del Centro de Investigación de la Caña de Azúcar
+ de Colombia y el área de biometría de esta entidad.
  Los gastos adicionales distintos a la toma de información (computo, papelería
  , etc.) serán solventados por el investigador.
 \end_layout

@@ -74,7 +74,7 @@ Introducción
 \end_layout
 
 \begin_layout Standard
-La Agricultura de precisión y manejo sitio-específico (AEPS), se define
+La Agricultura de precisión y el manejo sitio-específico (AEPS), se define
  como el arte de realizar las prácticas agronómicas requeridas por una especie
  vegetal, de acuerdo con las condiciones espaciales y temporales del sitio
  donde se cultiva, para obtener de ellas su rendimiento potencial 
@@ -85,25 +85,27 @@ key "Sandoval2012"
 \end_inset
 
 .
- La medición de variables biofísicas como lo son Área foliar (AF) o Índices
+ La medición de variables biofísicas como lo son área foliar (AF) y el índices
  de área foliar (IAF) en cultivos de caña de azúcar se realiza en la actualidad
- por medio de procesos destructivos.
+ por métodos destructivos directos sobre superficies de muestreo pequeñas.
  El conteo de la cantidad de tallos (NT) en cultivos de caña de azúcar es
- tambien un proceso de estimación empírico y poco preciso; estas dos característ
-icas plantean un panorama interesante de investigación con la finalidad
- de utilizar nuevos métodos de estimación indirecta y precisa, a los cuales
+ también un proceso de estimación empírico, no destructivo pero generalmente
+ poco preciso.
+ Estas dos características plantean un panorama interesante de investigación
+ con la finalidad de utilizar nuevos métodos de estimación indirecta, sobre
+ áreas de mayor tamaño (exhaustivos) y de mayor precisión, para los cuales
  la estadística pueden ser una ayuda invaluable.
 \end_layout
 
 \begin_layout Standard
 En tal sentido, existen hoy una gran cantidad de métodos estadísticos que
- permiten realizar infinidad de análisis distintos y cubrir cualquier variable
- y aplicación.
+ permiten realizar un abanico muy amplio de posibilidades de análisis, cubriendo
+ cualquier tipo de variable diseño y/o aplicación.
  El uso de la inteligencia artificial (visión computacional, sistemas expertos,
- sistemas de ayuda de decisión, etc.) y otras técnicas potenciales (redes
- neuronales, lógica difusa y bioinformática) pueden proporcionar soluciones
- a los problemas analíticos en sistemas agrícolas complejos de manera eficaz
- 
+ sistemas de ayuda de decisión, maquinas de aprendizaje, etc.) y otras técnicas
+ potenciales (redes neuronales, lógica difusa y bioinformática) pueden proporcio
+nar soluciones a distintos problemas en sistemas agrícolas complejos de
+ manera eficaz 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "M.2005"
@@ -111,11 +113,12 @@ key "M.2005"
 \end_inset
 
 .
- En este contexto, para analizar estructuras de datos como los que se mencionan
- en el párrafo anterior, tres métodos son de particular interés.
- Se desea evaluar el funcionamiento, la adaptación, la eficiencia y la precisión
- de los mismos, dado que son herramientas potencialmente importantes de
- aplicar en casos de aprendizaje y clasificación estadística 
+ En este contexto, para analizar estructuras de datos complejas derivadas
+ de la agricultura de precisión, tres métodos son de particular interés.
+ En este proyecto se pretende evaluar el funcionamiento, la adaptación,
+ la eficiencia y la precisión de los mismos, dado que son herramientas potencial
+mente importantes de aplicar en casos de aprendizaje y clasificación estadística
+ 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "Mitchell:1997:ML:541177"
@@ -129,7 +132,7 @@ key "citeulike:1720151"
 
 \end_inset
 
-, Las metodologías son: PLS o Regresión por mínimos cuadrados parciales
+, Las metodologías son: PLS o regresión por mínimos cuadrados parciales
  
 \begin_inset CommandInset citation
 LatexCommand citep
@@ -137,14 +140,14 @@ key "CEM:CEM1180040607"
 
 \end_inset
 
-, Random Forest 
+, random forest o árboles aleatorios 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "Breiman2001"
 
 \end_inset
 
- y el Aprendizaje por cuantificación vectorial (LVQ) 
+ y el aprendizaje por cuantificación vectorial (LVQ) 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "Kohonen:1997:SM:261082"
@@ -152,37 +155,34 @@ key "Kohonen:1997:SM:261082"
 \end_inset
 
 .
- Estos tres métodos serán aplicados a imágenes multiespectrales 
+ Estos tres métodos serán aplicados datos derivados de imágenes multiespectrales
+ 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "hough1991satellite"
 
 \end_inset
 
- y datos obtenidos mediante procesos de simulación del comportamiento de
- cultivos de caña de azúcar.
+ y simulaciones con modelos de cultivos de caña de azúcar.
 \end_layout
 
 \begin_layout Standard
 En este proyecto de tesis se pretende integrar métodos estadísticos y sistemas
- de visión artificial o visión por computadora 
+ de visión artificial 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "gonzalez1996tratamiento"
 
 \end_inset
 
-, para mejorar la comprensión de procesos naturales que ocurren en los cultivos.
- Dichos procesos son captados por sensores remotos, y revelan patrones espaciale
-s presentes en los cultivos 
+ a datos captados por sensores remotos 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "Gutierrez2006"
 
 \end_inset
 
-.
- Adicionalmente se desea cubrir la necesidad cada vez mayor de automatizar
+ y adicionalmente se desea cubrir la necesidad cada vez mayor de automatizar
  y mejorar procesos costosos o de características destructivas relacionados
  a la toma de información, permitiendo hacer un mejor manejo agronómico
  y apuntando a sistemas de agricultura de precisión y manejo sitio-específico
@@ -196,20 +196,21 @@ key "Gutierrez2006"
 
 \begin_layout Itemize
 Evaluar el funcionamiento, adaptación, eficiencia y precisión de tres algoritmos
- de inteligencia artificial [Aprendizaje por cuantificación vectorial (LVQ)],
- [La Regresión por mínimos cuadrados Parciales] y [Random Forest] aplicados
- en imágenes multiespectrales de cultivos de caña de azúcar.
+ de inteligencia artificial [aprendizaje por cuantificación vectorial (LVQ)],
+ [la regresión por mínimos cuadrados parciales] y [random forest] aplicados
+ a datos derivados de imágenes multiespectrales de cultivos de caña de azúcar.
 \end_layout
 
 \begin_layout Itemize
-Estimar el área foliar (AF) y el índice de área foliar (IAF) en cultivos
- de caña de azúcar y la cantidad de tallos (NT) en cultivos de caña de azúcar.
+Estimar el área foliar (AF) , el índice de área foliar (IAF) y cantidad
+ de tallos( NT) en cultivos de caña de azúcar mediante algoritmos de inteligenci
+a artificial.
 \end_layout
 
 \begin_layout Itemize
 Ajustar modelos estadísticos y de inteligencia artificial que relacionen
- correctamente la información de las imágenes multiespectrales a las variables
- de cultivo (AF), (IAF) y (NT).
+ correctamente la información derivada de las imágenes multiespectrales
+ a las variables de cultivo (AF), (IAF) y (NT).
 \end_layout
 
 \begin_layout Section
@@ -221,15 +222,22 @@ La caña de azúcar (
 \emph on
 Saccharum officinarum
 \emph default
+ 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "SaccharumofficinarumL"
+
+\end_inset
+
 ) es un cultivo de zonas tropicales y subtropicales que se propaga mediante
  la plantación de trozos y/o vástagos de caña, donde de cada nudo sale una
  planta nueva e idéntica a la original.
- Existe una infinidad de métodos relacionados con la medición del desarrollo
- de los cultivos entre estos métodos encontramos nuevas aplicaciones como
- lo son la percepción remota o teledetección, la cual se define como el
- grupo de técnicas para la obtención de información confiable sobre las
- propiedades físicas de ciertas superficies u objetos y su entorno, desde
- distancias relativamente grandes, sin contacto físico con ellos 
+ Existen una infinidad de métodos para la evaluación del crecimientoy desarrollo
+ de los cultivos, entre estos métodos encontramos nuevas aplicaciones como
+ son la percepción remota o teledetección, la cual se define como el grupo
+ de técnicas para la obtención de información sobre las propiedades físicas
+ de ciertas superficies u objetos y su entorno, desde distancias relativamente
+ grandes, sin contacto físico con ellos 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "GEO:4427856"
@@ -237,7 +245,7 @@ key "GEO:4427856"
 \end_inset
 
 .
- Las imágenes adquiridas por sensores en plataformas aéreas o satelitales
+ Las imágenes adquiridas por sensores desde plataformas aéreas o satelitales
  en el mundo agropecuario tienen un potencial que se ha venido explorando
  con mayor énfasis en la última década 
 \begin_inset CommandInset citation
@@ -251,12 +259,12 @@ key "Gutierrez2006"
 \end_layout
 
 \begin_layout Standard
-El IAF es el área ocupada por hojas verdes en relación con la unidad de
- superficie de suelo.
- La información precisa y oportuna sobre IAF tiene gran importancia y aplicacion
-es en la agricultura para la estimación del rendimiento y la evaluación
- del estrés en los cultivos, y en la ecología para el estudio de la producción
- primaria y el cambio ambiental 
+El IAF es el cociente entre el áreafoliar (AF) y la unidad de superficie
+ de suelo.
+ La información precisa y oportuna sobre el IAF tiene gran importancia y
+ aplicaciones en la agricultura para la estimación del rendimiento y la
+ evaluación de estrés en distintos cultivos, y en la ecología para el estudio
+ de la producción primaria y el cambio ambiental 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "Curran1983"
@@ -313,16 +321,17 @@ key "citeulike:1720151"
 
 \end_inset
 
- se define las máquinas de aprendizaje o el aprendizaje automático como
+ se define a las máquinas de aprendizaje o el aprendizaje automático como
  el campo de estudio que da a las computadoras la capacidad de aprender
- sin estar programado explícitamente, lo que sería un gran avance en las
+ sin ser explícitamente programadas, lo que sería un gran avance en las
  técnicas de estimación en cultivos de caña de azúcar, sobre todo cuando
  la información proviene de imágenes digitales, proceso que genera un flujo
  grande de información, el cual requiere métodos estadísticos capaces de
- tratar con estructuras de datos multivariados y no lineales, las herramientas
- matemáticas basadas en la minería de datos proporcionan un marco adecuado
- para la extracción de información útil a partir de grandes bases de datos,
- así como también pueden conducir al descubrimiento de conocimiento 
+ tratar con estructuras de datos multivariados y no lineales.
+ Las herramientas matemáticas basadas en la minería de datos proporcionan
+ un marco adecuado para la extracción de información útil a partir de grandes
+ bases de datos, así como también pueden conducir al descubrimiento de conocimie
+nto 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "Ferraro2008"
@@ -335,23 +344,24 @@ key "Ferraro2008"
 
 \begin_layout Standard
 La regresión por mínimos cuadrados parciales o PLS, el algoritmo de random
- forest o arboles aleatorios y el aprendizaje por cuantificación vectorial
+ forest o árboles aleatorios y el aprendizaje por cuantificación vectorial
  (LVQ) son tres metodologías de mucho interés para el desarrollo de esta
- investigación ya que aunque son métodos cada uno desarrollado para diferentes
- aplicaciones en un principio son altamente escalables y se espera obtener
- resultados interesantes con la aplicación de métodos que con anterioridad
+ investigación ya que aunque son métodos cada uno desarrollado para aplicaciones
+ originales diferentes, a priori son altamente escalables y se espera obtener
+ resultados originales con la aplicación de métodos que con anterioridad
  no se han probado sobre cultivos de caña.
 \end_layout
 
 \begin_layout Subsection
-PLS o Regresión por mínimos cuadrados parciales
+Regresión por mínimos cuadrados parciales (PLS)
 \end_layout
 
 \begin_layout Standard
-La Regresión por mínimos cuadrados se introdujo hace casi treinta años y
- ha tenido un gran desarrollo en áreas como la Quimiometría, donde se analizan
- datos que se caracterizan por muchas variables predictoras, con problemas
- de multicolinealidad, y pocas unidades experimentales en estudio (
+La regresión por mínimos cuadrados parciales se introdujo hace casi treinta
+ años y ha tenido un gran desarrollo en áreas como la quimiometría, donde
+ se analizan datos que se caracterizan por muchas variables predictoras,
+ con problemas de multicolinealidad, y pocas unidades experimentales en
+ estudio (
 \begin_inset CommandInset citation
 LatexCommand citet
 key "Geladi19861"
@@ -369,13 +379,12 @@ key "CEM:CEM1180040607"
 \end_layout
 
 \begin_layout Standard
-Es una particular forma de análisis multivariante, este método relacionado
- con la regresión de componentes principales, PCR (“Principal component
- regression”) posee valiosas ventajas teóricas y computacionales que han
- llevado a innumerables aplicaciones.
+Es una forma particular de análisis multivariante, relacionado con la regresión
+ de componentes principales (PCR) y posee valiosas ventajas teóricas y computaci
+onales que han llevado a innumerables aplicaciones.
  PLS se utiliza para encontrar las relaciones fundamentales entre dos matrices
  (X e Y), es decir, un enfoque de variable latente para el modelado de las
- estructuras de co varianza en estos dos espacios.
+ estructuras de co-varianza en estos dos espacios.
 \end_layout
 
 \begin_layout Standard
@@ -389,7 +398,7 @@ key "Tenenhaus2005"
 \end_inset
 
 .
- Estos métodos tienen ventajas intrínsecas cuando se le compara con métodos
+ Estos métodos tienen ventajas intrínsecas cuando se los compara con métodos
  univariados, Todas las variables relevantes son incluidas en el modelo
  PLS.
  La suposición básica de todos estos modelos es que el sistema o proceso
@@ -424,11 +433,11 @@ key "Saebo2008"
 \end_layout
 
 \begin_layout Subsection
-Random Forest o Árboles Aleatorios
+Árboles Aleatorios
 \end_layout
 
 \begin_layout Standard
-En una serie de documentos e informes técnicos, Breiman (
+Breiman (
 \begin_inset CommandInset citation
 LatexCommand citet
 key "Breiman1996"
@@ -456,22 +465,24 @@ key "Breim2004"
 
 \end_inset
 
-) demostró que hay una ganancia sustancial en la precisión en clasificación
- y regresión mediante el uso de conjuntos de arboles donde cada arbol en
- el conjunto se cultiva de acuerdo a un parametro aleatorio.
+) demostró que hay una ganancia sustancial en la precisión en los métodos
+ de clasificación y regresión mediante el uso de un conjunto de árboles
+ donde cada árbol en el conjunto se cultiva de acuerdo a un parámetro aleatorio.
  Las predicciones finales se obtienen de las agregaciones sobre el conjunto
  de datos.
  Como los componentes de base del conjunto son predictores con estructura
  de árbol, y desde cada uno de estos árboles se construye utilizando una
- inyección de aleatoriedad, estos procedimientos son llamados "Random Forest".
+ introducción de aleatoriedad, se conoce a estos procedimientos como como
+ árboles aleatorios.
+ 
 \end_layout
 
 \begin_layout Standard
 El random Forest es una combinación de árboles predictores tal que cada
  árbol depende de los valores de un vector aleatorio probado independientemente
  y con la misma distribución para cada uno de éstos.
- Es una modificación sustancial de bagging que construye una larga colección
- de árboles no correlacionados y luego los promedia.
+ Es una modificación sustancial de bagging [Bootstrap aggregating] que construye
+ una larga colección de árboles no correlacionados y luego los promedia.
  Random Forest es una unión entre métodos de clasificación y métodos de
  regresión, esta opera por la construcción de una multitud de árboles de
  decisión en el entrenamiento y en la salida una clase el cual es el modo
@@ -485,11 +496,24 @@ Aprendizaje por cuantificación vectorial (LVQ)
 
 \begin_layout Standard
 LVQ se puede entender como un caso especial de una red neuronal artificial,
- con mayor precisión, este aplica el concepto de ([winner-take-all] el ganador
- toma todo mediante el aprendizaje de Hebb) .
- Es un precursor de los mapas auto-organizados (SOM) y está relacionado
- con el algoritmo de gas neural y con el algoritmo de K vecinos más cercanos
- (k-NN).
+ con mayor precisión, este aplica el concepto de 
+\begin_inset Quotes eld
+\end_inset
+
+el ganador toma todo
+\begin_inset Quotes erd
+\end_inset
+
+ mediante el aprendizaje de Hebb, es un precursor de los mapas auto-organizados
+ (SOM) y está relacionado con el algoritmo de gas neural y con el algoritmo
+ de K vecinos más cercanos (k-NN) 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Kohonen:1997:SM:261082"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
@@ -498,8 +522,8 @@ El aprendizaje por cuantificación vectorial (LVQ) supone una extensión del
  Ahora, además de considerar la cercanía de un prototipo se puede evaluar
  la clase de éste e imponer, por lo tanto, correcciones de premio (acercamiento)
  o castigo (alejamiento).
- En ciencias de la computación, aprendizaje cuantificación vectorial (LVQ),
- está basado en prototipos de algoritmos de clasificación supervisada.
+ En ciencias de la computación, el aprendizaje por cuantificación vectorial
+ (LVQ), está basado en prototipos de algoritmos de clasificación supervisada.
  LVQ es la contraparte supervisada de los sistemas de cuantificación vectorial
  
 \begin_inset CommandInset citation
@@ -517,8 +541,24 @@ Validación cruzada
 \end_layout
 
 \begin_layout Standard
-Probablemente el más simple y ampliamente usado método para estimar el error
- en predicción es la validación cruzada, este método estima directamente
+La validación cruzada o cross-validation es una técnica utilizada para evaluar
+ los resultados de un análisis estadístico y garantizar que son independientes
+ de la partición entre datos de entrenamiento y prueba.
+ Consiste en repetir y calcular la media aritmética obtenida de las medidas
+ de evaluación sobre diferentes particiones.
+ Se utiliza en entornos donde el objetivo principal es la predicción y se
+ quiere estimar cómo de preciso es un modelo que se llevará a cabo a la
+ práctica 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Devyver1982"
+
+\end_inset
+
+.Es una técnica muy utilizada en proyectos de inteligencia artificial para
+ validar modelos generados.
+ Probablemente el método más simple y ampliamente usado para estimar el
+ error en predicción es la validación cruzada, este método estima directamente
  el error esperado de una muestra-extra 
 \begin_inset Formula $Err=E\left[L\left(Y,\hat{f}\left(X\right)\right)\right]$
 \end_inset
@@ -534,7 +574,14 @@ Probablemente el más simple y ampliamente usado método para estimar el error
 \begin_inset Formula $\tau$
 \end_inset
 
- el cual se mantiene fijo.
+ el cual se mantiene fijo 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "hastie_09_elements-of.statistical-learning"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Subsection
@@ -555,7 +602,7 @@ Sería ideal que, en caso que tuviéramos datos suficientes, dejáramos de
  para evaluar el desempeño de nuestro modelo de predicción.
  En general no es posible dado que los datos son a menudo escasos, y la
  precisión de la validación es perjudicada.
- Alternativamente si repetimos el procedimiento en K ocasiones cada una
+ Alternativamente si repetimos el procedimiento en K ocasiones, cada una
  con datos distintos para entrenamiento y validación, ganamos en precisión.
  Para ello se dividen los datos en K partes más o menos del mismo tamaño;
  por ejemplo, cuando 
@@ -570,12 +617,12 @@ Sería ideal que, en caso que tuviéramos datos suficientes, dejáramos de
 placement H
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename C:/Users/SAMSUNG/Documents/GitHub/ProyectoMaestria/imagenes/kfold.png
+	filename ../Figures/kfold.png
 	lyxscale 50
 	scale 50
 
@@ -605,9 +652,9 @@ k-fold
 \begin_layout Standard
 Para el grafico anterior en k=3, ajustamos el modelo con las otras k-1 partes
  de los datos es decir con (k=1 , k=2 , k=4 , k=5) y se calcula el error
- de predicción del modelo para la k-esima, esto para predecir la parte de
- orden k (en este caso la parte 3) de los datos, se realiza este proceso
- para cada k=1,2,3,..,K y se combinan las estimaciónes del error de predicción.
+ de predicción del modelo para la k-esima parte, esto para predecir la parte
+ de orden k (en este caso la parte 3) de los datos, se realiza este proceso
+ para cada k=1,2,3,..,K y se combinan las estimaciones del error de predicción.
 \end_layout
 
 \begin_layout Standard
@@ -617,58 +664,20 @@ Ahora sea κ : {1,.
  , N} → {1,.
  .
  .
- , K} una funcion de indexación la cual que indica a que partición es asignada
+ , K} una función de indexación la cual que indica a que partición es asignada
  la observación i por la aleatorización.
  Denotemos por 
 \begin_inset Formula $\hat{f}^{-k}\left(X\right)$
 \end_inset
 
-   la función de ajuste, computada con la k-esima parte de los datos eliminados,
- entonces la validacion cruzada estimada del error de prediccion es: 
-\end_layout
-
-\begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-Para la parte de orden k (k=3), nos ajustamos el modelo a la otra K - 1
- parte de los datos, y se calcula el error de predicción del modelo ajustado
- la k-th para predecir la parte de orden k de los datos.
- Hacemos esto para k = 1, 2,.
- .
- .
- , K y se combinan las estimaciones del error de predicción de K.
-\end_layout
-
-\begin_layout Plain Layout
-Suponga κ : {1,.
- .
- .
- , N} → {1,.
- .
- .
- , K} una función de indexación que indica la partición a la que la observación
- i es asignada por la aleatorización.
- Denotemos por 
-\begin_inset Formula $\hat{f}^{-k}\left(X\right)$
-\end_inset
-
-   la función de módulos, calculado con la parte de orden k de los datos
- eliminados.
- A continuación, la estimación de la validación cruzada de error de predicción
- es:
-\end_layout
-
-\end_inset
-
-
+   la función de ajuste, computada con la k-esima parte de los datos eliminada,
+ entonces la validación cruzada estimada del error de predicción  es: 
 \end_layout
 
 \begin_layout Standard
 \begin_inset Formula 
 \[
-CV\left(\hat{f}\right)=\frac{1}{N}\overset{N}{\underset{i=1}{\sum}L\left(y_{i},\hat{f}^{-k\left(i\right)}\left(x_{i}\right)\right)}
+CV\left(\hat{f}\right)=\frac{1}{N}\overset{N}{\underset{i=1}{\sum}}L\left(y_{i},\hat{f}^{-k\left(i\right)}\left(x_{i}\right)\right)
 \]
 
 \end_inset
@@ -699,11 +708,22 @@ Antecedentes
 \end_layout
 
 \begin_layout Standard
-Hace más de 50 años que se toman fotografías a color e infrarrojo para seguir
- el crecimiento de las plantas 
+Hace más de 60 años que se toman fotografías a color e infrarrojo para seguir
+ el crecimiento de plantas 
 \begin_inset CommandInset citation
 LatexCommand citet
 key "Colwell1956"
+
+\end_inset
+
+ 
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+en condiciones de cultivo y en ecosistemas naturales hace mas de 80 años
+ 
+\end_layout
 
 \end_inset
 
@@ -711,7 +731,7 @@ key "Colwell1956"
  En la actualidad, estos métodos están siendo reevaluados para realizar
  análisis dentro de la variabilidad espacial en la agricultura de precisión,
  ya que las imágenes aéreas se pueden adquirir rápidamente durante los períodos
- críticos del crecimiento rápido de las plantas 
+ críticos del crecimiento de las plantas 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "Blackmer1996"
@@ -732,11 +752,11 @@ key "Begue2008"
 
 \end_inset
 
- haciendo uso del índice de vegetación normalizado (NDVI) en cultivos de
+ haciendo uso del índice de vegetación normalizado (NDVI) en cultivos con
  variabilidad espacial (independiente a las etapas de crecimiento de los
  cultivos), demostraron que en una escala estacional, el patrón de crecimiento
- dentro de un campo depende de la etapa fenológica del cultivo, a escala
- anual los mapas NDVI revelaron patrones estables.
+ dentro de un campo depende de la etapa fenológica del cultivo mientras
+ que a escala anual los mapas NDVI revelaron patrones estables.
  Lo anterior permite concluir que es necesario conocer el ciclo de crecimiento
  del cultivo para interpretar correctamente los patrones espaciales.
  Las imágenes de una fecha única pueden ser insuficientes para el diagnóstico
@@ -775,16 +795,16 @@ key "Almeida2006"
  de componentes principales e información histórica de los cultivos.
  Para dicho estudio se utilizaron imágenes (ETM +) / Landsat-7 e imágenes
  ASTER/Terra.
- Este método presentado comprende varias etapas que finalmente e logra una
- síntesis de toda la información tanto de la imagen como de la información
- histórica permitiendo la normalización de todas las variables en conjunto,
- haciendo posible expresar todos los datos en imágenes síntesis.
+ Este método comprende varias etapas y permite una síntesis de toda la informaci
+ón tanto de la imagen como de la información histórica, normalizando todas
+ las variables en conjunto, y haciendo posible expresar todos los datos
+ en imágenes síntesis.
 \end_layout
 
 \begin_layout Standard
 Sudáfrica es el líder en producción de caña de azúcar en África y uno de
- los más grandes productores en el mundo, El monitoreo de estos factores
- de estrés del cultivo de caña es de vital importancia para tomar acciones
+ los más grandes productores del mundo, El monitoreo de estos factores de
+ estrés del cultivo de caña es de vital importancia para tomar acciones
  preventivas y de mitigación sobre el cultivo.
  
 \begin_inset CommandInset citation
