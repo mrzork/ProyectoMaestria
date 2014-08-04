@@ -649,30 +649,52 @@ key "Kohonen:1997:SM:261082"
 \end_layout
 
 \begin_layout Standard
+Se evaluara el funcionamiento de cada uno de estos algoritmos mediente la
+ puesta en practica de éstos sobre datos derivados de imagenes multiespectrales,
+ este funcionamiento se podra ver y evaluar siempre que se de la posibilidad
+ de adaptar estos metodos nombrados a esta nueva metodologia desarrollada
+ explicitamente para resolver los problemas de estimacion de variables biofisica
+s, por eso es de principal interes probar que los conceptos teoricos detras
+ de estos modelos son aplicables a nuestros datos.
+ Posteriormente se evaluara que tan eficiente es cada algoritmo tanto a
+ desarrollo como a tiempos de ejecucion, ya que al considerar estructuras
+ de datos complejas tanto multivariantes como espaciales hay algoritmos
+ que pueden asimilar mejor o peor estas estructuras.Finalmente se medira
+ la sensibilidad especificidad y precision de él o de los modelos que resulten
+ de los proceso previos.
+\end_layout
+
+\begin_layout Standard
 Una vez se han evaluado todas estas alternativas, se seleccionará el método
  que permita realizar una mejor estimación de las variables biofísicas y
- de cantidad poblacional o en su defecto una combinación de métodos que
+ de densidad poblacional o en su defecto una combinación de métodos que
  mejore los resultados esperados, esta selección se realizará mediante un
  proceso de validación cruzada el cual consta de dos subsets del total de
  los datos, donde uno de los subsets se utiliza para entrenamiento del modelo
- evaluado y el otro para la validación del resultado obtenido mediante las
- imágenes multiespectrales en términos de la respuesta observada.
- La validación cruzada o cross-validation es una técnica utilizada para
- evaluar los resultados de un análisis estadístico y garantizar que son
- independientes de la partición entre datos de entrenamiento y datos de
- prueba.
- Se utiliza en entornos donde el objetivo principal es la predicción y se
- quiere estimar cómo de preciso es un modelo que se llevará a cabo a la
- práctica.
-\begin_inset CommandInset citation
-LatexCommand citep
-key "Devyver1982"
+ evaluado y el otro para la validación del resultado obtenido mediante los
+ datos derivados de las imágenes multiespectrales en términos de la respuesta
+ observada.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+OJO en algún lugar debés especificár rigurosamente como medirás funcionamiento,
+ adaptación, eficiencia y precisión de cada algoritmo que es lo que decís
+ que vas a hacer como obj.
+ De tu tesis.
+\end_layout
 
 \end_inset
 
- Es una técnica muy utilizada en proyectos de inteligencia artificial para
- validar modelos generados.
- 
+
+\end_layout
+
+\begin_layout Standard
+
 \end_layout
 
 \begin_layout Section

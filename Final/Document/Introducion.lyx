@@ -703,6 +703,255 @@ key "hastie_09_elements-of.statistical-learning"
 .
 \end_layout
 
+\begin_layout Subsection
+Medidas de Ajuste
+\end_layout
+
+\begin_layout Standard
+En el campo de las máquinas de aprendizaje, el rendimiento de un clasificador
+ se mide generalmente en términos de error de predicción.
+ En la mayoría de los problemas del mundo real, el error no se puede calcular
+ con exactitud y debe ser estimado.
+ Por lo tanto, es importante elegir un estimador apropiado del error 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Rodriguez2010"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+En general:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Tabular
+<lyxtabular version="3" rows="1" columns="2">
+<features rotate="0" tabularvalignment="middle">
+<column alignment="center" valignment="top" width="0pt">
+<column alignment="center" valignment="top" width="0pt">
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Positivo (P) = identificado 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Negativo (N) = rechazado 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+por lo tanto:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Tabular
+<lyxtabular version="3" rows="4" columns="1">
+<features rotate="0" tabularvalignment="middle">
+<column alignment="left" valignment="top">
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Verdadero Positivo (VP)= identificado correctamente
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Verdadero Negativo (VN)= rechazado correctamente
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Falso Positivo (FP) = identificado incorrectamente
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Falso negativo (FN) = rechazado incorrectamente 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+En estadística, el error cuadrático medio (ECM) de un estimador mide el
+ promedio de los errores al cuadrado, es decir, la diferencia entre el estimador
+ y lo que se estima.
+ El MSE es una función de riesgo, correspondiente al valor esperado de la
+ pérdida del error al cuadrado o pérdida cuadrática.
+ La diferencia se produce debido a la aleatoriedad o porque el estimador
+ no tiene en cuenta la información que podría producir una estimación más
+ precisa
+\begin_inset CommandInset citation
+LatexCommand citep
+key "lehmann1998theory"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Error cuadrático medio (MSE): 
+\begin_inset Formula $\frac{1}{n}\overset{n}{\underset{i=1}{\sum}}\left(Predicción_{i}-DatosReales_{i}\right)^{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+En una analogía con la desviación estándar, tomando la raíz cuadrada del
+ MSE produce el error de la raíz cuadrada de la media o la desviación de
+ la raíz cuadrada media (RMSE o RMSD), que tiene las mismas unidades que
+ la cantidad que se estima; para un estimador insesgado, el RMSE es la raíz
+ cuadrada de la varianza, conocida como la desviación estándar.
+\end_layout
+
+\begin_layout Standard
+Raiz del error cuadratico medio (RMSE): 
+\begin_inset Formula $\sqrt{\frac{1}{n}\overset{n}{\underset{i=1}{\sum}}\left(Predicción_{i}-DatosReales_{i}\right)^{2}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Algunos nombres que adquieren caracteristicas relacionadas a la medicion
+ del error de predicción 
+\end_layout
+
+\begin_layout Enumerate
+Error cuadratico medio (o la raiz de error cuadratico medio)
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Sensible a outliers
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Desviación media absoluta 
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+A menudo mas robustos 
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Sensibilidad - Sensitivity (recall)
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Proporción de positivos correctamente identificados, Si quieres pocos positivos
+ perdidos es de gran interes controlarla.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Especificidad - (Specificity)
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Es llamado a la capacidad de nuestro estimador para dar como casos negativos
+ los casos realmente negativos, Si quieres pocos negativos llamados como
+ positivos es de gran interes controlarla.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Precisión (Accuracy)
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Es el resultado de la realizacion de una curva ROC la cual es una representación
+ gráfica de la sensibilidad frente a (1 – especificidad) para un sistema
+ clasificador binario según se varía el umbral de discriminación.
+\end_layout
+
+\begin_layout Itemize
+la Precisión esta definida como 
+\begin_inset Formula $\frac{(VP+VN)}{(P+N)}$
+\end_inset
+
+y se interpreta como el equilibrio de los pesos de los falsos positivos
+ y falsos negativos.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Concordancia
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Se dice que un instrumento o procedimiento es preciso si sus resultados
+ son consistentes cuando se aplica más de una vez al mismo individuo bajo
+ las mismas circunstancias, El Coeficiente kappa de Cohen mide el acuerdo
+ entre dos evaluadores que cada uno clasifica los elementos de N en C categorías
+ mutuamente excluyentes.
+ La primera mención de una estadística kappa como se atribuye a 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "galton1892finger"
+
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
 \begin_layout Section
 Antecedentes
 \end_layout

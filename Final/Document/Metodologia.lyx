@@ -568,13 +568,6 @@ key "Hartigan:1975:CA:540298"
 \end_layout
 
 \begin_layout Standard
-\begin_inset space ~
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
 Con la información denominada variables respuesta se realizará el siguiente
  proceso:
 \end_layout
@@ -582,13 +575,6 @@ Con la información denominada variables respuesta se realizará el siguiente
 \begin_layout Enumerate
 Estandarizar toda la información al tamaño de pixel o resolución a igual
  escala a la tomada en los datos de variables iniciales.
-\end_layout
-
-\begin_layout Standard
-\begin_inset space ~
-\end_inset
-
-
 \end_layout
 
 \begin_layout Standard
@@ -649,6 +635,22 @@ key "Kohonen:1997:SM:261082"
 \end_layout
 
 \begin_layout Standard
+Se evaluara el funcionamiento de cada uno de estos algoritmos mediante la
+ puesta en práctica de éstos sobre datos derivados de imágenes multiespectrales,
+ este funcionamiento se podrá ver y evaluar siempre que se dé la posibilidad
+ de adaptar estos métodos nombrados a esta nueva metodología desarrollada
+ explícitamente para resolver los problemas de estimación de variables biofísica
+s, por eso es de principal interés probar que los conceptos teóricos detrás
+ de estos modelos son aplicables a nuestros datos.
+ Posteriormente se evaluara que tan eficiente es cada algoritmo tanto a
+ desarrollo como a tiempos de ejecución, ya que al considerar estructuras
+ de datos complejas tanto multivariantes como espaciales hay algoritmos
+ que pueden asimilar mejor o peor estas estructuras.
+ Finalmente se medirá la sensibilidad especificidad y precisión de él o
+ de los modelos que resulten de los procesos previos.
+\end_layout
+
+\begin_layout Standard
 Una vez se han evaluado todas estas alternativas, se seleccionará el método
  que permita realizar una mejor estimación de las variables biofísicas y
  de densidad poblacional o en su defecto una combinación de métodos que
@@ -674,6 +676,10 @@ OJO en algún lugar debés especificár rigurosamente como medirás funcionamien
 
 \end_inset
 
+
+\end_layout
+
+\begin_layout Standard
 
 \end_layout
 

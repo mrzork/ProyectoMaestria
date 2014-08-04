@@ -649,17 +649,19 @@ key "Kohonen:1997:SM:261082"
 \end_layout
 
 \begin_layout Standard
-\begin_inset space ~
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset space ~
-\end_inset
-
-
+Se evaluara el funcionamiento de cada uno de estos algoritmos mediante la
+ puesta en práctica de éstos sobre datos derivados de imágenes multiespectrales,
+ este funcionamiento se podrá ver y evaluar siempre que se dé la posibilidad
+ de adaptar estos métodos nombrados a esta nueva metodología desarrollada
+ explícitamente para resolver los problemas de estimación de variables biofísica
+s, por eso es de principal interés probar que los conceptos teóricos detrás
+ de estos modelos son aplicables a nuestros datos.
+ Posteriormente se evaluara que tan eficiente es cada algoritmo tanto a
+ desarrollo como a tiempos de ejecución, ya que al considerar estructuras
+ de datos complejas tanto multivariantes como espaciales hay algoritmos
+ que pueden asimilar mejor o peor estas estructuras.
+ Finalmente se medirá la sensibilidad especificidad y precisión de él o
+ de los modelos que resulten de los procesos previos.
 \end_layout
 
 \begin_layout Standard
@@ -669,23 +671,9 @@ Una vez se han evaluado todas estas alternativas, se seleccionará el método
  mejore los resultados esperados, esta selección se realizará mediante un
  proceso de validación cruzada el cual consta de dos subsets del total de
  los datos, donde uno de los subsets se utiliza para entrenamiento del modelo
- evaluado y el otro para la validación del resultado obtenido mediante las
- imágenes multiespectrales en términos de la respuesta observada.
- La validación cruzada o cross-validation es una técnica utilizada para
- evaluar los resultados de un análisis estadístico y garantizar que son
- independientes de la partición entre datos de entrenamiento y datos de
- prueba.
- Se utiliza en entornos donde el objetivo principal es la predicción y se
- quiere estimar cómo de preciso es un modelo que se llevará a cabo a la
- práctica.
-\begin_inset CommandInset citation
-LatexCommand citep
-key "Devyver1982"
-
-\end_inset
-
- Es una técnica muy utilizada en proyectos de inteligencia artificial para
- validar modelos generados.
+ evaluado y el otro para la validación del resultado obtenido mediante los
+ datos derivados de las imágenes multiespectrales en términos de la respuesta
+ observada.
  
 \end_layout
 
@@ -702,6 +690,10 @@ OJO en algún lugar debés especificár rigurosamente como medirás funcionamien
 
 \end_inset
 
+
+\end_layout
+
+\begin_layout Standard
 
 \end_layout
 
