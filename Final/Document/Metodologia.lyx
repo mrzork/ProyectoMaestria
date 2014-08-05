@@ -76,18 +76,8 @@ Metodología
 \begin_layout Standard
 En el desarrollo de este proyecto de investigación se cuenta con 2 escenarios
  a desarrollar sobre este cultivo, donde una parte del estudio se realizará
- en cultivos experimentales 
-\begin_inset Note Note
-status collapsed
-
-\begin_layout Plain Layout
-y la otra parte del estudio se realizará sobre cultivos de caña comerciales,
- cada uno de
-\end_layout
-
-\end_inset
-
- estos cultivos se encuentran ubicados en el valle geográfico del río Cauca.
+ en cultivos experimentales estos cultivos se encuentran ubicados en el
+ valle geográfico del río Cauca.
  
 \end_layout
 
@@ -96,33 +86,11 @@ Los cultivos experimentales se utilizarán inicialmente por la necesidad
  de realizar pruebas sobre cultivos donde se puedan controlar las distintas
  fuentes de variación como lo son el sistemas de riego, el tamaño del lote
  productivo, la fecha y densidad de siembra, el manejo del suelo, el seguimiento
- del cultivo durante el crecimiento, y su fertilización, entre otros factores
-\begin_inset Note Note
-status collapsed
-
-\begin_layout Plain Layout
-que en un cultivo comercial no es posible
-\end_layout
-
-\end_inset
-
-.
+ del cultivo durante el crecimiento, y su fertilización, entre otros factores.
  Así, se limitará la variabilidad para realizar una correcta calibración
  y aproximación de las variables a estimar.
  Estos cultivos son campos de investigación de [CENICAÑA - Centro de Investigaci
 ón de la Caña de Azúcar de Colombia] que han sido designados para este fin.
-\begin_inset Note Note
-status collapsed
-
-\begin_layout Plain Layout
- Los cultivos comerciales serán un objetivo estratégico a evaluar, pues
- al depender de las políticas de plantación de los ingenios, no es posible
- controlar muchos de los factores relacionados con el crecimiento del cultivo.
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \begin_layout Standard
@@ -237,12 +205,13 @@ s.
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
 	filename ../Figures/bandas2.png
+	scale 110
 
 \end_inset
 
@@ -250,7 +219,7 @@ status collapsed
 \begin_inset Graphics
 	filename ../Figures/bandas.png
 	lyxscale 45
-	scale 50
+	scale 60
 
 \end_inset
 
@@ -664,18 +633,6 @@ Una vez se han evaluado todas estas alternativas, se seleccionará el método
 \end_layout
 
 \begin_layout Standard
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-OJO en algún lugar debés especificár rigurosamente como medirás funcionamiento,
- adaptación, eficiencia y precisión de cada algoritmo que es lo que decís
- que vas a hacer como obj.
- De tu tesis.
-\end_layout
-
-\end_inset
-
 
 \end_layout
 

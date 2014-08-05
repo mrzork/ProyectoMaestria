@@ -152,9 +152,9 @@ Facilidad de aplicación
 \begin_layout Itemize
 
 \size footnotesize
-El sensor puede instalarse en plataformas aéreas, como aviones de fumigacion,
- UAVs, grúas u otros y la información puede ser procesada facilmente una
- vez se establezca un protocolo estandar resultante de esta investigación.
+El sensor puede instalarse en plataformas aéreas, como aviones de fumigación,
+ UAVs, grúas u otros y la información puede ser procesada fácilmente una
+ vez se establezca un protocolo estándar resultante de esta investigación.
 \end_layout
 
 \end_deeper
@@ -187,34 +187,7 @@ Conocer el comportamiento del cultivo en una etapa temprana (4 meses - 6
 
 \size small
 Los ingenios tienen la necesidad de cuantificar el rendimiento de los cultivos
- de caña de azúcar, ya sea como un método de seguimiento del cultivo
-\begin_inset Note Note
-status collapsed
-
-\begin_layout Plain Layout
-
-\size small
- o para el respectivo pago de los derechos relacionados con los lotes productivo
-s (
-\begin_inset Quotes eld
-\end_inset
-
-suertes
-\begin_inset Quotes erd
-\end_inset
-
-) que se realiza hasta el momento del aforo realizado un mes antes del corte
- de la caña.
- Dichos derechos se liquidan por medio de la estimación del rendimiento
- promedio de grandes áreas de cultivo, lo que significa que se pierde resolución
- a la hora de considerar el rendimiento específico de sitios del cultivo,
- lo que conlleva una pérdida de información importante, tanto para el ingenio
- como para el agricultor
-\end_layout
-
-\end_inset
-
-.
+ de caña de azúcar, ya sea como un método de seguimiento del cultivo.
  Al lograr mejorar la resolución de la toma de información se enriquece
  mucho más el conocimiento del cultivo y así puede llevar a tener en cuenta
  prácticas realizadas sobre el cultivo que harían más preciso y menos empírico
@@ -257,18 +230,38 @@ Se desea mostrar que el proceso de estimación de características, tanto
  toda la información presente en el cultivo.
 \end_layout
 
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
 \begin_layout Section*
 Facilidades Disponibles
 \end_layout
 
 \begin_layout Standard
-
-\size small
 El trabajo se desarrollará contando con información y datos aportados por
  el programa de agronomía del Centro de Investigación de la Caña de Azúcar
- de Colombia y el área de biometría de esta entidad.
- Los gastos adicionales distintos a la toma de información (computo, papelería
- , etc.) serán solventados por el investigador.
+ de Colombia (CENICAÑA), estos datos están serán adquiridos con los siguientes
+ insumos disponibles para el desarrollo de este proyecto: Para la toma de
+ información aérea, se cuenta con un sistema de cámara multiespectral tetracam
+ mini-MCA de 6 lentes, adicional a esto ya está desarrollado un protocolo
+ de toma de información mediante aviones de fumigación de los campos que
+ se encargaran de realizar las tomas aéreas, el cual cuenta con un gps y
+ un sistema inercial para lograr ortogonalidad y precisión en la toma de
+ información, existen una serie de cultivos designados para realizar la
+ toma de las imágenes.
+ Adicional a esto se encuentra presupuestado el costo de jornales para toma
+ de medidas y métodos destructivos en campo y el apoyo técnico y logístico
+ de profesionales en sensores remotos, sistemas de información geográfica
+ y biometría vinculados al desarrollo de este proyecto, los cuales están
+ representados por el área de geomántica, el área de sistemas de información
+ geográfica y el área de biometría de la entidad (CENICAÑA).
+ Los gastos adicionales distintos a la toma de información como lo son (un
+ computador (Samsung serie 5 con 12gb de ram), papelería, etc.) ya se encuentran
+ disponibles y serán solventados por el investigador.
 \end_layout
 
 \end_body

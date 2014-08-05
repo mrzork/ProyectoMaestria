@@ -39,8 +39,8 @@
 \use_package stackrel 0
 \use_package stmaryrd 0
 \use_package undertilde 0
-\cite_engine basic
-\cite_engine_type default
+\cite_engine natbib
+\cite_engine_type authoryear
 \biblio_style plain
 \use_bibtopic false
 \use_indices false
@@ -78,16 +78,23 @@ Justificación
 \size small
 En Colombia los costos para producir una tonelada de azúcar son mayores
  que en otros países, a causa de múltiples factores como el precio de la
- tierra, la mano de obra, los insumos, los impuestos, la seguridad, el valor
- de los derechos de uso del agua, el costo de fertilizantes e inclusive
- los costos de inspecciones para la detección de plagas y enfermedades.
+ tierra, el costo de la mano de obra, los insumos, los impuestos, la seguridad,
+ el valor de los derechos de uso del agua, el costo de fertilizantes e inclusive
+ los costos de inspecciones para la detección de plagas y enfermedades 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "Sandoval2012"
+
+\end_inset
+
+.
  Igualmente, los recursos necesarios para medir la sacarosa en la caña en
  evaluaciones de pre cosecha, y otros rubros de importancia.
  Una manera de disminuir estos costos de producción y mejorar la productividad
  de los campos es mediante la utilización de herramientas para identificar
- las condiciones anormales en los cultivos, de manera que se pueden tomar
- medidas de control o de prevención oportunas.
- El uso de percepción remota en combinación con sistemas de información
+ tempranamente las condiciones anormales en los cultivos, de manera que
+ se pueden tomar medidas de control o de prevención oportunas.
+ El uso de la percepción remota en combinación con sistemas de información
  geográfica (SIG) y sistemas de posicionamiento global (GPS), generan una
  oportunidad para mejorar la competitividad de la producción agrícola asegurando
  el desarrollo sostenible de la actividad.
@@ -180,34 +187,7 @@ Conocer el comportamiento del cultivo en una etapa temprana (4 meses - 6
 
 \size small
 Los ingenios tienen la necesidad de cuantificar el rendimiento de los cultivos
- de caña de azúcar, ya sea como un método de seguimiento del cultivo
-\begin_inset Note Note
-status collapsed
-
-\begin_layout Plain Layout
-
-\size small
- o para el respectivo pago de los derechos relacionados con los lotes productivo
-s (
-\begin_inset Quotes eld
-\end_inset
-
-suertes
-\begin_inset Quotes erd
-\end_inset
-
-) que se realiza hasta el momento del aforo realizado un mes antes del corte
- de la caña.
- Dichos derechos se liquidan por medio de la estimación del rendimiento
- promedio de grandes áreas de cultivo, lo que significa que se pierde resolución
- a la hora de considerar el rendimiento específico de sitios del cultivo,
- lo que conlleva una pérdida de información importante, tanto para el ingenio
- como para el agricultor
-\end_layout
-
-\end_inset
-
-.
+ de caña de azúcar, ya sea como un método de seguimiento del cultivo.
  Al lograr mejorar la resolución de la toma de información se enriquece
  mucho más el conocimiento del cultivo y así puede llevar a tener en cuenta
  prácticas realizadas sobre el cultivo que harían más preciso y menos empírico
@@ -226,7 +206,7 @@ Realizar un proceso adecuado de estimación de parámetros biofísicos en el
  ser destructivos.
  Además logrando capturar una mejor resolución espacial en imágenes multiespectr
 ales junto con SIG es posible generar mapas de mayor nivel de detalle para
- características importantes, tanto del cultivo como de los suelos dándole
+ características importantes tanto del cultivo como de los suelos, dándole
  un valor agregado a cada área estudiada.
 \end_layout
 
@@ -259,9 +239,34 @@ Facilidades Disponibles
 \size small
 El trabajo se desarrollará contando con información y datos aportados por
  el programa de agronomía del Centro de Investigación de la Caña de Azúcar
- de Colombia y el área de biometría de esta entidad.
- Los gastos adicionales distintos a la toma de información (computo, papelería
- , etc.) serán solventados por el investigador.
+ de Colombia (CENICAÑA), estos datos estan seran adquiridos con los siguientes
+ insumos disponibles para el desarrollo de este proyecto:
+\size default
+ Para la toma de información aérea, se cuenta con un sistema de cámara multiespe
+ctral tetracam mini-MCA de 6 lentes, adicional a esto ya esta desarrollado
+ un protocolo de toma de informacion mediante aviones de fumigación de los
+ campos que se encargaran de realizar las tomas aéreas, el cual cuenta con
+ un gps y un sistema inercial para lograr ortogonalidad y precision en la
+ toma de información, existen una serie de cultivos designados para realizar
+ la toma de las imagenes.
+ 
+\end_layout
+
+\begin_layout Standard
+adicional a esto se encuentra presupuestado el costo de jornales para toma
+ de medidas y metodos destructivos en campo y el apoyo tecnico y logistico
+ de profesionales en sensores remotos, sistemas de informacion geografica
+ y biometroa vinculados al proyecto, que estan representados por el area
+ de geomatica, el area de sistemas de información geográfica y el area de
+ biometria de la entidad (CENICAÑA).
+
+\size small
+ Los gastos adicionales distintos a la toma de información como lo son (
+\size default
+un computador (Samsung serie 5 con 12gb de ram
+\size small
+), papelería , etc.) ya se encuentran disponibles y serán solventados por
+ el investigador.
 \end_layout
 
 \end_body

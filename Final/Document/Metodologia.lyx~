@@ -568,13 +568,6 @@ key "Hartigan:1975:CA:540298"
 \end_layout
 
 \begin_layout Standard
-\begin_inset space ~
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
 Con la información denominada variables respuesta se realizará el siguiente
  proceso:
 \end_layout
@@ -582,13 +575,6 @@ Con la información denominada variables respuesta se realizará el siguiente
 \begin_layout Enumerate
 Estandarizar toda la información al tamaño de pixel o resolución a igual
  escala a la tomada en los datos de variables iniciales.
-\end_layout
-
-\begin_layout Standard
-\begin_inset space ~
-\end_inset
-
-
 \end_layout
 
 \begin_layout Standard
