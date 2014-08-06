@@ -74,8 +74,6 @@ Justificación
 \end_layout
 
 \begin_layout Standard
-
-\size small
 En Colombia los costos para producir una tonelada de azúcar son mayores
  que en otros países, a causa de múltiples factores como el precio de la
  tierra, el costo de la mano de obra, los insumos, los impuestos, la seguridad,
@@ -101,8 +99,6 @@ key "Sandoval2012"
 \end_layout
 
 \begin_layout Standard
-
-\size small
 Las variables que se desean estimar por medio de esta metodología propuesta
  son de vital importancia para poder efectuar pronósticos tempranos de producció
 n y sistemas de manejo sitio especifico en el cultivo caña de azúcar entre
@@ -112,15 +108,11 @@ s factores:
 \end_layout
 
 \begin_layout Enumerate
-
-\size footnotesize
 Innovación
 \end_layout
 
 \begin_deeper
 \begin_layout Itemize
-
-\size footnotesize
 Actualmente no se utiliza fotografía aérea para conocer el estado del cultivo
  y tampoco se ha desarrollado algoritmos de inteligencia artificial para
  vincular imágenes con la estimación de parámetros biofísicos del cultivo.
@@ -128,46 +120,34 @@ Actualmente no se utiliza fotografía aérea para conocer el estado del cultivo
 
 \end_deeper
 \begin_layout Enumerate
-
-\size footnotesize
 Utilidad Económica
 \end_layout
 
 \begin_deeper
 \begin_layout Itemize
-
-\size footnotesize
 Actualmente se utilizan métodos de medición sobre cultivos de caña de azúcar
  que conllevan altos costos económicos y logísticos.
 \end_layout
 
 \end_deeper
 \begin_layout Enumerate
-
-\size footnotesize
 Facilidad de aplicación
 \end_layout
 
 \begin_deeper
 \begin_layout Itemize
-
-\size footnotesize
-El sensor puede instalarse en plataformas aéreas, como aviones de fumigacion,
- UAVs, grúas u otros y la información puede ser procesada facilmente una
- vez se establezca un protocolo estandar resultante de esta investigación.
+El sensor puede instalarse en plataformas aéreas, como aviones de fumigación,
+ UAVs, grúas u otros y la información puede ser procesada fácilmente una
+ vez se establezca un protocolo estándar resultante de esta investigación.
 \end_layout
 
 \end_deeper
 \begin_layout Enumerate
-
-\size footnotesize
 Impacto ambiental
 \end_layout
 
 \begin_deeper
 \begin_layout Itemize
-
-\size footnotesize
 Conocer el comportamiento del cultivo en una etapa temprana (4 meses - 6
  meses) donde se expresan características como su crecimiento y desarrollo,
  permitiría realizar tanto estimaciones tempranas de producción como también
@@ -184,8 +164,6 @@ Conocer el comportamiento del cultivo en una etapa temprana (4 meses - 6
 \end_layout
 
 \begin_layout Standard
-
-\size small
 Los ingenios tienen la necesidad de cuantificar el rendimiento de los cultivos
  de caña de azúcar, ya sea como un método de seguimiento del cultivo.
  Al lograr mejorar la resolución de la toma de información se enriquece
@@ -196,8 +174,6 @@ Los ingenios tienen la necesidad de cuantificar el rendimiento de los cultivos
 \end_layout
 
 \begin_layout Standard
-
-\size small
 Realizar un proceso adecuado de estimación de parámetros biofísicos en el
  cultivo de caña a partir de imágenes multiespectrales genera una gran ganancia
  al estudio del comportamiento de la caña a nivel de cultivo, además de
@@ -230,43 +206,62 @@ Se desea mostrar que el proceso de estimación de características, tanto
  toda la información presente en el cultivo.
 \end_layout
 
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
 \begin_layout Section*
 Facilidades Disponibles
 \end_layout
 
 \begin_layout Standard
-
-\size small
-El trabajo se desarrollará contando con información y datos aportados por
- el programa de agronomía del Centro de Investigación de la Caña de Azúcar
- de Colombia (CENICAÑA), estos datos estan seran adquiridos con los siguientes
- insumos disponibles para el desarrollo de este proyecto:
-\size default
- Para la toma de información aérea, se cuenta con un sistema de cámara multiespe
-ctral tetracam mini-MCA de 6 lentes, adicional a esto ya esta desarrollado
- un protocolo de toma de informacion mediante aviones de fumigación de los
- campos que se encargaran de realizar las tomas aéreas, el cual cuenta con
- un gps y un sistema inercial para lograr ortogonalidad y precision en la
- toma de información, existen una serie de cultivos designados para realizar
- la toma de las imagenes.
- 
+Este proyecto hace parte fundamental de un proyecto global en desarrollo
+ por el programa de agronomía y el área de geomática del Centro de Investigación
+ de la Caña de Azúcar de Colombia (CENICAÑA) titulado “Evaluación de imágenes
+ de alta resolución para la estimación de parámetros biofísicos en caña
+ de azúcar” por lo cual cuenta con el apoyo e interés del centro de investigació
+n para su desarrollo y consolidación.
 \end_layout
 
 \begin_layout Standard
-adicional a esto se encuentra presupuestado el costo de jornales para toma
- de medidas y metodos destructivos en campo y el apoyo tecnico y logistico
- de profesionales en sensores remotos, sistemas de informacion geografica
- y biometroa vinculados al proyecto, que estan representados por el area
- de geomatica, el area de sistemas de información geográfica y el area de
- biometria de la entidad (CENICAÑA).
+Los datos serán adquiridos con los siguientes insumos disponibles para el
+ desarrollo de este proyecto: para la toma de información aérea, se cuenta
+ con un sistema de cámara multiespectral tetracam mini-MCA de seis lentes,
+ y está desarrollado un protocolo de toma de información mediante aviones
+ de fumigación, dicho protocolo cuenta con la implementacion de un sistema
+ de GPS y un sistema inercial para lograr ortogonalidad y precisión en la
+ toma de información.
+ Existe una serie de cultivos designados para realizar la toma de las imágenes.
+ Adicional a esto se encuentra presupuestado el costo de jornales para toma
+ de medidas y métodos destructivos en campo (muestreo).
+\end_layout
 
-\size small
- Los gastos adicionales distintos a la toma de información como lo son (
-\size default
-un computador (Samsung serie 5 con 12gb de ram
-\size small
-), papelería , etc.) ya se encuentran disponibles y serán solventados por
- el investigador.
+\begin_layout Standard
+Tambien se cuenta con el apoyo técnico y logístico de profesionales en sensores
+ remotos, sistemas de información geográfica y biometría vinculados al desarroll
+o de este proyecto, los cuales están representados por el área de geomántica
+ de sistemas de información geográfica y de biometría de la entidad (CENICAÑA).
+\end_layout
+
+\begin_layout Standard
+El procesamiento estadístico de la información se realizara por medio de
+ software libre R 
+\begin_inset CommandInset citation
+LatexCommand citep
+key "RCoreTeam2014"
+
+\end_inset
+
+ el cual es un software con 
+\end_layout
+
+\begin_layout Standard
+Los gastos adicionales distintos a la toma de información como (un computador
+ (Samsung serie 5 con 12gb de ram), papelería, etc), ya se encuentran disponible
+s y serán solventados por el investigador.
 \end_layout
 
 \end_body

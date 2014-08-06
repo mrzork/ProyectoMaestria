@@ -612,7 +612,7 @@ s.
  Por eso es de principal interés probar que los conceptos teóricos detrás
  de estos modelos son aplicables a nuestros datos.
  Posteriormente, se evaluará qué tan eficiente es cada algoritmo tanto lo
- referente al desarrollo como a tiempos de ejecución, ya que al considerar
+ referentea desarrollo como a tiempos de ejecución, ya que al considerar
  estructuras de datos complejas tanto multivariantes como espaciales hay
  algoritmos que pueden asimilar mejor o peor estas estructuras.
  Finalmente, se medirá la sensibilidad, especificidad y precisión de él

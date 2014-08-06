@@ -85,8 +85,8 @@ key "Sandoval2012"
 \end_inset
 
 .
- La medición de variables biofísicas como lo son área foliar (AF) y el índices
- de área foliar (IAF) en cultivos de caña de azúcar se realiza en la actualidad
+ La medición de variables biofísicas como área foliar (AF) y el índice de
+ área foliar (IAF) en cultivos de caña de azúcar se realiza en la actualidad
  por métodos destructivos directos sobre superficies de muestreo pequeñas.
  El conteo de la cantidad de tallos (NT) en cultivos de caña de azúcar es
  también un proceso de estimación empírico, no destructivo pero generalmente
@@ -94,15 +94,15 @@ key "Sandoval2012"
  Estas dos características plantean un panorama interesante de investigación
  con la finalidad de utilizar nuevos métodos de estimación indirecta, sobre
  áreas de mayor tamaño (exhaustivos) y de mayor precisión, para los cuales
- la estadística pueden ser una ayuda invaluable.
+ la estadística puede ser una ayuda invaluable.
 \end_layout
 
 \begin_layout Standard
 En tal sentido, existen hoy una gran cantidad de métodos estadísticos que
- permiten realizar un abanico muy amplio de posibilidades de análisis, cubriendo
+ permiten apreciar un abanico muy amplio de posibilidades de análisis, cubriendo
  cualquier tipo de variable diseño y/o aplicación.
  El uso de la inteligencia artificial (visión computacional, sistemas expertos,
- sistemas de ayuda de decisión, maquinas de aprendizaje, etc.) y otras técnicas
+ sistemas de ayuda de decisión, máquinas de aprendizaje, etc), y otras técnicas
  potenciales (redes neuronales, lógica difusa y bioinformática) pueden proporcio
 nar soluciones a distintos problemas en sistemas agrícolas complejos de
  manera eficaz 
@@ -114,10 +114,10 @@ key "M.2005"
 
 .
  En este contexto, para analizar estructuras de datos complejas derivadas
- de la agricultura de precisión, tres métodos son de particular interés.
- En este proyecto se pretende evaluar el funcionamiento, la adaptación,
- la eficiencia y la precisión de los mismos, dado que son herramientas potencial
-mente importantes de aplicar en casos de aprendizaje y clasificación estadística
+ de la agricultura de precisión, tres métodos son de particular interés
+ de los cuales se pretende evaluar el funcionamiento, la adaptación, la
+ eficiencia y la precisión de los mismos, dado que son herramientas potencialmen
+te importantes de aplicar en casos de aprendizaje y clasificación estadística
  
 \begin_inset CommandInset citation
 LatexCommand citep
@@ -132,8 +132,8 @@ key "citeulike:1720151"
 
 \end_inset
 
-, Las metodologías son: PLS o regresión por mínimos cuadrados parciales
- 
+.
+ Las metodologías son: PLS o regresión por mínimos cuadrados parciales 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "CEM:CEM1180040607"
@@ -155,8 +155,8 @@ key "Kohonen:1997:SM:261082"
 \end_inset
 
 .
- Estos tres métodos serán aplicados datos derivados de imágenes multiespectrales
- 
+ Estos tres métodos serán aplicados a datos derivados de imágenes multiespectral
+es 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "hough1991satellite"
@@ -197,14 +197,14 @@ key "Gutierrez2006"
 \begin_layout Itemize
 Evaluar el funcionamiento, adaptación, eficiencia y precisión de tres algoritmos
  de inteligencia artificial [aprendizaje por cuantificación vectorial (LVQ)],
- [la regresión por mínimos cuadrados parciales] y [random forest] aplicados
+ [regresión por mínimos cuadrados parciales] y [random forest] aplicados
  a datos derivados de imágenes multiespectrales de cultivos de caña de azúcar.
 \end_layout
 
 \begin_layout Itemize
-Estimar el área foliar (AF) , el índice de área foliar (IAF) y cantidad
- de tallos( NT) en cultivos de caña de azúcar mediante algoritmos de inteligenci
-a artificial.
+Estimar el área foliar (AF), el índice de área foliar (IAF) y cantidad de
+ tallos (NT) en cultivos de caña de azúcar mediante algoritmos de inteligencia
+ artificial.
 \end_layout
 
 \begin_layout Itemize
@@ -220,7 +220,8 @@ Revisión de la literatura
 \begin_layout Standard
 La caña de azúcar (
 \emph on
-Saccharum officinarum
+Saccharum officinarum L.
+
 \emph default
  
 \begin_inset CommandInset citation
@@ -232,10 +233,10 @@ key "SaccharumofficinarumL"
 ) es un cultivo de zonas tropicales y subtropicales que se propaga mediante
  la plantación de trozos y/o vástagos de caña, donde de cada nudo sale una
  planta nueva e idéntica a la original.
- Existen una infinidad de métodos para la evaluación del crecimientoy desarrollo
- de los cultivos, entre estos métodos encontramos nuevas aplicaciones como
- son la percepción remota o teledetección, la cual se define como el grupo
- de técnicas para la obtención de información sobre las propiedades físicas
+ Existen una infinidad de métodos para la evaluación del crecimiento y desarroll
+o de los cultivos, entre estos métodos encontramos nuevas aplicaciones como
+ la percepción remota o teledetección, la cual se define como el grupo de
+ técnicas para la obtención de información sobre las propiedades físicas
  de ciertas superficies u objetos y su entorno, desde distancias relativamente
  grandes, sin contacto físico con ellos 
 \begin_inset CommandInset citation
@@ -259,7 +260,7 @@ key "Gutierrez2006"
 \end_layout
 
 \begin_layout Standard
-El IAF es el cociente entre el áreafoliar (AF) y la unidad de superficie
+El IAF es el cociente entre el área foliar (AF) y la unidad de superficie
  de suelo.
  La información precisa y oportuna sobre el IAF tiene gran importancia y
  aplicaciones en la agricultura para la estimación del rendimiento y la
@@ -323,11 +324,12 @@ key "citeulike:1720151"
 
  se define a las máquinas de aprendizaje o el aprendizaje automático como
  el campo de estudio que da a las computadoras la capacidad de aprender
- sin ser explícitamente programadas, lo que sería un gran avance en las
- técnicas de estimación en cultivos de caña de azúcar, sobre todo cuando
- la información proviene de imágenes digitales, proceso que genera un flujo
- grande de información, el cual requiere métodos estadísticos capaces de
- tratar con estructuras de datos multivariados y no lineales.
+ sin ser explícitamente programadas.
+ Esto sería un gran avance en las técnicas de estimación en cultivos de
+ caña de azúcar, sobre todo cuando la información proviene de imágenes digitales
+, proceso que genera un flujo grande de información, el cual requiere métodos
+ estadísticos capaces de tratar con estructuras de datos multivariados y
+ no lineales.
  Las herramientas matemáticas basadas en la minería de datos proporcionan
  un marco adecuado para la extracción de información útil a partir de grandes
  bases de datos, así como también pueden conducir al descubrimiento de conocimie
@@ -346,7 +348,7 @@ key "Ferraro2008"
 La regresión por mínimos cuadrados parciales o PLS, el algoritmo de random
  forest o árboles aleatorios y el aprendizaje por cuantificación vectorial
  (LVQ) son tres metodologías de mucho interés para el desarrollo de esta
- investigación ya que aunque son métodos cada uno desarrollado para aplicaciones
+ investigación pues aunque son métodos cada uno desarrollado para aplicaciones
  originales diferentes, a priori son altamente escalables y se espera obtener
  resultados originales con la aplicación de métodos que con anterioridad
  no se han probado sobre cultivos de caña.
@@ -439,28 +441,28 @@ key "Saebo2008"
 \begin_layout Standard
 Breiman (
 \begin_inset CommandInset citation
-LatexCommand citet
+LatexCommand citeyear
 key "Breiman1996"
 
 \end_inset
 
 , 
 \begin_inset CommandInset citation
-LatexCommand citet
+LatexCommand citeyear
 key "Breim2000"
 
 \end_inset
 
 , 
 \begin_inset CommandInset citation
-LatexCommand citet
+LatexCommand citeyear
 key "Breiman2001"
 
 \end_inset
 
 , 
 \begin_inset CommandInset citation
-LatexCommand citet
+LatexCommand citeyear
 key "Breim2004"
 
 \end_inset
@@ -478,12 +480,12 @@ key "Breim2004"
 \end_layout
 
 \begin_layout Standard
-El random Forest es una combinación de árboles predictores tal que cada
+El random forest es una combinación de árboles predictores tal que cada
  árbol depende de los valores de un vector aleatorio probado independientemente
  y con la misma distribución para cada uno de éstos.
  Es una modificación sustancial de bagging [Bootstrap aggregating] que construye
  una larga colección de árboles no correlacionados y luego los promedia.
- Random Forest es una unión entre métodos de clasificación y métodos de
+ Random forest es una unión entre métodos de clasificación y métodos de
  regresión, esta opera por la construcción de una multitud de árboles de
  decisión en el entrenamiento y en la salida una clase el cual es el modo
  de salida de los árboles individuales.
@@ -504,9 +506,16 @@ el ganador toma todo
 \begin_inset Quotes erd
 \end_inset
 
- mediante el aprendizaje de Hebb, es un precursor de los mapas auto-organizados
- (SOM) y está relacionado con el algoritmo de gas neural y con el algoritmo
- de K vecinos más cercanos (k-NN) 
+ mediante el aprendizaje de Hebb
+\begin_inset CommandInset citation
+LatexCommand citep
+key "hebb1946"
+
+\end_inset
+
+, es un precursor de los mapas auto-organizados (SOM) y está relacionado
+ con el algoritmo de gas neural y con el algoritmo de K vecinos más cercanos
+ (k-NN) 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "Kohonen:1997:SM:261082"
@@ -547,7 +556,7 @@ La validación cruzada o cross-validation es una técnica utilizada para evaluar
  Consiste en repetir y calcular la media aritmética obtenida de las medidas
  de evaluación sobre diferentes particiones.
  Se utiliza en entornos donde el objetivo principal es la predicción y se
- quiere estimar cómo de preciso es un modelo que se llevará a cabo a la
+ quiere estimar qué tan preciso es un modelo que se llevará a cabo a la
  práctica 
 \begin_inset CommandInset citation
 LatexCommand citep
@@ -569,7 +578,7 @@ key "Devyver1982"
 
 , se aplica a una muestra de prueba independiente de la distribución conjunta
  de X e Y.
- Como se mencionó anteriormente, podríamos esperar que la validación cruzada
+ Como se mencionó anteriormente, se podría esperar que la validación cruzada
  estime el error condicional, con el conjunto de entrenamiento 
 \begin_inset Formula $\tau$
 \end_inset
@@ -597,13 +606,13 @@ K-Fold
 \end_layout
 
 \begin_layout Standard
-Sería ideal que, en caso que tuviéramos datos suficientes, dejáramos de
+Sería ideal que, en caso que se tuvieran datos suficientes, se dejara de
  lado un conjunto de datos para la validación y los restantes se usaran
  para evaluar el desempeño de nuestro modelo de predicción.
  En general no es posible dado que los datos son a menudo escasos, y la
  precisión de la validación es perjudicada.
- Alternativamente si repetimos el procedimiento en K ocasiones, cada una
- con datos distintos para entrenamiento y validación, ganamos en precisión.
+ Alternativamente, si se repite el procedimiento en K ocasiones, cada una
+ con datos distintos para entrenamiento y validación, se gana en precisión.
  Para ello se dividen los datos en K partes más o menos del mismo tamaño;
  por ejemplo, cuando 
 \begin_inset Formula $K=5$
@@ -650,8 +659,8 @@ k-fold
 \end_layout
 
 \begin_layout Standard
-Para el grafico anterior en k=3, ajustamos el modelo con las otras k-1 partes
- de los datos es decir con (k=1 , k=2 , k=4 , k=5) y se calcula el error
+Para el grafico anterior en k=3, se ajusta el modelo con las otras k-1 partes
+ de los datos, es decir con (k=1 , k=2 , k=4 , k=5) y se calcula el error
  de predicción del modelo para la k-esima parte, esto para predecir la parte
  de orden k (en este caso la parte 3) de los datos, se realiza este proceso
  para cada k=1,2,3,..,K y se combinan las estimaciones del error de predicción.
@@ -686,13 +695,13 @@ CV\left(\hat{f}\right)=\frac{1}{N}\overset{N}{\underset{i=1}{\sum}}L\left(y_{i},
 \end_layout
 
 \begin_layout Standard
-La típica elección es k = 5 o 10, pero incluso podríamos tener una elección
+La típica elección es k = 5 o 10, pero incluso se podría tener una elección
  de K=N lo que es conocido como una validación cruzada dejando solo uno
  fuera “leave-one-out ” y donde el estimador de validación cruzada es aproximada
 mente insesgado, pero no se utiliza mucho este caso ya que cuando tenemos
- tantos conjuntos de validación, existen muchos conjuntos casi iguales,
- por esta razón en la mayoría de las veces de opta por selección de un K
- un poco más conservador como lo es 5 o 10 lo que es suficiente para obtener
+ tantos conjuntos de validación, existen muchos conjuntos casi iguales.
+ Por esta razón en la mayoría de las veces se opta por selección de un K
+ un poco más conservador como 5 o 10, lo que es suficiente para obtener
  buenos resultados 
 \begin_inset CommandInset citation
 LatexCommand citep
@@ -727,6 +736,7 @@ En general:
 \end_layout
 
 \begin_layout Standard
+\align center
 \begin_inset Tabular
 <lyxtabular version="3" rows="1" columns="2">
 <features rotate="0" tabularvalignment="middle">
@@ -760,10 +770,11 @@ Negativo (N) = rechazado
 \end_layout
 
 \begin_layout Standard
-por lo tanto:
+Por lo tanto:
 \end_layout
 
 \begin_layout Standard
+\align center
 \begin_inset Tabular
 <lyxtabular version="3" rows="4" columns="1">
 <features rotate="0" tabularvalignment="middle">
@@ -820,14 +831,14 @@ Falso negativo (FN) = rechazado incorrectamente
 \end_layout
 
 \begin_layout Standard
-En estadística, el error cuadrático medio (ECM) de un estimador mide el
- promedio de los errores al cuadrado, es decir, la diferencia entre el estimador
- y lo que se estima.
+En estadística, el error cuadrático medio o MSE (Mean squared error) de
+ un estimador mide el promedio de los errores al cuadrado, es decir, la
+ diferencia entre el estimador y lo que se estima.
  El MSE es una función de riesgo, correspondiente al valor esperado de la
  pérdida del error al cuadrado o pérdida cuadrática.
  La diferencia se produce debido a la aleatoriedad o porque el estimador
  no tiene en cuenta la información que podría producir una estimación más
- precisa
+ precisa 
 \begin_inset CommandInset citation
 LatexCommand citep
 key "lehmann1998theory"
@@ -854,7 +865,7 @@ En una analogía con la desviación estándar, tomando la raíz cuadrada del
 \end_layout
 
 \begin_layout Standard
-Raiz del error cuadratico medio (RMSE): 
+Raíz del error cuadrático medio (RMSE): 
 \begin_inset Formula $\sqrt{\frac{1}{n}\overset{n}{\underset{i=1}{\sum}}\left(Predicción_{i}-DatosReales_{i}\right)^{2}}$
 \end_inset
 
@@ -862,12 +873,12 @@ Raiz del error cuadratico medio (RMSE):
 \end_layout
 
 \begin_layout Standard
-Algunos nombres que adquieren caracteristicas relacionadas a la medicion
+Algunos nombres que adquieren características relacionadas a la medición
  del error de predicción 
 \end_layout
 
 \begin_layout Enumerate
-Error cuadratico medio (o la raiz de error cuadratico medio)
+Error cuadrático medio (o la raíz de error cuadrático medio)
 \end_layout
 
 \begin_deeper
@@ -882,7 +893,7 @@ Desviación media absoluta
 
 \begin_deeper
 \begin_layout Itemize
-A menudo mas robustos 
+A menudo más robustos 
 \end_layout
 
 \end_deeper
@@ -892,8 +903,8 @@ Sensibilidad - Sensitivity (recall)
 
 \begin_deeper
 \begin_layout Itemize
-Proporción de positivos correctamente identificados, Si quieres pocos positivos
- perdidos es de gran interes controlarla.
+Proporción de positivos correctamente identificados, Si se quieren pocos
+ positivos perdidos es de gran interés controlarla.
 \end_layout
 
 \end_deeper
@@ -903,9 +914,9 @@ Especificidad - (Specificity)
 
 \begin_deeper
 \begin_layout Itemize
-Es llamado a la capacidad de nuestro estimador para dar como casos negativos
- los casos realmente negativos, Si quieres pocos negativos llamados como
- positivos es de gran interes controlarla.
+Es llamada a la capacidad de nuestro estimador para dar como casos negativos
+ los casos realmente negativos, Si se quieren pocos negativos llamados como
+ positivos es de gran interés controlarla.
 \end_layout
 
 \end_deeper
@@ -915,13 +926,13 @@ Precisión (Accuracy)
 
 \begin_deeper
 \begin_layout Itemize
-Es el resultado de la realizacion de una curva ROC la cual es una representación
+Es el resultado de la realización de una curva ROC la cual es una representación
  gráfica de la sensibilidad frente a (1 – especificidad) para un sistema
  clasificador binario según se varía el umbral de discriminación.
 \end_layout
 
 \begin_layout Itemize
-la Precisión esta definida como 
+La precisión está definida como 
 \begin_inset Formula $\frac{(VP+VN)}{(P+N)}$
 \end_inset
 
@@ -962,17 +973,6 @@ Hace más de 60 años que se toman fotografías a color e infrarrojo para seguir
 \begin_inset CommandInset citation
 LatexCommand citet
 key "Colwell1956"
-
-\end_inset
-
- 
-\begin_inset Note Note
-status collapsed
-
-\begin_layout Plain Layout
-en condiciones de cultivo y en ecosistemas naturales hace mas de 80 años
- 
-\end_layout
 
 \end_inset
 
@@ -1022,13 +1022,14 @@ key "H.S.Sandhu2012"
 
  se evaluaron las calificaciones visuales subjetivas de crecimiento del
  cultivo de la caña de azúcar para la estimación de parámetros de rendimiento
- del cultivo y paralelamente se realizaron mediciones de los IAF, donde
- se encontró que existe relaciones importantes entre estos sistemas de evaluació
-n visual, los índices IAF y la estimación de la población, pero estas relaciones
- son válidas solo en algunos estados del crecimiento del cultivo, por lo
- tanto las estimaciones no eran buenas fuera de algunos periodos del desarrollo
- del cultivo, sobre todo en las primeras etapas del crecimiento, lo que
- impide tomar decisiones tempranas respecto al manejo del cultivo.
+ del cultivo y paralelamente se realizaron mediciones de los IAF.
+ En este caso se encontró que existe relaciones importantes entre estos
+ sistemas de evaluación visual, los índices IAF y la estimación de la población,
+ pero estas relaciones son válidas solo en algunos estados del crecimiento
+ del cultivo.
+ Por lo tanto, las estimaciones no eran buenas fuera de algunos periodos
+ del desarrollo del cultivo, sobre todo en las primeras etapas del crecimiento,
+ lo que impide tomar decisiones tempranas respecto al manejo del cultivo.
 \end_layout
 
 \begin_layout Standard
