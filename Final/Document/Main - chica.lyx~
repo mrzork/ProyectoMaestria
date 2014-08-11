@@ -205,20 +205,18 @@ Ingeniero Agrónomo - Dr.
 \begin_layout Standard
 \noindent
 \align center
-
+Consejero
 \size large
-\begin_inset Note Note
-status collapsed
 
-\begin_layout Plain Layout
-\noindent
-\align center
-Co - Director
 \begin_inset Newline newline
 \end_inset
 
+
+\size larger
 Héctor A.
  Chica Ramírez
+\size large
+
 \begin_inset Newline newline
 \end_inset
 
@@ -228,11 +226,6 @@ Agrónomo - Msc.
 \end_inset
 
 Biometrista en Cenicaña
-\end_layout
-
-\end_inset
-
-
 \begin_inset VSpace 0.7cm
 \end_inset
 
